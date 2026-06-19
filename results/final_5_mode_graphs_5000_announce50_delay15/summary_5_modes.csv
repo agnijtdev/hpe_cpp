@@ -1,0 +1,6 @@
+transport,file,injected_prefixes_seen,valid_prefixes_exactly_2_observations,average_ms,median_ms,p95_ms,p99_ms,min_ms,max_ms
+TCP,/home/gopika/Documents/bgpost-lab/results/mrt_parsed_tcp_5000_delay15/r1.csv.gz,5000,5000,154.035,154.031,155.100,155.846,151.420,167.292
+TLS,/home/gopika/Documents/bgpost-lab/results/mrt_parsed_tls_5000_delay15/r1.csv.gz,5000,5000,154.350,154.369,155.247,156.039,151.315,170.734
+QUIC,/home/gopika/Documents/bgpost-lab/results/mrt_parsed_quic_5000_delay15/r1.csv.gz,5000,5000,157.015,157.104,158.339,158.909,153.676,183.270
+TLS-TCP-AO Static,/home/gopika/Documents/bgpost-lab/results/mrt_parsed_tls_ao_static_5000_announce50_delay15/r1.csv.gz,5000,5000,154.788,154.800,155.948,156.929,151.734,182.401
+TLS-AO Dynamic,/home/gopika/Documents/bgpost-lab/results/mrt_parsed_tls_ao_dynamic_5000_announce50_delay15/r1.csv.gz,5000,5000,154.869,154.862,155.834,156.841,151.911,181.831
