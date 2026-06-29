@@ -1,0 +1,24 @@
+; =============================================================================
+; replica-a/zones/bgpost.lab.zone
+; Minimal authoritative zone. The TXT record lets us identify, via dig,
+; WHICH replica actually answered an anycast query -- useful for the
+; failover verification test.
+; =============================================================================
+$ORIGIN bgpost.lab.
+$TTL    300
+
+@       IN SOA  ns.bgpost.lab. admin.bgpost.lab. (
+                2024120401  ; serial
+                3600        ; refresh
+                900         ; retry
+                604800      ; expire
+                300 )       ; minimum
+
+@       IN NS   ns.bgpost.lab.
+ns      IN A    192.0.2.1
+
+; The anycast service record itself
+service IN A    192.0.2.1
+
+; Identity TXT record -- THIS IS THE FIELD THAT DIFFERS BETWEEN REPLICAS
+identity IN TXT "REPLICA-A"

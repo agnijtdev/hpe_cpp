@@ -1,0 +1,23 @@
+; =============================================================================
+; replica-b/zones/bgpost.lab.zone
+; Identical to replica A's zone except for the identity TXT record, so
+; `dig` output during the failover test clearly shows which replica
+; answered.
+; =============================================================================
+$ORIGIN bgpost.lab.
+$TTL    300
+
+@       IN SOA  ns.bgpost.lab. admin.bgpost.lab. (
+                2024120401  ; serial
+                3600        ; refresh
+                900         ; retry
+                604800      ; expire
+                300 )       ; minimum
+
+@       IN NS   ns.bgpost.lab.
+ns      IN A    192.0.2.1
+
+service IN A    192.0.2.1
+
+; THIS IS THE FIELD THAT DIFFERS BETWEEN REPLICAS
+identity IN TXT "REPLICA-B"

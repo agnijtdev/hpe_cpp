@@ -1,0 +1,102 @@
+# =============================================================================
+# docker-compose.yml
+# -----------------------------------------------------------------------------
+# BGPoST Anycast Lab -- 4 containers on one IPv4 bridge (10.10.0.0/24)
+#
+#   provider-router    10.10.0.2   AS65000   upstream BGP peer
+#   anycast-replica-a  10.10.0.3   AS65010   BIRD + NSD, advertises 192.0.2.1/32
+#   anycast-replica-b  10.10.0.4   AS65011   BIRD + NSD, advertises 192.0.2.1/32
+#   client-node        10.10.0.5             simulates client DNS queries
+#
+# Requires bird-tls:latest to already exist locally (built from the
+# IPNetworkingLab/BGPoTLS repo's own Dockerfile -- see top of guide).
+# =============================================================================
+networks:
+  bgpost-net:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 10.10.0.0/24
+          gateway: 10.10.0.1
+
+services:
+
+  provider-router:
+    build:
+      context: ./provider-router
+      dockerfile: Dockerfile
+    image: bgpost/provider-router:latest
+    container_name: provider-router
+    hostname: provider-router
+    cap_add:
+      - NET_ADMIN
+    networks:
+      bgpost-net:
+        ipv4_address: 10.10.0.2
+    volumes:
+      - ./provider-router/bird.conf:/etc/bird/bird.conf:ro
+      - ./certs:/certs:ro
+    sysctls:
+      - net.ipv4.ip_forward=1
+    tty: true
+    stdin_open: true
+
+  anycast-replica-a:
+    build:
+      context: ./replica-a
+      dockerfile: Dockerfile
+    image: bgpost/replica-a:latest
+    container_name: anycast-replica-a
+    hostname: anycast-replica-a
+    cap_add:
+      - NET_ADMIN
+    networks:
+      bgpost-net:
+        ipv4_address: 10.10.0.3
+    volumes:
+      - ./replica-a/bird.conf:/etc/bird/bird.conf:ro
+      - ./certs:/certs:ro
+    depends_on:
+      - provider-router
+    tty: true
+    stdin_open: true
+
+  anycast-replica-b:
+    build:
+      context: ./replica-b
+      dockerfile: Dockerfile
+    image: bgpost/replica-b:latest
+    container_name: anycast-replica-b
+    hostname: anycast-replica-b
+    cap_add:
+      - NET_ADMIN
+    networks:
+      bgpost-net:
+        ipv4_address: 10.10.0.4
+    volumes:
+      - ./replica-b/bird.conf:/etc/bird/bird.conf:ro
+      - ./certs:/certs:ro
+    depends_on:
+      - provider-router
+    tty: true
+    stdin_open: true
+
+  client-node:
+    build:
+      context: ./client-node
+      dockerfile: Dockerfile
+    image: bgpost/client-node:latest
+    container_name: client-node
+    hostname: client-node
+    cap_add:
+      - NET_ADMIN
+    networks:
+      bgpost-net:
+        ipv4_address: 10.10.0.5
+    depends_on:
+      - provider-router
+      - anycast-replica-a
+      - anycast-replica-b
+    tty: true
+    stdin_open: true
