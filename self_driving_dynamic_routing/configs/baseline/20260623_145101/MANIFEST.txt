@@ -1,0 +1,21 @@
+Configuration Snapshot Manifest
+Date: Tue Jun 23 02:51:02 PM IST 2026
+
+Routers:
+- hpe-r1: bird.conf + runtime_state.txt
+- hpe-r2: bird.conf + runtime_state.txt
+- hpe-r3: bird.conf + runtime_state.txt
+- hpe-r4: bird.conf + runtime_state.txt
+- hpe-r5: bird.conf + runtime_state.txt
+- hpe-r6: bird.conf + runtime_state.txt
+- hpe-r7: bird.conf + runtime_state.txt
+- hpe-r8: bird.conf + runtime_state.txt
+- hpe-r9: bird.conf + runtime_state.txt
+
+Hosts:
+- hpe-h1: runtime_state.txt
+- hpe-h2: runtime_state.txt
+- hpe-h3: runtime_state.txt
+
+Purpose:
+This snapshot stores the working baseline configuration and runtime state before further tuning or experiments.

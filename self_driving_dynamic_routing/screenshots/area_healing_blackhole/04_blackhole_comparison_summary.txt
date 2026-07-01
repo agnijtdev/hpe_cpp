@@ -1,0 +1,23 @@
+========================================================================================================================
+OSPF AREA HEALING BLACKHOLE - WITH BFD vs WITHOUT BFD
+========================================================================================================================
+Traffic: hpe-h1 Area 10 -> hpe-h2 Area 20
+Silent failed link: hpe-r3 eth3 -> hpe-r4 eth2
+Failure type: interface remains UP, packets dropped using tc/netem
+Old next-hop before failure: 10.0.34.3
+
+Mode                  BFD ms    Route-get ms       Kernel ms         BIRD ms     Ping loss %
+------------------------------------------------------------------------------------------------------------------------
+with_bfd                 573            1313            1315            1250               2
+no_bfd               ignored           18761           18762           18835              30
+
+Improvement with BFD:
+------------------------------------------------------------------------------------------------------------------------
+Route-get switch improvement : 93.00% faster
+Kernel route improvement     : 92.99% faster
+BIRD route improvement       : 93.36% faster
+Packet loss reduction        : 93.33% lower
+
+Conclusion:
+With BFD enabled, the silent ABR/core failure was detected in 573 ms and the route changed in 1313 ms. Without BFD, the route changed only after 18761 ms. This demonstrates that BFD significantly improves OSPF area healing during silent failures.
+========================================================================================================================

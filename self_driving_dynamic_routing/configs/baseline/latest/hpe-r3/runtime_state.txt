@@ -1,0 +1,83 @@
+### hostname
+9caf685f3655
+
+### ip addr
+lo               UNKNOWN        127.0.0.1/8 ::1/128 
+eth0@if108       UP             10.0.34.2/24 
+eth1@if109       UP             10.0.35.2/24 
+eth2@if110       UP             10.0.13.3/24 
+eth3@if111       UP             10.0.23.3/24 
+
+### ip route
+default via 10.0.23.2 dev eth3 proto bird metric 32 
+10.0.12.0/24 proto bird metric 32 
+	nexthop via 10.0.13.2 dev eth2 weight 1 
+	nexthop via 10.0.23.2 dev eth3 weight 1 
+10.0.13.0/24 dev eth2 proto kernel scope link src 10.0.13.3 
+10.0.13.0/24 dev eth2 proto bird scope link metric 32 
+10.0.14.0/24 proto bird metric 32 
+	nexthop via 10.0.13.2 dev eth2 weight 1 
+	nexthop via 10.0.34.3 dev eth0 weight 1 
+10.0.23.0/24 dev eth3 proto kernel scope link src 10.0.23.3 
+10.0.23.0/24 dev eth3 proto bird scope link metric 32 
+10.0.24.0/24 proto bird metric 32 
+	nexthop via 10.0.23.2 dev eth3 weight 1 
+	nexthop via 10.0.34.3 dev eth0 weight 1 
+10.0.34.0/24 dev eth0 proto kernel scope link src 10.0.34.2 
+10.0.34.0/24 dev eth0 proto bird scope link metric 32 
+10.0.35.0/24 dev eth1 proto kernel scope link src 10.0.35.2 
+10.0.35.0/24 dev eth1 proto bird scope link metric 32 
+10.0.47.0/24 via 10.0.34.3 dev eth0 proto bird metric 32 
+10.0.56.0/24 via 10.0.35.3 dev eth1 proto bird metric 32 
+10.0.61.0/24 via 10.0.35.3 dev eth1 proto bird metric 32 
+10.0.78.0/24 via 10.0.34.3 dev eth0 proto bird metric 32 
+10.0.82.0/24 via 10.0.34.3 dev eth0 proto bird metric 32 
+
+### bird protocols
+BIRD 2.0.8 ready.
+Name       Proto      Table      State  Since         Info
+device1    Device     ---        up     08:45:01.748  
+direct1    Direct     ---        up     08:45:01.748  
+kernel1    Kernel     master4    up     08:45:01.748  
+ospf1      OSPF       master4    up     09:18:25.739  Running
+
+### bird routes
+BIRD 2.0.8 ready.
+Table master4:
+0.0.0.0/0            unicast [ospf1 10:07:49.840] * E2 (150/10/10) [2.2.2.2]
+	via 10.0.23.2 on eth3
+10.0.24.0/24         unicast [ospf1 10:07:49.840] * I (150/20) [4.4.4.4]
+	via 10.0.23.2 on eth3 weight 1
+	via 10.0.34.3 on eth0 weight 1
+10.0.61.0/24         unicast [ospf1 09:18:47.841] * I (150/30) [6.6.6.6]
+	via 10.0.35.3 on eth1
+10.0.56.0/24         unicast [ospf1 09:18:47.841] * I (150/20) [6.6.6.6]
+	via 10.0.35.3 on eth1
+10.0.23.0/24         unicast [direct1 10:07:43.126] * (240)
+	dev eth3
+                     unicast [ospf1 10:07:48.841] I (150/10) [2.2.2.2]
+	dev eth3
+10.0.78.0/24         unicast [ospf1 09:18:50.840] * IA (150/30) [4.4.4.4]
+	via 10.0.34.3 on eth0
+10.0.12.0/24         unicast [ospf1 10:07:49.840] * I (150/20) [2.2.2.2]
+	via 10.0.13.2 on eth2 weight 1
+	via 10.0.23.2 on eth3 weight 1
+10.0.13.0/24         unicast [direct1 08:45:01.750] * (240)
+	dev eth2
+                     unicast [ospf1 09:18:25.840] I (150/10) [3.3.3.3]
+	dev eth2
+10.0.47.0/24         unicast [ospf1 09:18:50.840] * IA (150/20) [4.4.4.4]
+	via 10.0.34.3 on eth0
+10.0.14.0/24         unicast [ospf1 09:18:50.840] * I (150/20) [4.4.4.4]
+	via 10.0.13.2 on eth2 weight 1
+	via 10.0.34.3 on eth0 weight 1
+10.0.82.0/24         unicast [ospf1 09:18:52.840] * IA (150/40) [4.4.4.4]
+	via 10.0.34.3 on eth0
+10.0.34.0/24         unicast [direct1 08:45:01.750] * (240)
+	dev eth0
+                     unicast [ospf1 09:18:46.841] I (150/10) [4.4.4.4]
+	dev eth0
+10.0.35.0/24         unicast [direct1 08:45:01.750] * (240)
+	dev eth1
+                     unicast [ospf1 09:18:47.841] I (150/10) [5.5.5.5]
+	dev eth1

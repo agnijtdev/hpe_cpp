@@ -1,0 +1,154 @@
+\section{OSPF NSSA Type-7 to Type-5 Translation}
+
+\subsection{Objective}
+
+The objective of this experiment was to validate OSPF NSSA behaviour, specifically Type-7 to Type-5 external route translation and external route containment.
+
+The experiment checked whether an external route originated inside an NSSA area is first carried as a Type-7 LSA inside the NSSA, and then translated into a Type-5 LSA by the Area Border Router, or ABR, for the backbone area.
+
+\subsection{NSSA Area in the Topology}
+
+In this topology, Area 10 is configured as an NSSA area.
+
+The relevant routers are:
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|l|l|}
+\hline
+\textbf{Router} & \textbf{Role} \\
+\hline
+\texttt{hpe-r3} & ABR between Area 0 and Area 10 \\
+\hline
+\texttt{hpe-r5} & Internal NSSA router \\
+\hline
+\texttt{hpe-r6} & Internal NSSA router and origin router for the test external route \\
+\hline
+\end{tabular}
+\caption{Routers involved in the NSSA experiment}
+\end{table}
+
+Area 10 is configured as NSSA on \texttt{hpe-r3}, \texttt{hpe-r5}, and \texttt{hpe-r6}.
+
+\subsection{Why NSSA is Important}
+
+In normal OSPF, external routes are flooded as Type-5 LSAs.
+
+However, an NSSA does not directly flood Type-5 LSAs inside the NSSA area. Instead, external routes originated inside the NSSA are carried as Type-7 LSAs. The ABR then translates the Type-7 LSA into a Type-5 LSA for the rest of the OSPF domain.
+
+This keeps external route flooding controlled and prevents external LSAs from entering areas where they should not be directly flooded.
+
+\subsection{Test External Route}
+
+A controlled static blackhole route was added on \texttt{hpe-r6}.
+
+\begin{verbatim}
+172.16.66.0/24
+\end{verbatim}
+
+This was added as a BIRD static route:
+
+\begin{verbatim}
+172.16.66.0/24 blackhole
+\end{verbatim}
+
+This route was then exported into OSPF from \texttt{hpe-r6}, which is inside NSSA Area 10.
+
+The route was intentionally configured as a blackhole route because the experiment only needed a clean routing advertisement, not real host connectivity.
+
+\subsection{Route Visibility Result}
+
+The route visibility result is shown below.
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Router} & \textbf{Route Present} & \textbf{Route Type} \\
+\hline
+\texttt{hpe-r6} & Yes & Static \\
+\hline
+\texttt{hpe-r5} & Yes & OSPF-E2 \\
+\hline
+\texttt{hpe-r3} & Yes & OSPF-E2 \\
+\hline
+\texttt{hpe-r1} & Yes & OSPF-E2 \\
+\hline
+\texttt{hpe-r2} & Yes & OSPF-E2 \\
+\hline
+\texttt{hpe-r4} & Yes & OSPF-E2 \\
+\hline
+\texttt{hpe-r8} & No & Not present \\
+\hline
+\end{tabular}
+\caption{NSSA external route visibility}
+\end{table}
+
+This confirms that the test route was originated by \texttt{hpe-r6}, propagated through Area 10, translated by the ABR, and made visible to the backbone routers.
+
+\subsection{Type-7 Evidence Inside NSSA}
+
+The Type-7 LSADB output showed the test route inside the NSSA area.
+
+\begin{verbatim}
+hpe-r6:
+0007  172.16.66.255   6.6.6.6
+
+hpe-r5:
+0007  172.16.66.255   6.6.6.6
+
+hpe-r3:
+0007  172.16.66.255   6.6.6.6
+\end{verbatim}
+
+This proves that the external route originated by \texttt{hpe-r6} was carried inside Area 10 as a Type-7 LSA.
+
+\subsection{Type-5 Evidence Outside NSSA}
+
+The Type-5 LSADB output showed the translated route outside the NSSA.
+
+\begin{verbatim}
+hpe-r3:
+0005  172.16.66.255   3.3.3.3
+
+hpe-r1:
+0005  172.16.66.255   3.3.3.3
+
+hpe-r2:
+0005  172.16.66.255   3.3.3.3
+
+hpe-r4:
+0005  172.16.66.255   3.3.3.3
+\end{verbatim}
+
+This proves that ABR \texttt{hpe-r3}, whose router ID is \texttt{3.3.3.3}, translated the NSSA Type-7 LSA into a Type-5 LSA for the backbone area.
+
+\subsection{Stub Area Containment}
+
+Router \texttt{hpe-r8} is inside the stub area, Area 20.
+
+When the route was checked on \texttt{hpe-r8}, BIRD reported:
+
+\begin{verbatim}
+Network not found
+\end{verbatim}
+
+This means \texttt{hpe-r8} did not receive the external OSPF route as a direct OSPF external route.
+
+However, the Linux kernel still had a forwarding path using the default route:
+
+\begin{verbatim}
+172.16.66.1 via 10.0.78.2 dev eth0
+\end{verbatim}
+
+This is the expected containment behaviour. The external route itself was not flooded into the stub area, but the stub router could still forward traffic using the default route.
+
+\subsection{Conclusion}
+
+The NSSA experiment successfully demonstrated Type-7 to Type-5 translation and external route containment.
+
+A static blackhole route, \texttt{172.16.66.0/24}, was originated inside NSSA Area 10 from \texttt{hpe-r6}. Inside the NSSA, the route appeared as a Type-7 LSA originated by router ID \texttt{6.6.6.6}. At the ABR, \texttt{hpe-r3}, the Type-7 LSA was translated into a Type-5 LSA originated by router ID \texttt{3.3.3.3}.
+
+Backbone routers such as \texttt{hpe-r1}, \texttt{hpe-r2}, and \texttt{hpe-r4} received the translated Type-5 LSA. The stub-area router \texttt{hpe-r8} did not receive the external route directly, showing that external route flooding was contained.
+
+This confirms that NSSA behaviour worked correctly in the lab topology.

@@ -1,0 +1,2 @@
+timestamp,test_name,restarted_router,bgp_bfd_state,birdc_ready_ms,bgp_reestablished_ms,ping_tx,ping_rx,ping_loss,direct_next_hop_samples,alternate_next_hop_samples,route_missing_samples,forwarding_preserved
+20260623_235923,bgp_gr_full_bird_daemon_restart,hpe-r9,bgp_bfd_temporarily_disabled,92,4376,167,92,44.9102%,43,0,0,partial_or_no

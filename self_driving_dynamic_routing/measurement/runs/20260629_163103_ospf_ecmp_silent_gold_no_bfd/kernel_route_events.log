@@ -1,0 +1,1140 @@
+1782730899618|10.0.24.0/24 via 10.0.23.2 dev eth2 proto bird metric 32
+1782730899625|10.0.78.0/24 proto bird metric 32
+1782730899630|nexthop via 10.0.13.2 dev eth1 weight 1
+1782730899633|nexthop via 10.0.23.2 dev eth2 weight 1
+1782730899637|10.0.47.0/24 proto bird metric 32
+1782730899640|nexthop via 10.0.13.2 dev eth1 weight 1
+1782730899642|nexthop via 10.0.23.2 dev eth2 weight 1
+1782730899645|10.0.14.0/24 via 10.0.13.2 dev eth1 proto bird metric 32
+1782730899647|10.0.82.0/24 proto bird metric 32
+1782730899648|nexthop via 10.0.13.2 dev eth1 weight 1
+1782730899650|nexthop via 10.0.23.2 dev eth2 weight 1
+1782730906610|10.0.24.0/24 proto bird metric 32
+1782730906613|nexthop via 10.0.23.2 dev eth2 weight 1
+1782730906615|nexthop via 10.0.34.3 dev eth3 weight 1
+1782730906619|10.0.78.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782730906621|10.0.47.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782730906624|10.0.14.0/24 proto bird metric 32
+1782730906626|nexthop via 10.0.13.2 dev eth1 weight 1
+1782730906628|nexthop via 10.0.34.3 dev eth3 weight 1
+1782730906631|10.0.82.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782730959609|10.0.24.0/24 via 10.0.23.2 dev eth2 proto bird metric 32
+1782730959612|10.0.78.0/24 proto bird metric 32
+1782730959617|nexthop via 10.0.13.2 dev eth1 weight 1
+1782730959619|nexthop via 10.0.23.2 dev eth2 weight 1
+1782730959621|10.0.47.0/24 proto bird metric 32
+1782730959622|nexthop via 10.0.13.2 dev eth1 weight 1
+1782730959624|nexthop via 10.0.23.2 dev eth2 weight 1
+1782730959626|10.0.14.0/24 via 10.0.13.2 dev eth1 proto bird metric 32
+1782730959627|10.0.82.0/24 proto bird metric 32
+1782730959629|nexthop via 10.0.13.2 dev eth1 weight 1
+1782730959631|nexthop via 10.0.23.2 dev eth2 weight 1
+1782730966608|10.0.24.0/24 proto bird metric 32
+1782730966612|nexthop via 10.0.23.2 dev eth2 weight 1
+1782730966614|nexthop via 10.0.34.3 dev eth3 weight 1
+1782730966615|10.0.78.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782730966617|10.0.47.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782730966618|10.0.14.0/24 proto bird metric 32
+1782730966620|nexthop via 10.0.13.2 dev eth1 weight 1
+1782730966622|nexthop via 10.0.34.3 dev eth3 weight 1
+1782730966623|10.0.82.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782731817096|10.0.24.0/24 via 10.0.23.2 dev eth2 proto bird metric 32
+1782731817098|10.0.78.0/24 proto bird metric 32
+1782731817101|nexthop via 10.0.13.2 dev eth1 weight 1
+1782731817104|nexthop via 10.0.23.2 dev eth2 weight 1
+1782731817107|10.0.47.0/24 proto bird metric 32
+1782731817112|nexthop via 10.0.13.2 dev eth1 weight 1
+1782731817114|nexthop via 10.0.23.2 dev eth2 weight 1
+1782731817116|10.0.14.0/24 via 10.0.13.2 dev eth1 proto bird metric 32
+1782731817118|10.0.82.0/24 proto bird metric 32
+1782731817120|nexthop via 10.0.13.2 dev eth1 weight 1
+1782731817121|nexthop via 10.0.23.2 dev eth2 weight 1
+1782731841096|10.0.24.0/24 proto bird metric 32
+1782731841104|nexthop via 10.0.23.2 dev eth2 weight 1
+1782731841106|nexthop via 10.0.34.3 dev eth3 weight 1
+1782731841112|10.0.78.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782731841114|10.0.47.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782731841115|10.0.14.0/24 proto bird metric 32
+1782731841117|nexthop via 10.0.13.2 dev eth1 weight 1
+1782731841121|nexthop via 10.0.34.3 dev eth3 weight 1
+1782731841123|10.0.82.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782731876096|10.0.24.0/24 via 10.0.23.2 dev eth2 proto bird metric 32
+1782731876098|10.0.78.0/24 proto bird metric 32
+1782731876101|nexthop via 10.0.13.2 dev eth1 weight 1
+1782731876104|nexthop via 10.0.23.2 dev eth2 weight 1
+1782731876107|10.0.47.0/24 proto bird metric 32
+1782731876110|nexthop via 10.0.13.2 dev eth1 weight 1
+1782731876112|nexthop via 10.0.23.2 dev eth2 weight 1
+1782731876115|10.0.14.0/24 via 10.0.13.2 dev eth1 proto bird metric 32
+1782731876118|10.0.82.0/24 proto bird metric 32
+1782731876120|nexthop via 10.0.13.2 dev eth1 weight 1
+1782731876122|nexthop via 10.0.23.2 dev eth2 weight 1
+1782731901097|10.0.24.0/24 proto bird metric 32
+1782731901099|nexthop via 10.0.23.2 dev eth2 weight 1
+1782731901102|nexthop via 10.0.34.3 dev eth3 weight 1
+1782731901106|10.0.78.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782731901108|10.0.47.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782731901110|10.0.14.0/24 proto bird metric 32
+1782731901112|nexthop via 10.0.13.2 dev eth1 weight 1
+1782731901115|nexthop via 10.0.34.3 dev eth3 weight 1
+1782731901119|10.0.82.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782731935104|10.0.24.0/24 via 10.0.23.2 dev eth2 proto bird metric 32
+1782731935112|10.0.78.0/24 proto bird metric 32
+1782731935118|nexthop via 10.0.13.2 dev eth1 weight 1
+1782731935120|nexthop via 10.0.23.2 dev eth2 weight 1
+1782731935123|10.0.47.0/24 proto bird metric 32
+1782731935126|nexthop via 10.0.13.2 dev eth1 weight 1
+1782731935127|nexthop via 10.0.23.2 dev eth2 weight 1
+1782731935130|10.0.14.0/24 via 10.0.13.2 dev eth1 proto bird metric 32
+1782731935131|10.0.82.0/24 proto bird metric 32
+1782731935133|nexthop via 10.0.13.2 dev eth1 weight 1
+1782731935135|nexthop via 10.0.23.2 dev eth2 weight 1
+1782731956101|10.0.24.0/24 proto bird metric 32
+1782731956102|nexthop via 10.0.23.2 dev eth2 weight 1
+1782731956105|nexthop via 10.0.34.3 dev eth3 weight 1
+1782731956107|10.0.78.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782731956109|10.0.47.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782731956111|10.0.14.0/24 proto bird metric 32
+1782731956113|nexthop via 10.0.13.2 dev eth1 weight 1
+1782731956116|nexthop via 10.0.34.3 dev eth3 weight 1
+1782731956119|10.0.82.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782731994102|10.0.24.0/24 via 10.0.23.2 dev eth2 proto bird metric 32
+1782731994106|10.0.78.0/24 proto bird metric 32
+1782731994112|nexthop via 10.0.13.2 dev eth1 weight 1
+1782731994115|nexthop via 10.0.23.2 dev eth2 weight 1
+1782731994117|10.0.47.0/24 proto bird metric 32
+1782731994120|nexthop via 10.0.13.2 dev eth1 weight 1
+1782731994126|nexthop via 10.0.23.2 dev eth2 weight 1
+1782731994129|10.0.14.0/24 via 10.0.13.2 dev eth1 proto bird metric 32
+1782731994131|10.0.82.0/24 proto bird metric 32
+1782731994133|nexthop via 10.0.13.2 dev eth1 weight 1
+1782731994135|nexthop via 10.0.23.2 dev eth2 weight 1
+1782732016098|10.0.24.0/24 proto bird metric 32
+1782732016103|nexthop via 10.0.23.2 dev eth2 weight 1
+1782732016108|nexthop via 10.0.34.3 dev eth3 weight 1
+1782732016110|10.0.78.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782732016112|10.0.47.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782732016113|10.0.14.0/24 proto bird metric 32
+1782732016115|nexthop via 10.0.13.2 dev eth1 weight 1
+1782732016117|nexthop via 10.0.34.3 dev eth3 weight 1
+1782732016118|10.0.82.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782732053098|10.0.24.0/24 via 10.0.23.2 dev eth2 proto bird metric 32
+1782732053104|10.0.78.0/24 proto bird metric 32
+1782732053112|nexthop via 10.0.13.2 dev eth1 weight 1
+1782732053116|nexthop via 10.0.23.2 dev eth2 weight 1
+1782732053121|10.0.47.0/24 proto bird metric 32
+1782732053123|nexthop via 10.0.13.2 dev eth1 weight 1
+1782732053127|nexthop via 10.0.23.2 dev eth2 weight 1
+1782732053129|10.0.14.0/24 via 10.0.13.2 dev eth1 proto bird metric 32
+1782732053134|10.0.82.0/24 proto bird metric 32
+1782732053136|nexthop via 10.0.13.2 dev eth1 weight 1
+1782732053139|nexthop via 10.0.23.2 dev eth2 weight 1
+1782732076095|10.0.24.0/24 proto bird metric 32
+1782732076099|nexthop via 10.0.23.2 dev eth2 weight 1
+1782732076102|nexthop via 10.0.34.3 dev eth3 weight 1
+1782732076104|10.0.78.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782732076106|10.0.47.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782732076108|10.0.14.0/24 proto bird metric 32
+1782732076110|nexthop via 10.0.13.2 dev eth1 weight 1
+1782732076112|nexthop via 10.0.34.3 dev eth3 weight 1
+1782732076114|10.0.82.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782732112098|10.0.24.0/24 via 10.0.23.2 dev eth2 proto bird metric 32
+1782732112104|10.0.78.0/24 proto bird metric 32
+1782732112108|nexthop via 10.0.13.2 dev eth1 weight 1
+1782732112111|nexthop via 10.0.23.2 dev eth2 weight 1
+1782732112116|10.0.47.0/24 proto bird metric 32
+1782732112118|nexthop via 10.0.13.2 dev eth1 weight 1
+1782732112121|nexthop via 10.0.23.2 dev eth2 weight 1
+1782732112122|10.0.14.0/24 via 10.0.13.2 dev eth1 proto bird metric 32
+1782732112125|10.0.82.0/24 proto bird metric 32
+1782732112128|nexthop via 10.0.13.2 dev eth1 weight 1
+1782732112130|nexthop via 10.0.23.2 dev eth2 weight 1
+1782732136098|10.0.24.0/24 proto bird metric 32
+1782732136103|nexthop via 10.0.23.2 dev eth2 weight 1
+1782732136114|nexthop via 10.0.34.3 dev eth3 weight 1
+1782732136117|10.0.78.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782732136119|10.0.47.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782732136120|10.0.14.0/24 proto bird metric 32
+1782732136122|nexthop via 10.0.13.2 dev eth1 weight 1
+1782732136123|nexthop via 10.0.34.3 dev eth3 weight 1
+1782732136125|10.0.82.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782732171096|10.0.24.0/24 via 10.0.23.2 dev eth2 proto bird metric 32
+1782732171102|10.0.78.0/24 proto bird metric 32
+1782732171109|nexthop via 10.0.13.2 dev eth1 weight 1
+1782732171116|nexthop via 10.0.23.2 dev eth2 weight 1
+1782732171119|10.0.47.0/24 proto bird metric 32
+1782732171125|nexthop via 10.0.13.2 dev eth1 weight 1
+1782732171129|nexthop via 10.0.23.2 dev eth2 weight 1
+1782732171135|10.0.14.0/24 via 10.0.13.2 dev eth1 proto bird metric 32
+1782732171137|10.0.82.0/24 proto bird metric 32
+1782732171140|nexthop via 10.0.13.2 dev eth1 weight 1
+1782732171145|nexthop via 10.0.23.2 dev eth2 weight 1
+1782732196099|10.0.24.0/24 proto bird metric 32
+1782732196103|nexthop via 10.0.23.2 dev eth2 weight 1
+1782732196106|nexthop via 10.0.34.3 dev eth3 weight 1
+1782732196110|10.0.78.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782732196115|10.0.47.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782732196118|10.0.14.0/24 proto bird metric 32
+1782732196121|nexthop via 10.0.13.2 dev eth1 weight 1
+1782732196123|nexthop via 10.0.34.3 dev eth3 weight 1
+1782732196125|10.0.82.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782732230104|10.0.24.0/24 via 10.0.23.2 dev eth2 proto bird metric 32
+1782732230108|10.0.78.0/24 proto bird metric 32
+1782732230114|nexthop via 10.0.13.2 dev eth1 weight 1
+1782732230116|nexthop via 10.0.23.2 dev eth2 weight 1
+1782732230118|10.0.47.0/24 proto bird metric 32
+1782732230120|nexthop via 10.0.13.2 dev eth1 weight 1
+1782732230122|nexthop via 10.0.23.2 dev eth2 weight 1
+1782732230127|10.0.14.0/24 via 10.0.13.2 dev eth1 proto bird metric 32
+1782732230130|10.0.82.0/24 proto bird metric 32
+1782732230132|nexthop via 10.0.13.2 dev eth1 weight 1
+1782732230135|nexthop via 10.0.23.2 dev eth2 weight 1
+1782732256097|10.0.24.0/24 proto bird metric 32
+1782732256100|nexthop via 10.0.23.2 dev eth2 weight 1
+1782732256101|nexthop via 10.0.34.3 dev eth3 weight 1
+1782732256103|10.0.78.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782732256111|10.0.47.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782732256119|10.0.14.0/24 proto bird metric 32
+1782732256120|nexthop via 10.0.13.2 dev eth1 weight 1
+1782732256122|nexthop via 10.0.34.3 dev eth3 weight 1
+1782732256123|10.0.82.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782732289103|10.0.24.0/24 via 10.0.23.2 dev eth2 proto bird metric 32
+1782732289109|10.0.78.0/24 proto bird metric 32
+1782732289111|nexthop via 10.0.13.2 dev eth1 weight 1
+1782732289115|nexthop via 10.0.23.2 dev eth2 weight 1
+1782732289119|10.0.47.0/24 proto bird metric 32
+1782732289124|nexthop via 10.0.13.2 dev eth1 weight 1
+1782732289130|nexthop via 10.0.23.2 dev eth2 weight 1
+1782732289133|10.0.14.0/24 via 10.0.13.2 dev eth1 proto bird metric 32
+1782732289138|10.0.82.0/24 proto bird metric 32
+1782732289144|nexthop via 10.0.13.2 dev eth1 weight 1
+1782732289147|nexthop via 10.0.23.2 dev eth2 weight 1
+1782732311107|10.0.24.0/24 proto bird metric 32
+1782732311112|nexthop via 10.0.23.2 dev eth2 weight 1
+1782732311118|nexthop via 10.0.34.3 dev eth3 weight 1
+1782732311126|10.0.78.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782732311128|10.0.47.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782732311130|10.0.14.0/24 proto bird metric 32
+1782732311132|nexthop via 10.0.13.2 dev eth1 weight 1
+1782732311134|nexthop via 10.0.34.3 dev eth3 weight 1
+1782732311135|10.0.82.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782732348104|10.0.24.0/24 via 10.0.23.2 dev eth2 proto bird metric 32
+1782732348111|10.0.78.0/24 proto bird metric 32
+1782732348117|nexthop via 10.0.13.2 dev eth1 weight 1
+1782732348121|nexthop via 10.0.23.2 dev eth2 weight 1
+1782732348124|10.0.47.0/24 proto bird metric 32
+1782732348126|nexthop via 10.0.13.2 dev eth1 weight 1
+1782732348132|nexthop via 10.0.23.2 dev eth2 weight 1
+1782732348134|10.0.14.0/24 via 10.0.13.2 dev eth1 proto bird metric 32
+1782732348136|10.0.82.0/24 proto bird metric 32
+1782732348139|nexthop via 10.0.13.2 dev eth1 weight 1
+1782732348141|nexthop via 10.0.23.2 dev eth2 weight 1
+1782732371103|10.0.24.0/24 proto bird metric 32
+1782732371110|nexthop via 10.0.23.2 dev eth2 weight 1
+1782732371116|nexthop via 10.0.34.3 dev eth3 weight 1
+1782732371119|10.0.78.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782732371123|10.0.47.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782732371128|10.0.14.0/24 proto bird metric 32
+1782732371131|nexthop via 10.0.13.2 dev eth1 weight 1
+1782732371133|nexthop via 10.0.34.3 dev eth3 weight 1
+1782732371135|10.0.82.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782732407096|10.0.24.0/24 via 10.0.23.2 dev eth2 proto bird metric 32
+1782732407098|10.0.78.0/24 proto bird metric 32
+1782732407102|nexthop via 10.0.13.2 dev eth1 weight 1
+1782732407116|nexthop via 10.0.23.2 dev eth2 weight 1
+1782732407120|10.0.47.0/24 proto bird metric 32
+1782732407123|nexthop via 10.0.13.2 dev eth1 weight 1
+1782732407128|nexthop via 10.0.23.2 dev eth2 weight 1
+1782732407130|10.0.14.0/24 via 10.0.13.2 dev eth1 proto bird metric 32
+1782732407132|10.0.82.0/24 proto bird metric 32
+1782732407133|nexthop via 10.0.13.2 dev eth1 weight 1
+1782732407137|nexthop via 10.0.23.2 dev eth2 weight 1
+1782732431096|10.0.24.0/24 proto bird metric 32
+1782732431099|nexthop via 10.0.23.2 dev eth2 weight 1
+1782732431101|nexthop via 10.0.34.3 dev eth3 weight 1
+1782732431103|10.0.78.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782732431104|10.0.47.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782732431106|10.0.14.0/24 proto bird metric 32
+1782732431110|nexthop via 10.0.13.2 dev eth1 weight 1
+1782732431111|nexthop via 10.0.34.3 dev eth3 weight 1
+1782732431113|10.0.82.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782739764102|10.0.24.0/24 via 10.0.23.2 dev eth2 proto bird metric 32
+1782739764104|10.0.78.0/24 proto bird metric 32
+1782739764107|nexthop via 10.0.13.2 dev eth1 weight 1
+1782739764115|nexthop via 10.0.23.2 dev eth2 weight 1
+1782739764126|10.0.47.0/24 proto bird metric 32
+1782739764128|nexthop via 10.0.13.2 dev eth1 weight 1
+1782739764129|nexthop via 10.0.23.2 dev eth2 weight 1
+1782739764135|10.0.14.0/24 via 10.0.13.2 dev eth1 proto bird metric 32
+1782739764140|10.0.82.0/24 proto bird metric 32
+1782739764144|nexthop via 10.0.13.2 dev eth1 weight 1
+1782739764146|nexthop via 10.0.23.2 dev eth2 weight 1
+1782739777103|10.0.24.0/24 proto bird metric 32
+1782739777105|nexthop via 10.0.23.2 dev eth2 weight 1
+1782739777107|nexthop via 10.0.34.3 dev eth3 weight 1
+1782739777109|10.0.78.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782739777122|10.0.47.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782739777125|10.0.14.0/24 proto bird metric 32
+1782739777129|nexthop via 10.0.13.2 dev eth1 weight 1
+1782739777132|nexthop via 10.0.34.3 dev eth3 weight 1
+1782739777133|10.0.82.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782739833101|10.0.24.0/24 via 10.0.23.2 dev eth2 proto bird metric 32
+1782739833116|10.0.78.0/24 proto bird metric 32
+1782739833120|nexthop via 10.0.13.2 dev eth1 weight 1
+1782739833125|nexthop via 10.0.23.2 dev eth2 weight 1
+1782739833134|10.0.47.0/24 proto bird metric 32
+1782739833138|nexthop via 10.0.13.2 dev eth1 weight 1
+1782739833140|nexthop via 10.0.23.2 dev eth2 weight 1
+1782739833146|10.0.14.0/24 via 10.0.13.2 dev eth1 proto bird metric 32
+1782739833147|10.0.82.0/24 proto bird metric 32
+1782739833148|nexthop via 10.0.13.2 dev eth1 weight 1
+1782739833150|nexthop via 10.0.23.2 dev eth2 weight 1
+1782739847103|10.0.24.0/24 proto bird metric 32
+1782739847112|nexthop via 10.0.23.2 dev eth2 weight 1
+1782739847121|nexthop via 10.0.34.3 dev eth3 weight 1
+1782739847124|10.0.78.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782739847126|10.0.47.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782739847128|10.0.14.0/24 proto bird metric 32
+1782739847130|nexthop via 10.0.13.2 dev eth1 weight 1
+1782739847131|nexthop via 10.0.34.3 dev eth3 weight 1
+1782739847133|10.0.82.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782739902100|10.0.24.0/24 via 10.0.23.2 dev eth2 proto bird metric 32
+1782739902102|10.0.78.0/24 proto bird metric 32
+1782739902104|nexthop via 10.0.13.2 dev eth1 weight 1
+1782739902105|nexthop via 10.0.23.2 dev eth2 weight 1
+1782739902107|10.0.47.0/24 proto bird metric 32
+1782739902109|nexthop via 10.0.13.2 dev eth1 weight 1
+1782739902115|nexthop via 10.0.23.2 dev eth2 weight 1
+1782739902119|10.0.14.0/24 via 10.0.13.2 dev eth1 proto bird metric 32
+1782739902121|10.0.82.0/24 proto bird metric 32
+1782739902123|nexthop via 10.0.13.2 dev eth1 weight 1
+1782739902127|nexthop via 10.0.23.2 dev eth2 weight 1
+1782739915096|10.0.24.0/24 proto bird metric 32
+1782739915098|nexthop via 10.0.23.2 dev eth2 weight 1
+1782739915100|nexthop via 10.0.34.3 dev eth3 weight 1
+1782739915102|10.0.78.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782739915103|10.0.47.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782739915105|10.0.14.0/24 proto bird metric 32
+1782739915109|nexthop via 10.0.13.2 dev eth1 weight 1
+1782739915111|nexthop via 10.0.34.3 dev eth3 weight 1
+1782739915114|10.0.82.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782739970096|10.0.24.0/24 via 10.0.23.2 dev eth2 proto bird metric 32
+1782739970097|10.0.78.0/24 proto bird metric 32
+1782739970102|nexthop via 10.0.13.2 dev eth1 weight 1
+1782739970105|nexthop via 10.0.23.2 dev eth2 weight 1
+1782739970115|10.0.47.0/24 proto bird metric 32
+1782739970119|nexthop via 10.0.13.2 dev eth1 weight 1
+1782739970123|nexthop via 10.0.23.2 dev eth2 weight 1
+1782739970126|10.0.14.0/24 via 10.0.13.2 dev eth1 proto bird metric 32
+1782739970129|10.0.82.0/24 proto bird metric 32
+1782739970132|nexthop via 10.0.13.2 dev eth1 weight 1
+1782739970136|nexthop via 10.0.23.2 dev eth2 weight 1
+1782739983110|10.0.24.0/24 proto bird metric 32
+1782739983116|nexthop via 10.0.23.2 dev eth2 weight 1
+1782739983118|nexthop via 10.0.34.3 dev eth3 weight 1
+1782739983125|10.0.78.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782739983127|10.0.47.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782739983128|10.0.14.0/24 proto bird metric 32
+1782739983130|nexthop via 10.0.13.2 dev eth1 weight 1
+1782739983131|nexthop via 10.0.34.3 dev eth3 weight 1
+1782739983133|10.0.82.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782740039115|10.0.24.0/24 via 10.0.23.2 dev eth2 proto bird metric 32
+1782740039118|10.0.78.0/24 proto bird metric 32
+1782740039121|nexthop via 10.0.13.2 dev eth1 weight 1
+1782740039126|nexthop via 10.0.23.2 dev eth2 weight 1
+1782740039134|10.0.47.0/24 proto bird metric 32
+1782740039140|nexthop via 10.0.13.2 dev eth1 weight 1
+1782740039144|nexthop via 10.0.23.2 dev eth2 weight 1
+1782740039146|10.0.14.0/24 via 10.0.13.2 dev eth1 proto bird metric 32
+1782740039147|10.0.82.0/24 proto bird metric 32
+1782740039150|nexthop via 10.0.13.2 dev eth1 weight 1
+1782740039151|nexthop via 10.0.23.2 dev eth2 weight 1
+1782740052102|10.0.24.0/24 proto bird metric 32
+1782740052108|nexthop via 10.0.23.2 dev eth2 weight 1
+1782740052115|nexthop via 10.0.34.3 dev eth3 weight 1
+1782740052119|10.0.78.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782740052125|10.0.47.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782740052128|10.0.14.0/24 proto bird metric 32
+1782740052132|nexthop via 10.0.13.2 dev eth1 weight 1
+1782740052135|nexthop via 10.0.34.3 dev eth3 weight 1
+1782740052136|10.0.82.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782740107119|10.0.24.0/24 via 10.0.23.2 dev eth2 proto bird metric 32
+1782740107121|10.0.78.0/24 proto bird metric 32
+1782740107124|nexthop via 10.0.13.2 dev eth1 weight 1
+1782740107127|nexthop via 10.0.23.2 dev eth2 weight 1
+1782740107131|10.0.47.0/24 proto bird metric 32
+1782740107137|nexthop via 10.0.13.2 dev eth1 weight 1
+1782740107139|nexthop via 10.0.23.2 dev eth2 weight 1
+1782740107146|10.0.14.0/24 via 10.0.13.2 dev eth1 proto bird metric 32
+1782740107149|10.0.82.0/24 proto bird metric 32
+1782740107152|nexthop via 10.0.13.2 dev eth1 weight 1
+1782740107158|nexthop via 10.0.23.2 dev eth2 weight 1
+1782740121098|10.0.24.0/24 proto bird metric 32
+1782740121101|nexthop via 10.0.23.2 dev eth2 weight 1
+1782740121108|nexthop via 10.0.34.3 dev eth3 weight 1
+1782740121111|10.0.78.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782740121116|10.0.47.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782740121118|10.0.14.0/24 proto bird metric 32
+1782740121120|nexthop via 10.0.13.2 dev eth1 weight 1
+1782740121124|nexthop via 10.0.34.3 dev eth3 weight 1
+1782740121127|10.0.82.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782740176099|10.0.24.0/24 via 10.0.23.2 dev eth2 proto bird metric 32
+1782740176102|10.0.78.0/24 proto bird metric 32
+1782740176105|nexthop via 10.0.13.2 dev eth1 weight 1
+1782740176108|nexthop via 10.0.23.2 dev eth2 weight 1
+1782740176117|10.0.47.0/24 proto bird metric 32
+1782740176131|nexthop via 10.0.13.2 dev eth1 weight 1
+1782740176139|nexthop via 10.0.23.2 dev eth2 weight 1
+1782740176148|10.0.14.0/24 via 10.0.13.2 dev eth1 proto bird metric 32
+1782740176150|10.0.82.0/24 proto bird metric 32
+1782740176151|nexthop via 10.0.13.2 dev eth1 weight 1
+1782740176156|nexthop via 10.0.23.2 dev eth2 weight 1
+1782740190098|10.0.24.0/24 proto bird metric 32
+1782740190104|nexthop via 10.0.23.2 dev eth2 weight 1
+1782740190106|nexthop via 10.0.34.3 dev eth3 weight 1
+1782740190117|10.0.78.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782740190118|10.0.47.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782740190120|10.0.14.0/24 proto bird metric 32
+1782740190122|nexthop via 10.0.13.2 dev eth1 weight 1
+1782740190128|nexthop via 10.0.34.3 dev eth3 weight 1
+1782740190130|10.0.82.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782740244098|10.0.24.0/24 via 10.0.23.2 dev eth2 proto bird metric 32
+1782740244110|10.0.78.0/24 proto bird metric 32
+1782740244114|nexthop via 10.0.13.2 dev eth1 weight 1
+1782740244117|nexthop via 10.0.23.2 dev eth2 weight 1
+1782740244118|10.0.47.0/24 proto bird metric 32
+1782740244126|nexthop via 10.0.13.2 dev eth1 weight 1
+1782740244133|nexthop via 10.0.23.2 dev eth2 weight 1
+1782740244139|10.0.14.0/24 via 10.0.13.2 dev eth1 proto bird metric 32
+1782740244144|10.0.82.0/24 proto bird metric 32
+1782740244149|nexthop via 10.0.13.2 dev eth1 weight 1
+1782740244150|nexthop via 10.0.23.2 dev eth2 weight 1
+1782740258097|10.0.24.0/24 proto bird metric 32
+1782740258101|nexthop via 10.0.23.2 dev eth2 weight 1
+1782740258102|nexthop via 10.0.34.3 dev eth3 weight 1
+1782740258104|10.0.78.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782740258106|10.0.47.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782740258107|10.0.14.0/24 proto bird metric 32
+1782740258109|nexthop via 10.0.13.2 dev eth1 weight 1
+1782740258110|nexthop via 10.0.34.3 dev eth3 weight 1
+1782740258112|10.0.82.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782740313097|10.0.24.0/24 via 10.0.23.2 dev eth2 proto bird metric 32
+1782740313099|10.0.78.0/24 proto bird metric 32
+1782740313101|nexthop via 10.0.13.2 dev eth1 weight 1
+1782740313104|nexthop via 10.0.23.2 dev eth2 weight 1
+1782740313110|10.0.47.0/24 proto bird metric 32
+1782740313117|nexthop via 10.0.13.2 dev eth1 weight 1
+1782740313121|nexthop via 10.0.23.2 dev eth2 weight 1
+1782740313129|10.0.14.0/24 via 10.0.13.2 dev eth1 proto bird metric 32
+1782740313133|10.0.82.0/24 proto bird metric 32
+1782740313139|nexthop via 10.0.13.2 dev eth1 weight 1
+1782740313141|nexthop via 10.0.23.2 dev eth2 weight 1
+1782740327097|10.0.24.0/24 proto bird metric 32
+1782740327102|nexthop via 10.0.23.2 dev eth2 weight 1
+1782740327105|nexthop via 10.0.34.3 dev eth3 weight 1
+1782740327114|10.0.78.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782740327117|10.0.47.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782740327119|10.0.14.0/24 proto bird metric 32
+1782740327121|nexthop via 10.0.13.2 dev eth1 weight 1
+1782740327128|nexthop via 10.0.34.3 dev eth3 weight 1
+1782740327131|10.0.82.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782740381110|10.0.24.0/24 via 10.0.23.2 dev eth2 proto bird metric 32
+1782740381119|10.0.78.0/24 proto bird metric 32
+1782740381123|nexthop via 10.0.13.2 dev eth1 weight 1
+1782740381130|nexthop via 10.0.23.2 dev eth2 weight 1
+1782740381135|10.0.47.0/24 proto bird metric 32
+1782740381141|nexthop via 10.0.13.2 dev eth1 weight 1
+1782740381144|nexthop via 10.0.23.2 dev eth2 weight 1
+1782740381146|10.0.14.0/24 via 10.0.13.2 dev eth1 proto bird metric 32
+1782740381150|10.0.82.0/24 proto bird metric 32
+1782740381153|nexthop via 10.0.13.2 dev eth1 weight 1
+1782740381155|nexthop via 10.0.23.2 dev eth2 weight 1
+1782740395097|10.0.24.0/24 proto bird metric 32
+1782740395099|nexthop via 10.0.23.2 dev eth2 weight 1
+1782740395106|nexthop via 10.0.34.3 dev eth3 weight 1
+1782740395116|10.0.78.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782740395120|10.0.47.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782740395127|10.0.14.0/24 proto bird metric 32
+1782740395132|nexthop via 10.0.13.2 dev eth1 weight 1
+1782740395135|nexthop via 10.0.34.3 dev eth3 weight 1
+1782740395137|10.0.82.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782740450112|10.0.24.0/24 via 10.0.23.2 dev eth2 proto bird metric 32
+1782740450117|10.0.78.0/24 proto bird metric 32
+1782740450123|nexthop via 10.0.13.2 dev eth1 weight 1
+1782740450136|nexthop via 10.0.23.2 dev eth2 weight 1
+1782740450138|10.0.47.0/24 proto bird metric 32
+1782740450143|nexthop via 10.0.13.2 dev eth1 weight 1
+1782740450149|nexthop via 10.0.23.2 dev eth2 weight 1
+1782740450156|10.0.14.0/24 via 10.0.13.2 dev eth1 proto bird metric 32
+1782740450158|10.0.82.0/24 proto bird metric 32
+1782740450159|nexthop via 10.0.13.2 dev eth1 weight 1
+1782740450161|nexthop via 10.0.23.2 dev eth2 weight 1
+1782740464095|10.0.24.0/24 proto bird metric 32
+1782740464107|nexthop via 10.0.23.2 dev eth2 weight 1
+1782740464112|nexthop via 10.0.34.3 dev eth3 weight 1
+1782740464114|10.0.78.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782740464120|10.0.47.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782740464123|10.0.14.0/24 proto bird metric 32
+1782740464125|nexthop via 10.0.13.2 dev eth1 weight 1
+1782740464127|nexthop via 10.0.34.3 dev eth3 weight 1
+1782740464130|10.0.82.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782740519100|10.0.24.0/24 via 10.0.23.2 dev eth2 proto bird metric 32
+1782740519103|10.0.78.0/24 proto bird metric 32
+1782740519109|nexthop via 10.0.13.2 dev eth1 weight 1
+1782740519111|nexthop via 10.0.23.2 dev eth2 weight 1
+1782740519117|10.0.47.0/24 proto bird metric 32
+1782740519119|nexthop via 10.0.13.2 dev eth1 weight 1
+1782740519125|nexthop via 10.0.23.2 dev eth2 weight 1
+1782740519131|10.0.14.0/24 via 10.0.13.2 dev eth1 proto bird metric 32
+1782740519135|10.0.82.0/24 proto bird metric 32
+1782740519140|nexthop via 10.0.13.2 dev eth1 weight 1
+1782740519142|nexthop via 10.0.23.2 dev eth2 weight 1
+1782740531096|10.0.24.0/24 proto bird metric 32
+1782740531099|nexthop via 10.0.23.2 dev eth2 weight 1
+1782740531102|nexthop via 10.0.34.3 dev eth3 weight 1
+1782740531106|10.0.78.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782740531108|10.0.47.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782740531110|10.0.14.0/24 proto bird metric 32
+1782740531112|nexthop via 10.0.13.2 dev eth1 weight 1
+1782740531117|nexthop via 10.0.34.3 dev eth3 weight 1
+1782740531119|10.0.82.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782740587104|10.0.24.0/24 via 10.0.23.2 dev eth2 proto bird metric 32
+1782740587109|10.0.78.0/24 proto bird metric 32
+1782740587119|nexthop via 10.0.13.2 dev eth1 weight 1
+1782740587122|nexthop via 10.0.23.2 dev eth2 weight 1
+1782740587123|10.0.47.0/24 proto bird metric 32
+1782740587126|nexthop via 10.0.13.2 dev eth1 weight 1
+1782740587130|nexthop via 10.0.23.2 dev eth2 weight 1
+1782740587132|10.0.14.0/24 via 10.0.13.2 dev eth1 proto bird metric 32
+1782740587136|10.0.82.0/24 proto bird metric 32
+1782740587138|nexthop via 10.0.13.2 dev eth1 weight 1
+1782740587146|nexthop via 10.0.23.2 dev eth2 weight 1
+1782740601097|10.0.24.0/24 proto bird metric 32
+1782740601102|nexthop via 10.0.23.2 dev eth2 weight 1
+1782740601110|nexthop via 10.0.34.3 dev eth3 weight 1
+1782740601115|10.0.78.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782740601117|10.0.47.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782740601122|10.0.14.0/24 proto bird metric 32
+1782740601123|nexthop via 10.0.13.2 dev eth1 weight 1
+1782740601125|nexthop via 10.0.34.3 dev eth3 weight 1
+1782740601127|10.0.82.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782740655112|10.0.24.0/24 via 10.0.23.2 dev eth2 proto bird metric 32
+1782740655119|10.0.78.0/24 proto bird metric 32
+1782740655120|nexthop via 10.0.13.2 dev eth1 weight 1
+1782740655128|nexthop via 10.0.23.2 dev eth2 weight 1
+1782740655132|10.0.47.0/24 proto bird metric 32
+1782740655135|nexthop via 10.0.13.2 dev eth1 weight 1
+1782740655143|nexthop via 10.0.23.2 dev eth2 weight 1
+1782740655146|10.0.14.0/24 via 10.0.13.2 dev eth1 proto bird metric 32
+1782740655148|10.0.82.0/24 proto bird metric 32
+1782740655149|nexthop via 10.0.13.2 dev eth1 weight 1
+1782740655151|nexthop via 10.0.23.2 dev eth2 weight 1
+1782740669096|10.0.24.0/24 proto bird metric 32
+1782740669100|nexthop via 10.0.23.2 dev eth2 weight 1
+1782740669107|nexthop via 10.0.34.3 dev eth3 weight 1
+1782740669109|10.0.78.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782740669110|10.0.47.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782740669113|10.0.14.0/24 proto bird metric 32
+1782740669115|nexthop via 10.0.13.2 dev eth1 weight 1
+1782740669119|nexthop via 10.0.34.3 dev eth3 weight 1
+1782740669121|10.0.82.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782740724102|10.0.24.0/24 via 10.0.23.2 dev eth2 proto bird metric 32
+1782740724111|10.0.78.0/24 proto bird metric 32
+1782740724115|nexthop via 10.0.13.2 dev eth1 weight 1
+1782740724120|nexthop via 10.0.23.2 dev eth2 weight 1
+1782740724125|10.0.47.0/24 proto bird metric 32
+1782740724129|nexthop via 10.0.13.2 dev eth1 weight 1
+1782740724131|nexthop via 10.0.23.2 dev eth2 weight 1
+1782740724134|10.0.14.0/24 via 10.0.13.2 dev eth1 proto bird metric 32
+1782740724138|10.0.82.0/24 proto bird metric 32
+1782740724140|nexthop via 10.0.13.2 dev eth1 weight 1
+1782740724143|nexthop via 10.0.23.2 dev eth2 weight 1
+1782740737096|10.0.24.0/24 proto bird metric 32
+1782740737101|nexthop via 10.0.23.2 dev eth2 weight 1
+1782740737105|nexthop via 10.0.34.3 dev eth3 weight 1
+1782740737108|10.0.78.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782740737112|10.0.47.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782740737117|10.0.14.0/24 proto bird metric 32
+1782740737122|nexthop via 10.0.13.2 dev eth1 weight 1
+1782740737123|nexthop via 10.0.34.3 dev eth3 weight 1
+1782740737125|10.0.82.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782741052107|10.0.24.0/24 via 10.0.23.2 dev eth2 proto bird metric 32
+1782741052114|10.0.78.0/24 proto bird metric 32
+1782741052120|nexthop via 10.0.13.2 dev eth1 weight 1
+1782741052125|nexthop via 10.0.23.2 dev eth2 weight 1
+1782741052129|10.0.47.0/24 proto bird metric 32
+1782741052137|nexthop via 10.0.13.2 dev eth1 weight 1
+1782741052141|nexthop via 10.0.23.2 dev eth2 weight 1
+1782741052143|10.0.14.0/24 via 10.0.13.2 dev eth1 proto bird metric 32
+1782741052144|10.0.82.0/24 proto bird metric 32
+1782741052146|nexthop via 10.0.13.2 dev eth1 weight 1
+1782741052148|nexthop via 10.0.23.2 dev eth2 weight 1
+1782741057102|10.0.24.0/24 proto bird metric 32
+1782741057104|nexthop via 10.0.23.2 dev eth2 weight 1
+1782741057109|nexthop via 10.0.34.3 dev eth3 weight 1
+1782741057111|10.0.78.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782741057116|10.0.47.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782741057121|10.0.14.0/24 proto bird metric 32
+1782741057125|nexthop via 10.0.13.2 dev eth1 weight 1
+1782741057127|nexthop via 10.0.34.3 dev eth3 weight 1
+1782741057128|10.0.82.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782741682099|10.0.24.0/24 via 10.0.23.2 dev eth2 proto bird metric 32
+1782741682102|10.0.78.0/24 proto bird metric 32
+1782741682105|nexthop via 10.0.13.2 dev eth1 weight 1
+1782741682124|nexthop via 10.0.23.2 dev eth2 weight 1
+1782741682139|10.0.47.0/24 proto bird metric 32
+1782741682142|nexthop via 10.0.13.2 dev eth1 weight 1
+1782741682145|nexthop via 10.0.23.2 dev eth2 weight 1
+1782741682148|10.0.14.0/24 via 10.0.13.2 dev eth1 proto bird metric 32
+1782741682151|10.0.82.0/24 proto bird metric 32
+1782741682152|nexthop via 10.0.13.2 dev eth1 weight 1
+1782741682155|nexthop via 10.0.23.2 dev eth2 weight 1
+1782741695097|10.0.24.0/24 proto bird metric 32
+1782741695102|nexthop via 10.0.23.2 dev eth2 weight 1
+1782741695104|nexthop via 10.0.34.3 dev eth3 weight 1
+1782741695107|10.0.78.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782741695109|10.0.47.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782741695111|10.0.14.0/24 proto bird metric 32
+1782741695113|nexthop via 10.0.13.2 dev eth1 weight 1
+1782741695115|nexthop via 10.0.34.3 dev eth3 weight 1
+1782741695118|10.0.82.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782742568101|Deleted 10.0.78.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782742568111|Deleted 10.0.47.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782742568114|Deleted 10.0.82.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782742575096|10.0.78.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782742575101|10.0.47.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782742575104|10.0.82.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782742795101|Deleted 10.0.78.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782742795104|Deleted 10.0.47.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782742795106|Deleted 10.0.82.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782742802099|10.0.78.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782742802103|10.0.47.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782742802106|10.0.82.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782742837096|Deleted 10.0.78.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782742837103|Deleted 10.0.47.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782742837109|Deleted 10.0.82.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782742843097|10.0.47.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782742844096|10.0.78.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782742844100|10.0.82.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782742880100|Deleted 10.0.78.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782742880102|Deleted 10.0.47.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782742880106|Deleted 10.0.82.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782742885095|10.0.47.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782742889101|10.0.78.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782742889104|10.0.82.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782742925103|Deleted 10.0.78.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782742925105|Deleted 10.0.47.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782742925107|Deleted 10.0.82.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782742930097|10.0.47.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782742936098|10.0.78.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782742936100|10.0.82.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782742972102|Deleted 10.0.78.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782742972112|Deleted 10.0.47.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782742972116|Deleted 10.0.82.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782742978103|10.0.78.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782742978105|10.0.47.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782742978107|10.0.82.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782743013100|Deleted 10.0.78.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782743013103|Deleted 10.0.47.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782743013107|Deleted 10.0.82.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782743020097|10.0.47.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782743025100|10.0.78.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782743025102|10.0.82.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782743060096|Deleted 10.0.78.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782743060099|Deleted 10.0.47.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782743060102|Deleted 10.0.82.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782743065096|10.0.47.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782743071098|10.0.78.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782743071101|10.0.82.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782743107097|Deleted 10.0.78.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782743107100|Deleted 10.0.47.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782743107108|Deleted 10.0.82.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782743113097|10.0.78.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782743113099|10.0.47.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782743113104|10.0.82.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782743148096|Deleted 10.0.78.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782743148099|Deleted 10.0.47.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782743148108|Deleted 10.0.82.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782743154100|10.0.47.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782743155099|10.0.78.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782743155101|10.0.82.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782743190098|Deleted 10.0.78.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782743190100|Deleted 10.0.47.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782743190102|Deleted 10.0.82.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782743195096|10.0.47.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782743201101|10.0.78.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782743201103|10.0.82.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782743237097|Deleted 10.0.78.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782743237105|Deleted 10.0.47.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782743237107|Deleted 10.0.82.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782743243103|10.0.78.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782743243105|10.0.47.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782743243107|10.0.82.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782743278113|Deleted 10.0.78.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782743278119|Deleted 10.0.47.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782743278125|Deleted 10.0.82.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782743283096|10.0.47.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782743285098|10.0.78.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782743285102|10.0.82.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782743320096|Deleted 10.0.78.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782743320098|Deleted 10.0.47.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782743320100|Deleted 10.0.82.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782743325102|10.0.47.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782743330097|10.0.78.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782743330099|10.0.82.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782743365108|Deleted 10.0.78.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782743365113|Deleted 10.0.47.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782743365115|Deleted 10.0.82.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782743372104|10.0.78.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782743372109|10.0.47.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782743372112|10.0.82.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782743407100|Deleted 10.0.78.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782743407103|Deleted 10.0.47.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782743407108|Deleted 10.0.82.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782743413099|10.0.47.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782743414096|10.0.78.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782743414097|10.0.82.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782753778099|10.0.24.0/24 via 10.0.23.2 dev eth2 proto bird metric 32
+1782753778105|10.0.78.0/24 proto bird metric 32
+1782753778108|nexthop via 10.0.13.2 dev eth1 weight 1
+1782753778111|nexthop via 10.0.23.2 dev eth2 weight 1
+1782753778119|10.0.47.0/24 proto bird metric 32
+1782753778124|nexthop via 10.0.13.2 dev eth1 weight 1
+1782753778128|nexthop via 10.0.23.2 dev eth2 weight 1
+1782753778133|10.0.14.0/24 via 10.0.13.2 dev eth1 proto bird metric 32
+1782753778138|10.0.82.0/24 proto bird metric 32
+1782753778145|nexthop via 10.0.13.2 dev eth1 weight 1
+1782753778147|nexthop via 10.0.23.2 dev eth2 weight 1
+1782753779103|10.0.34.0/24 proto bird metric 32
+1782753779108|nexthop via 10.0.13.2 dev eth1 weight 1
+1782753779112|nexthop via 10.0.23.2 dev eth2 weight 1
+1782753791873|broadcast 10.0.34.255 dev eth3 table local proto kernel scope link src 10.0.34.2
+1782753791880|10.0.34.0/24 dev eth3 proto kernel scope link src 10.0.34.2
+1782753791882|10.0.34.0/24 dev eth3 proto bird scope link metric 32
+1782753797100|10.0.24.0/24 proto bird metric 32
+1782753797109|nexthop via 10.0.23.2 dev eth2 weight 1
+1782753797112|nexthop via 10.0.34.3 dev eth3 weight 1
+1782753797118|10.0.78.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782753797122|10.0.47.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782753797126|10.0.14.0/24 proto bird metric 32
+1782753797129|nexthop via 10.0.13.2 dev eth1 weight 1
+1782753797132|nexthop via 10.0.34.3 dev eth3 weight 1
+1782753797134|10.0.82.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782753834551|10.0.12.0/24 via 10.0.23.2 dev eth2 proto bird metric 32
+1782753834557|10.0.14.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782753835552|10.0.24.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782753839554|10.0.24.0/24 proto bird metric 32
+1782753839556|nexthop via 10.0.23.2 dev eth2 weight 1
+1782753839560|nexthop via 10.0.34.3 dev eth3 weight 1
+1782753839563|Deleted 10.0.61.0/24 via 10.0.35.3 dev eth0 proto bird metric 32
+1782753839565|Deleted 10.0.56.0/24 via 10.0.35.3 dev eth0 proto bird metric 32
+1782753839569|Deleted 10.0.78.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782753839576|Deleted 10.0.82.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782753844555|10.0.24.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782753845550|10.0.24.0/24 proto bird metric 32
+1782753845553|nexthop via 10.0.23.2 dev eth2 weight 1
+1782753845559|nexthop via 10.0.34.3 dev eth3 weight 1
+1782753846553|10.0.12.0/24 proto bird metric 32
+1782753846556|nexthop via 10.0.13.2 dev eth1 weight 1
+1782753846559|nexthop via 10.0.23.2 dev eth2 weight 1
+1782753846562|10.0.14.0/24 proto bird metric 32
+1782753846566|nexthop via 10.0.13.2 dev eth1 weight 1
+1782753846568|nexthop via 10.0.34.3 dev eth3 weight 1
+1782753849549|10.0.61.0/24 via 10.0.35.3 dev eth0 proto bird metric 32
+1782753849552|10.0.56.0/24 via 10.0.35.3 dev eth0 proto bird metric 32
+1782753849562|10.0.78.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782753849565|10.0.82.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782753882549|10.0.24.0/24 via 10.0.23.2 dev eth2 proto bird metric 32
+1782753882552|10.0.78.0/24 proto bird metric 32
+1782753882556|nexthop via 10.0.13.2 dev eth1 weight 1
+1782753882573|nexthop via 10.0.23.2 dev eth2 weight 1
+1782753882582|10.0.47.0/24 proto bird metric 32
+1782753882584|nexthop via 10.0.13.2 dev eth1 weight 1
+1782753882589|nexthop via 10.0.23.2 dev eth2 weight 1
+1782753882591|10.0.14.0/24 via 10.0.13.2 dev eth1 proto bird metric 32
+1782753882594|10.0.82.0/24 proto bird metric 32
+1782753882596|nexthop via 10.0.13.2 dev eth1 weight 1
+1782753882599|nexthop via 10.0.23.2 dev eth2 weight 1
+1782753882608|10.0.34.0/24 proto bird metric 32
+1782753882613|nexthop via 10.0.13.2 dev eth1 weight 1
+1782753882617|nexthop via 10.0.23.2 dev eth2 weight 1
+1782753896443|broadcast 10.0.34.255 dev eth3 table local proto kernel scope link src 10.0.34.2
+1782753896450|10.0.34.0/24 dev eth3 proto kernel scope link src 10.0.34.2
+1782753896454|10.0.34.0/24 dev eth3 proto bird scope link metric 32
+1782753903557|10.0.24.0/24 proto bird metric 32
+1782753903561|nexthop via 10.0.23.2 dev eth2 weight 1
+1782753903564|nexthop via 10.0.34.3 dev eth3 weight 1
+1782753903567|10.0.78.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782753903570|10.0.47.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782753903572|10.0.14.0/24 proto bird metric 32
+1782753903576|nexthop via 10.0.13.2 dev eth1 weight 1
+1782753903578|nexthop via 10.0.34.3 dev eth3 weight 1
+1782753903582|10.0.82.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782754501636|10.0.24.0/24 via 10.0.23.2 dev eth2 proto bird metric 32
+1782754501641|10.0.78.0/24 proto bird metric 32
+1782754501643|nexthop via 10.0.13.2 dev eth1 weight 1
+1782754501649|nexthop via 10.0.23.2 dev eth2 weight 1
+1782754501652|10.0.47.0/24 proto bird metric 32
+1782754501654|nexthop via 10.0.13.2 dev eth1 weight 1
+1782754501656|nexthop via 10.0.23.2 dev eth2 weight 1
+1782754501659|10.0.14.0/24 via 10.0.13.2 dev eth1 proto bird metric 32
+1782754501661|10.0.82.0/24 proto bird metric 32
+1782754501667|nexthop via 10.0.13.2 dev eth1 weight 1
+1782754501677|nexthop via 10.0.23.2 dev eth2 weight 1
+1782754567640|10.0.24.0/24 proto bird metric 32
+1782754567643|nexthop via 10.0.23.2 dev eth2 weight 1
+1782754567647|nexthop via 10.0.34.3 dev eth3 weight 1
+1782754567650|10.0.78.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782754567655|10.0.47.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782754567659|10.0.14.0/24 proto bird metric 32
+1782754567661|nexthop via 10.0.13.2 dev eth1 weight 1
+1782754567663|nexthop via 10.0.34.3 dev eth3 weight 1
+1782754567667|10.0.82.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782754597652|10.0.24.0/24 via 10.0.23.2 dev eth2 proto bird metric 32
+1782754597664|10.0.78.0/24 proto bird metric 32
+1782754597671|nexthop via 10.0.13.2 dev eth1 weight 1
+1782754597676|nexthop via 10.0.23.2 dev eth2 weight 1
+1782754597683|10.0.47.0/24 proto bird metric 32
+1782754597690|nexthop via 10.0.13.2 dev eth1 weight 1
+1782754597694|nexthop via 10.0.23.2 dev eth2 weight 1
+1782754597698|10.0.14.0/24 via 10.0.13.2 dev eth1 proto bird metric 32
+1782754597703|10.0.82.0/24 proto bird metric 32
+1782754597705|nexthop via 10.0.13.2 dev eth1 weight 1
+1782754597707|nexthop via 10.0.23.2 dev eth2 weight 1
+1782754663639|10.0.24.0/24 proto bird metric 32
+1782754663644|nexthop via 10.0.23.2 dev eth2 weight 1
+1782754663648|nexthop via 10.0.34.3 dev eth3 weight 1
+1782754663650|10.0.78.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782754663651|10.0.47.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782754663653|10.0.14.0/24 proto bird metric 32
+1782754663656|nexthop via 10.0.13.2 dev eth1 weight 1
+1782754663658|nexthop via 10.0.34.3 dev eth3 weight 1
+1782754663660|10.0.82.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782754709635|10.0.24.0/24 via 10.0.23.2 dev eth2 proto bird metric 32
+1782754709641|10.0.78.0/24 proto bird metric 32
+1782754709653|nexthop via 10.0.13.2 dev eth1 weight 1
+1782754709665|nexthop via 10.0.23.2 dev eth2 weight 1
+1782754709667|10.0.47.0/24 proto bird metric 32
+1782754709669|nexthop via 10.0.13.2 dev eth1 weight 1
+1782754709672|nexthop via 10.0.23.2 dev eth2 weight 1
+1782754709682|10.0.14.0/24 via 10.0.13.2 dev eth1 proto bird metric 32
+1782754709686|10.0.82.0/24 proto bird metric 32
+1782754709689|nexthop via 10.0.13.2 dev eth1 weight 1
+1782754709692|nexthop via 10.0.23.2 dev eth2 weight 1
+1782754773634|10.0.24.0/24 proto bird metric 32
+1782754773637|nexthop via 10.0.23.2 dev eth2 weight 1
+1782754773639|nexthop via 10.0.34.3 dev eth3 weight 1
+1782754773641|10.0.78.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782754773643|10.0.47.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782754773647|10.0.14.0/24 proto bird metric 32
+1782754773649|nexthop via 10.0.13.2 dev eth1 weight 1
+1782754773651|nexthop via 10.0.34.3 dev eth3 weight 1
+1782754773657|10.0.82.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782754851493|10.0.12.0/24 via 10.0.23.2 dev eth2 proto bird metric 32
+1782754851500|10.0.14.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782754852496|10.0.24.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782754854495|10.0.24.0/24 proto bird metric 32
+1782754854497|nexthop via 10.0.23.2 dev eth2 weight 1
+1782754854498|nexthop via 10.0.34.3 dev eth3 weight 1
+1782754854500|Deleted 10.0.61.0/24 via 10.0.35.3 dev eth0 proto bird metric 32
+1782754854502|Deleted 10.0.56.0/24 via 10.0.35.3 dev eth0 proto bird metric 32
+1782754854504|Deleted 10.0.78.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782754854505|Deleted 10.0.82.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782754859493|10.0.24.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782754859498|Deleted 10.0.47.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782754860495|10.0.24.0/24 proto bird metric 32
+1782754860499|nexthop via 10.0.23.2 dev eth2 weight 1
+1782754860502|nexthop via 10.0.34.3 dev eth3 weight 1
+1782754860510|10.0.12.0/24 proto bird metric 32
+1782754860518|nexthop via 10.0.13.2 dev eth1 weight 1
+1782754860520|nexthop via 10.0.23.2 dev eth2 weight 1
+1782754860522|10.0.47.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782754860524|10.0.14.0/24 proto bird metric 32
+1782754860526|nexthop via 10.0.13.2 dev eth1 weight 1
+1782754860528|nexthop via 10.0.34.3 dev eth3 weight 1
+1782754864504|10.0.61.0/24 via 10.0.35.3 dev eth0 proto bird metric 32
+1782754864506|10.0.56.0/24 via 10.0.35.3 dev eth0 proto bird metric 32
+1782754864507|10.0.78.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782754864509|10.0.82.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782754917496|10.0.24.0/24 via 10.0.23.2 dev eth2 proto bird metric 32
+1782754917505|10.0.78.0/24 proto bird metric 32
+1782754917507|nexthop via 10.0.13.2 dev eth1 weight 1
+1782754917510|nexthop via 10.0.23.2 dev eth2 weight 1
+1782754917516|10.0.47.0/24 proto bird metric 32
+1782754917537|nexthop via 10.0.13.2 dev eth1 weight 1
+1782754917540|nexthop via 10.0.23.2 dev eth2 weight 1
+1782754917543|10.0.14.0/24 via 10.0.13.2 dev eth1 proto bird metric 32
+1782754917545|10.0.82.0/24 proto bird metric 32
+1782754917547|nexthop via 10.0.13.2 dev eth1 weight 1
+1782754917549|nexthop via 10.0.23.2 dev eth2 weight 1
+1782754964510|10.0.24.0/24 proto bird metric 32
+1782754964516|nexthop via 10.0.23.2 dev eth2 weight 1
+1782754964521|nexthop via 10.0.34.3 dev eth3 weight 1
+1782754964526|10.0.78.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782754964531|10.0.47.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782754964533|10.0.14.0/24 proto bird metric 32
+1782754964535|nexthop via 10.0.13.2 dev eth1 weight 1
+1782754964537|nexthop via 10.0.34.3 dev eth3 weight 1
+1782754964538|10.0.82.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782759469334|10.0.24.0/24 via 10.0.23.2 dev eth2 proto bird metric 32
+1782759469337|10.0.78.0/24 proto bird metric 32
+1782759469342|nexthop via 10.0.13.2 dev eth1 weight 1
+1782759469345|nexthop via 10.0.23.2 dev eth2 weight 1
+1782759469349|10.0.47.0/24 proto bird metric 32
+1782759469350|nexthop via 10.0.13.2 dev eth1 weight 1
+1782759469352|nexthop via 10.0.23.2 dev eth2 weight 1
+1782759469355|10.0.14.0/24 via 10.0.13.2 dev eth1 proto bird metric 32
+1782759469357|10.0.82.0/24 proto bird metric 32
+1782759469358|nexthop via 10.0.13.2 dev eth1 weight 1
+1782759469360|nexthop via 10.0.23.2 dev eth2 weight 1
+1782759469364|10.0.34.0/24 proto bird metric 32
+1782759469370|nexthop via 10.0.13.2 dev eth1 weight 1
+1782759469375|nexthop via 10.0.23.2 dev eth2 weight 1
+1782759475328|broadcast 10.0.34.255 dev eth3 table local proto kernel scope link src 10.0.34.2
+1782759475334|10.0.34.0/24 dev eth3 proto kernel scope link src 10.0.34.2
+1782759475336|10.0.34.0/24 dev eth3 proto bird scope link metric 32
+1782759481338|10.0.24.0/24 proto bird metric 32
+1782759481343|nexthop via 10.0.23.2 dev eth2 weight 1
+1782759481347|nexthop via 10.0.34.3 dev eth3 weight 1
+1782759481349|10.0.78.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782759481351|10.0.47.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782759481353|10.0.14.0/24 proto bird metric 32
+1782759481355|nexthop via 10.0.13.2 dev eth1 weight 1
+1782759481357|nexthop via 10.0.34.3 dev eth3 weight 1
+1782759481358|10.0.82.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782759563334|10.0.24.0/24 via 10.0.23.2 dev eth2 proto bird metric 32
+1782759563336|10.0.78.0/24 proto bird metric 32
+1782759563338|nexthop via 10.0.13.2 dev eth1 weight 1
+1782759563340|nexthop via 10.0.23.2 dev eth2 weight 1
+1782759563345|10.0.47.0/24 proto bird metric 32
+1782759563350|nexthop via 10.0.13.2 dev eth1 weight 1
+1782759563356|nexthop via 10.0.23.2 dev eth2 weight 1
+1782759563363|10.0.14.0/24 via 10.0.13.2 dev eth1 proto bird metric 32
+1782759563370|10.0.82.0/24 proto bird metric 32
+1782759563372|nexthop via 10.0.13.2 dev eth1 weight 1
+1782759563374|nexthop via 10.0.23.2 dev eth2 weight 1
+1782759563376|10.0.34.0/24 proto bird metric 32
+1782759563380|nexthop via 10.0.13.2 dev eth1 weight 1
+1782759563382|nexthop via 10.0.23.2 dev eth2 weight 1
+1782759569095|broadcast 10.0.34.255 dev eth3 table local proto kernel scope link src 10.0.34.2
+1782759569098|10.0.34.0/24 dev eth3 proto kernel scope link src 10.0.34.2
+1782759569099|10.0.34.0/24 dev eth3 proto bird scope link metric 32
+1782759575333|10.0.24.0/24 proto bird metric 32
+1782759575336|nexthop via 10.0.23.2 dev eth2 weight 1
+1782759575337|nexthop via 10.0.34.3 dev eth3 weight 1
+1782759575339|10.0.78.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782759575341|10.0.47.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782759575342|10.0.14.0/24 proto bird metric 32
+1782759575344|nexthop via 10.0.13.2 dev eth1 weight 1
+1782759575346|nexthop via 10.0.34.3 dev eth3 weight 1
+1782759575347|10.0.82.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782801036337|Deleted default via 10.0.23.2 dev eth2 proto bird metric 32
+1782801036342|10.0.24.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782801036345|Deleted 10.0.12.0/24 proto bird metric 32
+1782801036350|nexthop via 10.0.13.2 dev eth1 weight 1
+1782801036352|nexthop via 10.0.23.2 dev eth2 weight 1
+1782801036353|10.0.14.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782801041335|default via 10.0.23.2 dev eth2 proto bird metric 32
+1782801041338|10.0.24.0/24 proto bird metric 32
+1782801041340|nexthop via 10.0.23.2 dev eth2 weight 1
+1782801041342|nexthop via 10.0.34.3 dev eth3 weight 1
+1782801041343|10.0.12.0/24 via 10.0.23.2 dev eth2 proto bird metric 32
+1782801044336|10.0.24.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782801045335|10.0.24.0/24 proto bird metric 32
+1782801045337|nexthop via 10.0.23.2 dev eth2 weight 1
+1782801045339|nexthop via 10.0.34.3 dev eth3 weight 1
+1782801047335|10.0.12.0/24 proto bird metric 32
+1782801047338|nexthop via 10.0.13.2 dev eth1 weight 1
+1782801047341|nexthop via 10.0.23.2 dev eth2 weight 1
+1782801047343|10.0.14.0/24 proto bird metric 32
+1782801047347|nexthop via 10.0.13.2 dev eth1 weight 1
+1782801047349|nexthop via 10.0.34.3 dev eth3 weight 1
+1782803373334|Deleted default via 10.0.23.2 dev eth2 proto bird metric 32
+1782803373337|10.0.24.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782803373338|Deleted 10.0.12.0/24 proto bird metric 32
+1782803373340|nexthop via 10.0.13.2 dev eth1 weight 1
+1782803373341|nexthop via 10.0.23.2 dev eth2 weight 1
+1782803373343|10.0.14.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782803380339|default via 10.0.23.2 dev eth2 proto bird metric 32
+1782803380342|10.0.24.0/24 proto bird metric 32
+1782803380344|nexthop via 10.0.23.2 dev eth2 weight 1
+1782803380345|nexthop via 10.0.34.3 dev eth3 weight 1
+1782803380348|10.0.12.0/24 via 10.0.23.2 dev eth2 proto bird metric 32
+1782803381344|10.0.12.0/24 proto bird metric 32
+1782803381347|nexthop via 10.0.13.2 dev eth1 weight 1
+1782803381348|nexthop via 10.0.23.2 dev eth2 weight 1
+1782803381350|10.0.14.0/24 proto bird metric 32
+1782803381351|nexthop via 10.0.13.2 dev eth1 weight 1
+1782803381353|nexthop via 10.0.34.3 dev eth3 weight 1
+1782803904339|default via 10.0.34.3 dev eth3 proto bird metric 32
+1782803904341|10.0.24.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782803904342|10.0.12.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782803904345|10.0.14.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782803905336|Deleted default via 10.0.34.3 dev eth3 proto bird metric 32
+1782803905340|Deleted 10.0.24.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782803905342|Deleted 10.0.12.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782803911338|default via 10.0.13.2 dev eth1 proto bird metric 32
+1782803911342|10.0.24.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782803911344|10.0.12.0/24 via 10.0.13.2 dev eth1 proto bird metric 32
+1782803911349|10.0.14.0/24 proto bird metric 32
+1782803911358|nexthop via 10.0.13.2 dev eth1 weight 1
+1782803911360|nexthop via 10.0.34.3 dev eth3 weight 1
+1782803914338|default via 10.0.23.2 dev eth2 proto bird metric 32
+1782803914342|10.0.24.0/24 proto bird metric 32
+1782803914345|nexthop via 10.0.23.2 dev eth2 weight 1
+1782803914349|nexthop via 10.0.34.3 dev eth3 weight 1
+1782803914350|10.0.12.0/24 proto bird metric 32
+1782803914352|nexthop via 10.0.13.2 dev eth1 weight 1
+1782803914354|nexthop via 10.0.23.2 dev eth2 weight 1
+1782804108335|Deleted default via 10.0.23.2 dev eth2 proto bird metric 32
+1782804108337|10.0.24.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782804108339|Deleted 10.0.12.0/24 proto bird metric 32
+1782804108341|nexthop via 10.0.13.2 dev eth1 weight 1
+1782804108343|nexthop via 10.0.23.2 dev eth2 weight 1
+1782804108348|10.0.14.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782804115334|default via 10.0.23.2 dev eth2 proto bird metric 32
+1782804115340|10.0.24.0/24 proto bird metric 32
+1782804115342|nexthop via 10.0.23.2 dev eth2 weight 1
+1782804115347|nexthop via 10.0.34.3 dev eth3 weight 1
+1782804115348|10.0.12.0/24 via 10.0.23.2 dev eth2 proto bird metric 32
+1782804119336|10.0.12.0/24 proto bird metric 32
+1782804119337|nexthop via 10.0.13.2 dev eth1 weight 1
+1782804119341|nexthop via 10.0.23.2 dev eth2 weight 1
+1782804119344|10.0.14.0/24 proto bird metric 32
+1782804119346|nexthop via 10.0.13.2 dev eth1 weight 1
+1782804119349|nexthop via 10.0.34.3 dev eth3 weight 1
+1782814410344|Deleted default via 10.0.23.2 dev eth2 proto bird metric 32
+1782814410354|10.0.24.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782814410356|Deleted 10.0.12.0/24 proto bird metric 32
+1782814410365|nexthop via 10.0.13.2 dev eth1 weight 1
+1782814410367|nexthop via 10.0.23.2 dev eth2 weight 1
+1782814410370|10.0.14.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782814420342|default via 10.0.23.2 dev eth2 proto bird metric 32
+1782814420345|10.0.24.0/24 proto bird metric 32
+1782814420355|nexthop via 10.0.23.2 dev eth2 weight 1
+1782814420361|nexthop via 10.0.34.3 dev eth3 weight 1
+1782814420364|10.0.12.0/24 proto bird metric 32
+1782814420368|nexthop via 10.0.13.2 dev eth1 weight 1
+1782814420372|nexthop via 10.0.23.2 dev eth2 weight 1
+1782814420375|10.0.14.0/24 proto bird metric 32
+1782814420378|nexthop via 10.0.13.2 dev eth1 weight 1
+1782814420380|nexthop via 10.0.34.3 dev eth3 weight 1
+1782814987338|default via 10.0.34.3 dev eth3 proto bird metric 32
+1782814987345|10.0.24.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782814987347|10.0.12.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782814987354|10.0.14.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782814988335|Deleted default via 10.0.34.3 dev eth3 proto bird metric 32
+1782814988337|Deleted 10.0.12.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782814993339|default via 10.0.23.2 dev eth2 proto bird metric 32
+1782814993343|10.0.24.0/24 proto bird metric 32
+1782814993345|nexthop via 10.0.23.2 dev eth2 weight 1
+1782814993349|nexthop via 10.0.34.3 dev eth3 weight 1
+1782814993351|10.0.12.0/24 via 10.0.23.2 dev eth2 proto bird metric 32
+1782814999341|10.0.12.0/24 proto bird metric 32
+1782814999348|nexthop via 10.0.13.2 dev eth1 weight 1
+1782814999352|nexthop via 10.0.23.2 dev eth2 weight 1
+1782814999356|10.0.14.0/24 proto bird metric 32
+1782814999359|nexthop via 10.0.13.2 dev eth1 weight 1
+1782814999360|nexthop via 10.0.34.3 dev eth3 weight 1
+1782816767337|default via 10.0.34.3 dev eth3 proto bird metric 32
+1782816767340|10.0.24.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782816767345|10.0.12.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782816767347|10.0.14.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782816768342|Deleted default via 10.0.34.3 dev eth3 proto bird metric 32
+1782816768345|Deleted 10.0.12.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782816774332|default via 10.0.23.2 dev eth2 proto bird metric 32
+1782816774336|10.0.24.0/24 proto bird metric 32
+1782816774339|nexthop via 10.0.23.2 dev eth2 weight 1
+1782816774341|nexthop via 10.0.34.3 dev eth3 weight 1
+1782816774343|10.0.12.0/24 via 10.0.23.2 dev eth2 proto bird metric 32
+1782816778333|10.0.12.0/24 proto bird metric 32
+1782816778334|nexthop via 10.0.13.2 dev eth1 weight 1
+1782816778336|nexthop via 10.0.23.2 dev eth2 weight 1
+1782816778338|10.0.14.0/24 proto bird metric 32
+1782816778341|nexthop via 10.0.13.2 dev eth1 weight 1
+1782816778353|nexthop via 10.0.34.3 dev eth3 weight 1
+1782817296335|default via 10.0.34.3 dev eth3 proto bird metric 32
+1782817296339|10.0.24.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782817296342|10.0.12.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782817296345|10.0.14.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782817297337|Deleted default via 10.0.34.3 dev eth3 proto bird metric 32
+1782817297340|Deleted 10.0.12.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782817305336|default via 10.0.23.2 dev eth2 proto bird metric 32
+1782817305340|10.0.24.0/24 proto bird metric 32
+1782817305346|nexthop via 10.0.23.2 dev eth2 weight 1
+1782817305351|nexthop via 10.0.34.3 dev eth3 weight 1
+1782817305355|10.0.12.0/24 via 10.0.23.2 dev eth2 proto bird metric 32
+1782817307337|10.0.12.0/24 proto bird metric 32
+1782817307344|nexthop via 10.0.13.2 dev eth1 weight 1
+1782817307348|nexthop via 10.0.23.2 dev eth2 weight 1
+1782817307352|10.0.14.0/24 proto bird metric 32
+1782817307355|nexthop via 10.0.13.2 dev eth1 weight 1
+1782817307357|nexthop via 10.0.34.3 dev eth3 weight 1
+1782817616339|default via 10.0.34.3 dev eth3 proto bird metric 32
+1782817616341|10.0.24.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782817616342|10.0.12.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782817616348|10.0.14.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782817617333|Deleted default via 10.0.34.3 dev eth3 proto bird metric 32
+1782817617337|Deleted 10.0.12.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782817621343|default via 10.0.23.2 dev eth2 proto bird metric 32
+1782817621348|10.0.24.0/24 proto bird metric 32
+1782817621350|nexthop via 10.0.23.2 dev eth2 weight 1
+1782817621352|nexthop via 10.0.34.3 dev eth3 weight 1
+1782817621354|10.0.12.0/24 via 10.0.23.2 dev eth2 proto bird metric 32
+1782817627335|10.0.12.0/24 proto bird metric 32
+1782817627342|nexthop via 10.0.13.2 dev eth1 weight 1
+1782817627345|nexthop via 10.0.23.2 dev eth2 weight 1
+1782817627347|10.0.14.0/24 proto bird metric 32
+1782817627349|nexthop via 10.0.13.2 dev eth1 weight 1
+1782817627351|nexthop via 10.0.34.3 dev eth3 weight 1
+1782818805341|default via 10.0.34.3 dev eth3 proto bird metric 32
+1782818805346|10.0.24.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782818805351|10.0.12.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782818805353|10.0.14.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782818806333|Deleted default via 10.0.34.3 dev eth3 proto bird metric 32
+1782818806340|Deleted 10.0.12.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782818811334|default via 10.0.23.2 dev eth2 proto bird metric 32
+1782818811336|10.0.24.0/24 proto bird metric 32
+1782818811338|nexthop via 10.0.23.2 dev eth2 weight 1
+1782818811340|nexthop via 10.0.34.3 dev eth3 weight 1
+1782818811343|10.0.12.0/24 via 10.0.23.2 dev eth2 proto bird metric 32
+1782818817333|10.0.12.0/24 proto bird metric 32
+1782818817334|nexthop via 10.0.13.2 dev eth1 weight 1
+1782818817343|nexthop via 10.0.23.2 dev eth2 weight 1
+1782818817351|10.0.14.0/24 proto bird metric 32
+1782818817353|nexthop via 10.0.13.2 dev eth1 weight 1
+1782818817354|nexthop via 10.0.34.3 dev eth3 weight 1
+1782819327338|default via 10.0.34.3 dev eth3 proto bird metric 32
+1782819327346|10.0.24.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782819327350|10.0.12.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782819327353|10.0.14.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782819328333|Deleted default via 10.0.34.3 dev eth3 proto bird metric 32
+1782819328338|Deleted 10.0.12.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782819335336|default via 10.0.23.2 dev eth2 proto bird metric 32
+1782819335345|10.0.24.0/24 proto bird metric 32
+1782819335351|nexthop via 10.0.23.2 dev eth2 weight 1
+1782819335354|nexthop via 10.0.34.3 dev eth3 weight 1
+1782819335357|10.0.12.0/24 via 10.0.23.2 dev eth2 proto bird metric 32
+1782819337337|10.0.12.0/24 proto bird metric 32
+1782819337349|nexthop via 10.0.13.2 dev eth1 weight 1
+1782819337351|nexthop via 10.0.23.2 dev eth2 weight 1
+1782819337354|10.0.14.0/24 proto bird metric 32
+1782819337357|nexthop via 10.0.13.2 dev eth1 weight 1
+1782819337359|nexthop via 10.0.34.3 dev eth3 weight 1
+1782819626335|default via 10.0.34.3 dev eth3 proto bird metric 32
+1782819626341|10.0.24.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782819626343|10.0.12.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782819626346|10.0.14.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782819627334|Deleted default via 10.0.34.3 dev eth3 proto bird metric 32
+1782819627337|Deleted 10.0.12.0/24 via 10.0.34.3 dev eth3 proto bird metric 32
+1782819634332|default via 10.0.23.2 dev eth2 proto bird metric 32
+1782819634337|10.0.24.0/24 proto bird metric 32
+1782819634340|nexthop via 10.0.23.2 dev eth2 weight 1
+1782819634342|nexthop via 10.0.34.3 dev eth3 weight 1
+1782819634344|10.0.12.0/24 via 10.0.23.2 dev eth2 proto bird metric 32
+1782819638333|10.0.12.0/24 proto bird metric 32
+1782819638341|nexthop via 10.0.13.2 dev eth1 weight 1
+1782819638347|nexthop via 10.0.23.2 dev eth2 weight 1
+1782819638355|10.0.14.0/24 proto bird metric 32
+1782819638363|nexthop via 10.0.13.2 dev eth1 weight 1
+1782819638367|nexthop via 10.0.34.3 dev eth3 weight 1

@@ -1,0 +1,75 @@
+\section{LLGR Stale Route Timer Experiment}
+
+\subsection{Purpose}
+
+This experiment was performed to observe stale-route handling and withdrawal timer behaviour with Long-Lived Graceful Restart. The goal was to check whether a route learned from a failed BGP peer remains available temporarily and is removed after the configured timer period.
+
+\subsection{Experiment Setup}
+
+The route tested was:
+
+\begin{verbatim}
+10.0.93.0/24
+\end{verbatim}
+
+This prefix is originated from the ISP/upstream side behind \texttt{hpe-r9}. The observing router was \texttt{hpe-r1}.
+
+For the experiment, the timers were temporarily reduced:
+
+\begin{table}[H]
+\centering
+\small
+\renewcommand{\arraystretch}{1.25}
+\begin{tabular}{|p{6cm}|p{5cm}|}
+\hline
+\textbf{Timer} & \textbf{Temporary Value} \\
+\hline
+Graceful Restart time & 5 seconds \\
+\hline
+LLGR stale time & 10 seconds \\
+\hline
+Expected total retention window & About 15 seconds \\
+\hline
+\end{tabular}
+\caption{Temporary GR and LLGR timer values}
+\end{table}
+
+After applying the temporary timer configuration, the BIRD daemon on \texttt{hpe-r9} was stopped. The route table on \texttt{hpe-r1} was then sampled repeatedly to check when the route disappeared.
+
+\subsection{Measurement Result}
+
+\begin{table}[H]
+\centering
+\small
+\renewcommand{\arraystretch}{1.25}
+\begin{tabular}{|p{6cm}|p{5cm}|}
+\hline
+\textbf{Measurement} & \textbf{Result} \\
+\hline
+Target prefix & \texttt{10.0.93.0/24} \\
+\hline
+GR timer & 5 seconds \\
+\hline
+LLGR stale timer & 10 seconds \\
+\hline
+Last time route from \texttt{hpe-r9} was present & 14259 ms \\
+\hline
+First time route from \texttt{hpe-r9} became missing & 15350 ms \\
+\hline
+LLGR stale marker observed & Yes, shown as \texttt{(100s)} and \texttt{BGP.community: (65535,6)} \\
+\hline
+\end{tabular}
+\caption{LLGR stale route timer result}
+\end{table}
+
+\subsection{Observation}
+
+The route did not disappear immediately after the peer-side failure. Instead, it remained present for approximately 14.259 seconds and disappeared around 15.350 seconds.
+
+This closely matches the configured timing expectation of 5 seconds of Graceful Restart time plus 10 seconds of LLGR stale time.
+
+The literal text \texttt{LLGR\_STALE} was not printed by BIRD. However, the stale route marker was visible as \texttt{(100s)} and the BGP community \texttt{(65535,6)}. The community \texttt{65535:6} corresponds to the LLGR stale community. Therefore, this experiment confirms both stale-route retention timing and visible LLGR stale marking.
+
+\subsection{Conclusion}
+
+This experiment demonstrates stale-route retention and withdrawal timer behaviour. With shortened GR and LLGR timers, the route remained temporarily available, was marked stale using \texttt{(100s)} and \texttt{BGP.community: (65535,6)}, and was removed after approximately the expected timer duration. This satisfies the stale-route handling and withdrawal-timer observation requirement.

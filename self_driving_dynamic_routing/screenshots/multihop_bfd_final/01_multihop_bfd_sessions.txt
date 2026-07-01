@@ -1,0 +1,18 @@
+MULTIHOP BFD SESSION VERIFICATION
+============================================================
+
+Expected multihop peers:
+hpe-r1 -> 10.0.82.3
+hpe-r8 -> 10.0.14.2
+
+----- hpe-r1 BFD sessions -----
+bfd1:
+IP address                Interface  State      Since         Interval  Timeout
+10.0.82.3                 ---        Up         14:30:14.418    0.100    0.500
+
+----- hpe-r8 BFD sessions -----
+bfd1:
+IP address                Interface  State      Since         Interval  Timeout
+10.0.14.2                 ---        Up         14:30:14.418    0.100    0.500
+
+Note: Interface value '---' confirms multihop BFD.

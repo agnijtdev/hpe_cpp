@@ -1,0 +1,47 @@
+============================================================
+GOLD BFD WAN EDGE FAILURE MEASUREMENT SUMMARY
+============================================================
+Run directory: measurement/runs/20260625_005312_bfd_wan_edge_failure_gold_timeline
+Timestamp: 20260625_005312
+
+T0 failure trigger: 1782329008232
+
+Timeline relative to T0:
+- BFD session down observed: 93 ms
+- BGP non-established observed: 95 ms
+- BGP re-established observed: NA ms
+- BIRD route changed to alternate/missing path: 99 ms
+- BIRD route missing observed: NA ms
+- ip route get changed to alternate path: 97 ms
+- ip route get missing/unreachable observed: NA ms
+- Kernel route event observed: 8 ms
+- First traffic loss observed/estimated: 3 ms
+- Traffic recovery after loss: 29 ms
+- Estimated traffic outage duration: 26 ms
+
+Traffic:
+- Tool: ping_D
+- Transmitted: 761
+- Received: 760
+- Lost: 1
+- Loss percent: 0.131406%
+- Missing/lost sequence sample: [96]
+
+Packet capture:
+- BFD packet evidence lines: 190
+- BGP packet evidence lines: 23
+
+BIRD event/debug log:
+- BIRD event lines after T0: 174
+- First BIRD event after T0: 1782329009123|2026-06-24 19:23:28.164 <TRACE> bfd1: Sending CTL to 10.0.29.3 [Up]
+
+Important evidence lines:
+- BFD line: 1782329008325|state=Missing|
+- BGP line: 1782329008327|state=NotEstablished|BIRD 2.0.8 ready. Name Proto Table State Since Info r9 BGP --- start 19:23:28.238 Idle Error: Neighbor lost 
+- BIRD route changed line: 1782329008331|state=alternate_or_changed|BIRD 2.0.8 ready. Table master4: 10.0.93.0/24 unicast [r1 13:53:32.670] * (100) [AS65002i] via 10.0.12.2 on eth2 Type: BGP univ BGP.origin: IGP BGP.as_path: 65002 BGP.next_hop: 10.0.12.2 BGP.local_pref: 100 
+- route-get changed line: 1782329008329|state=alternate_or_changed|10.0.93.2 via 10.0.12.2 dev eth2 src 10.0.12.3 uid 0 cache 
+- kernel event line: 1782329008240|default via 10.0.12.2 dev eth2 proto bird metric 32
+
+CSV saved to: measurement/runs/20260625_005312_bfd_wan_edge_failure_gold_timeline/parsed_timeline.csv
+Global CSV updated at: measurement/summaries/bfd_wan_gold_summary.csv
+============================================================

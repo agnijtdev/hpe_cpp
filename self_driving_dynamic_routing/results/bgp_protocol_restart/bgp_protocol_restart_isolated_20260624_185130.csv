@@ -1,0 +1,2 @@
+timestamp,test_name,restarted_router,method,bgp_reestablished_ms,ping_tx,ping_rx,ping_loss_percent,route_missing_samples,r9_route_present_samples,r2_route_present_samples,isolated_result
+20260624_185130,bgp_protocol_restart_isolated,hpe-r9,birdc_restart_r1,4362,241,241,0,14,86,0,fail

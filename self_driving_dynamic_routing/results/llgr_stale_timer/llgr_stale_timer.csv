@@ -1,0 +1,2 @@
+timestamp,test_name,target_prefix,gr_time_s,llgr_stale_time_s,first_missing_ms,last_present_ms,first_stale_text_ms
+20260624_180442,llgr_stale_timer,10.0.93.0/24,5,10,15979,14912,NA

@@ -1,0 +1,139 @@
+\section{OSPF Core Link Failure Recovery}
+
+\subsection{Objective}
+
+The objective of this experiment was to validate OSPF fast recovery when an internal core link fails.
+
+The tested failure was the core OSPF link between \texttt{hpe-r3} and \texttt{hpe-r2}. The goal was to observe whether OSPF could detect the failure, remove the failed path, install an alternate path, and restore forwarding quickly.
+
+\subsection{Test Setup}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|l|l|}
+\hline
+\textbf{Item} & \textbf{Value} \\
+\hline
+Failed router & hpe-r3 \\
+\hline
+Failed core peer & hpe-r2 \\
+\hline
+Old next-hop & 10.0.23.2 \\
+\hline
+New next-hop & 10.0.13.2 \\
+\hline
+Test type & OSPF core link failure \\
+\hline
+Primary measurement method & Linux kernel route monitor \\
+\hline
+Supporting methods & ip route get and BIRD route sampling \\
+\hline
+Traffic measurement & Timestamped ICMP ping \\
+\hline
+\end{tabular}
+\caption{OSPF core link failure test setup}
+\end{table}
+
+\subsection{Measurement Method}
+
+OSPF convergence is not only a control-plane event. A route may change inside BIRD first, but traffic is forwarded by the Linux kernel routing table.
+
+Because of this, three different measurement methods were used. The Linux kernel route monitor was treated as the primary convergence measurement because it shows when the actual forwarding route changed in the kernel. The \texttt{ip route get} and BIRD route-table samples were used as supporting confirmation.
+
+\subsection{Measurement Result}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|l|l|}
+\hline
+\textbf{Metric} & \textbf{Result} \\
+\hline
+Old next-hop & 10.0.23.2 \\
+\hline
+New next-hop & 10.0.13.2 \\
+\hline
+Kernel route monitor convergence time & 628 ms \\
+\hline
+ip route get sample convergence time & 631 ms \\
+\hline
+BIRD route-table sample convergence time & 648 ms \\
+\hline
+Estimated transmitted packets & 350 \\
+\hline
+Received packets & 338 \\
+\hline
+Failed/lost packets & 12 \\
+\hline
+Estimated packet loss & 3.43\% \\
+\hline
+Explicit unreachable packets & 1 \\
+\hline
+\end{tabular}
+\caption{OSPF core link failure measurement result}
+\end{table}
+
+\subsection{Path Change}
+
+Before the failure, the route used the old next-hop:
+
+\begin{verbatim}
+10.0.23.2
+\end{verbatim}
+
+After the core link failure, OSPF selected the alternate next-hop:
+
+\begin{verbatim}
+10.0.13.2
+\end{verbatim}
+
+This means OSPF successfully removed the failed path and installed an alternate route.
+
+\subsection{Convergence Analysis}
+
+The three convergence measurements were close:
+
+\begin{verbatim}
+Kernel route monitor: 628 ms
+ip route get sampling: 631 ms
+BIRD route sampling: 648 ms
+\end{verbatim}
+
+This consistency shows that the result is reliable. The kernel forwarding table changed first at around 628 ms, and the supporting measurements confirmed the same route transition within a small time gap.
+
+\subsection{Traffic Impact}
+
+The ping log did not contain a normal final ping summary, so packet loss was estimated using ICMP sequence numbers.
+
+The parsed result was:
+
+\begin{verbatim}
+Estimated transmitted packets: 350
+Received packets: 338
+Failed/lost packets: 12
+Estimated packet loss percent: 3.43\%
+Explicit unreachable packets seen: 1
+\end{verbatim}
+
+This shows that traffic experienced a short disruption during OSPF reconvergence, but connectivity recovered automatically after the alternate path was installed.
+
+\subsection{Post-Test Recovery Validation}
+
+After the failure experiment, OSPF was verified on all internal routers. OSPF was Running on \texttt{hpe-r1} through \texttt{hpe-r8}.
+
+Final end-to-end pings also succeeded with zero packet loss:
+
+\begin{verbatim}
+hpe-h1 -> hpe-h2: 0\% packet loss
+hpe-h1 -> hpe-h3: 0\% packet loss
+hpe-h3 -> hpe-h1: 0\% packet loss
+\end{verbatim}
+
+\subsection{Conclusion}
+
+The OSPF core link failure experiment successfully demonstrated automatic intra-domain recovery.
+
+When the \texttt{hpe-r3} to \texttt{hpe-r2} core link failed, OSPF removed the old path through \texttt{10.0.23.2} and installed the alternate path through \texttt{10.0.13.2}.
+
+The primary convergence time measured using the Linux kernel route monitor was 628 ms. Supporting measurements using \texttt{ip route get} and BIRD route-table sampling showed 631 ms and 648 ms respectively. Since all three values were close, the convergence measurement is consistent and reliable.
+
+The traffic test showed an estimated packet loss of 3.43\% during the short convergence window. After reconvergence, OSPF was Running on all internal routers and end-to-end connectivity returned to zero packet loss.

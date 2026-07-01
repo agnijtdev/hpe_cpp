@@ -1,0 +1,2 @@
+timestamp,test_name,alternate_path_disabled,old_next_hop,bgp_non_established_seen_ms,old_next_hop_seen_after_restart,alternate_next_hop_seen_after_restart,unreachable_seen_after_restart,stale_or_grace_text_seen,ping_tx,ping_rx,ping_lost,ping_loss_percent,bgp_non_established_line,missing_ping_sequences
+20260623_165618,bgp_gr_isolated_peer_restart,yes,10.0.19.3,171,yes,no,no,no,180,180,0,0,"Name       Proto      Table      State  Since         Info r9         BGP        ---        start  11:26:29.459  Active        Received: Administrative reset",""

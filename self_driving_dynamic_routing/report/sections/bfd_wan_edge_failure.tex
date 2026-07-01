@@ -1,0 +1,183 @@
+\section{BFD WAN Edge Failure Detection}
+
+\subsection{Objective}
+
+The objective of this experiment was to validate fast failure detection on the WAN edge using Bidirectional Forwarding Detection, or BFD.
+
+The tested failure was the WAN edge link between \texttt{hpe-r2} and \texttt{hpe-r9}. This link carries eBGP between the enterprise edge router and the upstream ISP router. BFD was attached to the BGP session so that link or session failure could be detected quickly.
+
+\subsection{Test Setup}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|l|l|}
+\hline
+\textbf{Item} & \textbf{Value} \\
+\hline
+Failed router & hpe-r2 \\
+\hline
+Failed interface & eth1 \\
+\hline
+Failed peer & hpe-r9 \\
+\hline
+BFD peer IP & 10.0.29.3 \\
+\hline
+Traffic source & hpe-h1 \\
+\hline
+Traffic destination & hpe-h3 \\
+\hline
+Destination IP & 10.0.93.2 \\
+\hline
+\end{tabular}
+\caption{BFD WAN edge failure test setup}
+\end{table}
+
+\subsection{BFD Timer Configuration}
+
+The observed BFD session timing values were:
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|l|l|}
+\hline
+\textbf{Field} & \textbf{Value} \\
+\hline
+BFD interval & 0.100 seconds \\
+\hline
+BFD timeout & 0.500 seconds \\
+\hline
+\end{tabular}
+\caption{Observed BFD timing values}
+\end{table}
+
+\subsection{Measurement Result}
+
+The BFD WAN edge failure experiment measured how quickly the network detected the failure of the direct WAN edge path between \texttt{hpe-r2} and \texttt{hpe-r9}. The failed BFD peer was \texttt{10.0.29.3}. During the test, traffic was continuously sent from \texttt{hpe-h1} to \texttt{hpe-h3}.
+
+\begin{table}[H]
+\centering
+\small
+\renewcommand{\arraystretch}{1.25}
+\begin{tabular}{|p{6cm}|p{5cm}|}
+\hline
+\textbf{Measurement} & \textbf{Result} \\
+\hline
+Failed router & \texttt{hpe-r2} \\
+\hline
+Failed interface & \texttt{eth1} \\
+\hline
+Failed BFD peer & \texttt{10.0.29.3} \\
+\hline
+Traffic source & \texttt{hpe-h1} \\
+\hline
+Traffic destination & \texttt{hpe-h3} \\
+\hline
+Destination IP & \texttt{10.0.93.2} \\
+\hline
+BFD detection time & 61 ms \\
+\hline
+BGP reaction time & 61 ms \\
+\hline
+Packets transmitted & 293 \\
+\hline
+Packets received & 293 \\
+\hline
+Packets lost & 0 \\
+\hline
+Packet loss & 0.00\% \\
+\hline
+Alternate path after failure & \texttt{hpe-r2 -> hpe-r1 -> hpe-r9} \\
+\hline
+\end{tabular}
+\caption{BFD WAN edge failure detection measurement result}
+\end{table}
+
+The project target for single-hop BFD failure detection was below 300 ms. The measured detection time was 61 ms, so the experiment successfully satisfies the target. The ping result also shows that traffic continued with 0.00\% packet loss.
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|l|l|}
+\hline
+\textbf{Metric} & \textbf{Result} \\
+\hline
+BFD detection time & 61 ms \\
+\hline
+BGP reaction time & 61 ms \\
+\hline
+Estimated packets transmitted & 293 \\
+\hline
+Packets received & 293 \\
+\hline
+Lost packets & 0 \\
+\hline
+Packet loss & 0.00\% \\
+\hline
+Explicit unreachable packets & 0 \\
+\hline
+\end{tabular}
+\caption{BFD WAN edge failure measurement result}
+\end{table}
+
+\subsection{Path Before Failure}
+
+Before the failure, \texttt{hpe-r2} reached the external host network through the direct WAN edge link to \texttt{hpe-r9}.
+
+\begin{verbatim}
+10.0.93.2 via 10.0.29.3 dev eth1
+\end{verbatim}
+
+This means the original forwarding path was:
+
+\begin{verbatim}
+hpe-r2 -> hpe-r9
+\end{verbatim}
+
+\subsection{Path During Failure}
+
+After the \texttt{hpe-r2} to \texttt{hpe-r9} link was brought down, BFD detected the failure and BGP removed the failed direct route. During the failure, \texttt{hpe-r2} changed its route to the external network through \texttt{hpe-r1}.
+
+\begin{verbatim}
+10.0.93.2 via 10.0.12.2 dev eth2
+\end{verbatim}
+
+At the same time, \texttt{hpe-r1} still had reachability to the ISP router through its own WAN edge link.
+
+\begin{verbatim}
+10.0.93.2 via 10.0.19.3 dev eth0
+\end{verbatim}
+
+Therefore, the alternate forwarding path became:
+
+\begin{verbatim}
+hpe-r2 -> hpe-r1 -> hpe-r9
+\end{verbatim}
+
+\subsection{Traffic Behaviour During Failure}
+
+During the failure window, traffic from \texttt{hpe-h1} to \texttt{hpe-h3} remained successful.
+
+\begin{verbatim}
+10 packets transmitted, 10 received, 0\% packet loss
+\end{verbatim}
+
+The longer timestamped ping monitor also showed:
+
+\begin{verbatim}
+293 packets transmitted, 293 received, 0 lost, 0.00\% packet loss
+\end{verbatim}
+
+\subsection{Restore Behaviour}
+
+After the failed link was restored, BFD became Up again on both sides. The BGP session between \texttt{hpe-r2} and \texttt{hpe-r9} also returned to Established state after a short reconnection period.
+
+The final restore confirmation showed that direct link pings worked, BFD was Up, BGP was Established, and end-to-end traffic from \texttt{hpe-h1} to \texttt{hpe-h3} worked with zero packet loss.
+
+
+
+\subsection{Conclusion}
+
+The BFD WAN edge failure experiment successfully demonstrated fast failure detection and automatic routing recovery.
+
+BFD detected the \texttt{hpe-r2} to \texttt{hpe-r9} WAN edge failure in 61 ms. BGP reacted in the same 61 ms window. After the failed direct path was removed, traffic shifted to the alternate path through \texttt{hpe-r1} and continued toward \texttt{hpe-r9}.
+
+The traffic test showed 0.00\% packet loss during the failure window. After link restoration, BFD and BGP recovered cleanly. This confirms that BFD can provide sub-second WAN failure detection and help maintain reachability through alternate paths.

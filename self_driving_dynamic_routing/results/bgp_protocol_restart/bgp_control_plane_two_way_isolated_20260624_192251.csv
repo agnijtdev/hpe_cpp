@@ -1,0 +1,2 @@
+timestamp,test_name,restarted_router,method,bgp_reestablished_ms,ping_tx,ping_rx,ping_loss_percent,forward_missing_samples,forward_r9_samples,forward_r2_samples,return_missing_samples,return_r1_samples,return_r2_samples,isolation_result,forwarding_result
+20260624_192251,bgp_control_plane_two_way_isolated,hpe-r9,birdc_restart_r1,4005,235,158,32.766,13,87,0,13,87,0,pass,partial_or_fail

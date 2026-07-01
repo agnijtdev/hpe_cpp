@@ -1,0 +1,46 @@
+\section{Baseline Validation}
+
+\subsection{Objective}
+
+The objective of the baseline validation was to confirm that the routing lab was healthy before running failure experiments.
+
+A stable baseline is important because convergence and failover results are meaningful only when the network starts from a known working state.
+
+\subsection{Validated Conditions}
+
+The baseline validation checked the following conditions:
+
+\begin{itemize}
+    \item All HPE router and host containers were running.
+    \item BIRD was running on all routers.
+    \item OSPF was running.
+    \item OSPF neighbours were in the Full state.
+    \item BGP sessions were Established.
+    \item BFD sessions on the WAN edge were Up.
+    \item End-to-end host connectivity worked with zero packet loss.
+\end{itemize}
+
+\subsection{Baseline Connectivity Results}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|l|l|l|l|}
+\hline
+\textbf{Test} & \textbf{Source} & \textbf{Destination} & \textbf{Packet Loss} \\
+\hline
+h1\_to\_h2 & hpe-h1 & 10.0.82.2 & 0\% \\
+h2\_to\_h1 & hpe-h2 & 10.0.61.2 & 0\% \\
+h1\_to\_h3 & hpe-h1 & 10.0.93.2 & 0\% \\
+h2\_to\_h3 & hpe-h2 & 10.0.93.2 & 0\% \\
+h3\_to\_h1 & hpe-h3 & 10.0.61.2 & 0\% \\
+h3\_to\_h2 & hpe-h3 & 10.0.82.2 & 0\% \\
+\hline
+\end{tabular}
+\caption{Baseline end-to-end connectivity results}
+\end{table}
+
+\subsection{Conclusion}
+
+The baseline validation confirmed that the lab was stable before failure testing. OSPF was running with Full neighbour adjacencies, BGP sessions were Established, BFD sessions were Up on the WAN edge, and all host-to-host connectivity tests completed with zero packet loss.
+
+This baseline is the reference state for later BFD, OSPF, ECMP, and BGP GR/LLGR experiments.

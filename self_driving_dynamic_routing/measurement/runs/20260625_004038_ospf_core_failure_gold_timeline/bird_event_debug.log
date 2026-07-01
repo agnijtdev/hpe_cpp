@@ -1,0 +1,194 @@
+1782328250184|2026-06-24 19:10:49.514 <TRACE> ospf1: HELLO packet received from nbr 1.1.1.1 on eth2
+1782328250187|2026-06-24 19:10:49.555 <TRACE> ospf1: HELLO packet received from nbr 2.2.2.2 on eth3
+1782328250190|2026-06-24 19:10:49.594 <TRACE> ospf1: HELLO packet sent via eth1
+1782328250193|2026-06-24 19:10:49.594 <TRACE> ospf1: HELLO packet sent via eth2
+1782328250196|2026-06-24 19:10:49.627 <TRACE> ospf1: HELLO packet received from nbr 4.4.4.4 on eth0
+1782328250198|2026-06-24 19:10:49.658 <TRACE> ospf1: HELLO packet received from nbr 5.5.5.5 on eth1
+1782328250201|2026-06-24 19:10:49.992 <TRACE> ospf1: HELLO packet sent via eth3
+1782328250204|2026-06-24 19:10:50.011 <TRACE> ospf1: HELLO packet sent via eth0
+1782328252189|2026-06-24 19:10:51.259 <WARN> Netlink: Network is down
+1782328252196|2026-06-24 19:10:51.259 <TRACE> ospf1.ipv4 < rejected by protocol 10.0.34.0/24 unicast
+1782328252202|2026-06-24 19:10:51.259 <TRACE> ospf1 < address 10.0.34.0/24 on interface eth0 removed
+1782328252212|2026-06-24 19:10:51.259 <TRACE> ospf1: Interface eth0 changed state from Backup to Down
+1782328252225|2026-06-24 19:10:51.259 <TRACE> ospf1: Removing interface eth0 (10.0.34.0/24) from area 0.0.0.0
+1782328252241|2026-06-24 19:10:51.259 <TRACE> ospf1: Neighbor 4.4.4.4 on eth0 changed state from Full to Down
+1782328252252|2026-06-24 19:10:51.259 <TRACE> ospf1: Neighbor 4.4.4.4 on eth0 removed
+1782328252254|2026-06-24 19:10:51.259 <TRACE> ospf1 < interface eth0 goes down
+1782328252256|2026-06-24 19:10:52.161 <TRACE> ospf1: Updating router state for area 0.0.0.0
+1782328252258|2026-06-24 19:10:52.161 <TRACE> ospf1: Originating LSA: Type: 2001, Id: 3.3.3.3, Rt: 3.3.3.3, Seq: 8000004e
+1782328252260|2026-06-24 19:10:52.161 <TRACE> ospf1: Scheduling routing table calculation
+1782328252261|2026-06-24 19:10:52.161 <TRACE> ospf1: Starting routing table calculation
+1782328252263|2026-06-24 19:10:52.161 <TRACE> ospf1: Starting routing table calculation for area 0.0.0.0
+1782328252264|2026-06-24 19:10:52.161 <TRACE> ospf1: Starting routing table calculation for area 0.0.0.10
+1782328252266|2026-06-24 19:10:52.161 <TRACE> ospf1: Starting routing table calculation for inter-area (area 0.0.0.0)
+1782328252268|2026-06-24 19:10:52.161 <TRACE> ospf1: Starting routing table calculation for ext routes
+1782328252269|2026-06-24 19:10:52.161 <TRACE> ospf1: Starting routing table synchronization
+1782328252271|2026-06-24 19:10:52.161 <TRACE> ospf1.ipv4 > added [best] 10.0.24.0/24 unicast
+1782328252272|2026-06-24 19:10:52.161 <TRACE> ospf1.ipv4 < rejected by protocol 10.0.24.0/24 unicast
+1782328252273|2026-06-24 19:10:52.161 <TRACE> ospf1.ipv4 > added [best] 10.0.78.0/24 unicast
+1782328252274|2026-06-24 19:10:52.161 <TRACE> ospf1.ipv4 < rejected by protocol 10.0.78.0/24 unicast
+1782328252276|2026-06-24 19:10:52.161 <TRACE> ospf1.ipv4 > added [best] 10.0.47.0/24 unicast
+1782328252277|2026-06-24 19:10:52.161 <TRACE> ospf1.ipv4 < rejected by protocol 10.0.47.0/24 unicast
+1782328252279|2026-06-24 19:10:52.161 <TRACE> ospf1.ipv4 > added [best] 10.0.14.0/24 unicast
+1782328252280|2026-06-24 19:10:52.161 <TRACE> ospf1.ipv4 < rejected by protocol 10.0.14.0/24 unicast
+1782328252282|2026-06-24 19:10:52.161 <TRACE> ospf1.ipv4 > added [best] 10.0.82.0/24 unicast
+1782328252284|2026-06-24 19:10:52.161 <TRACE> ospf1.ipv4 < rejected by protocol 10.0.82.0/24 unicast
+1782328252285|2026-06-24 19:10:52.161 <TRACE> ospf1.ipv4 > added [best] 10.0.34.0/24 unicast
+1782328252287|2026-06-24 19:10:52.161 <TRACE> ospf1.ipv4 < rejected by protocol 10.0.34.0/24 unicast
+1782328252289|2026-06-24 19:10:52.165 <TRACE> ospf1: LSUPD packet flooded via eth2
+1782328252290|2026-06-24 19:10:52.165 <TRACE> ospf1:     length   76
+1782328252292|2026-06-24 19:10:52.165 <TRACE> ospf1:     router   3.3.3.3
+1782328252295|2026-06-24 19:10:52.165 <TRACE> ospf1:     LSA      Type: 0001, Id: 3.3.3.3, Rt: 3.3.3.3, Seq: 8000004e, Age: 1, Sum: 1af2
+1782328252296|2026-06-24 19:10:52.165 <TRACE> ospf1: LSUPD packet flooded via eth3
+1782328252298|2026-06-24 19:10:52.165 <TRACE> ospf1:     length   76
+1782328252299|2026-06-24 19:10:52.165 <TRACE> ospf1:     router   3.3.3.3
+1782328252301|2026-06-24 19:10:52.165 <TRACE> ospf1:     LSA      Type: 0001, Id: 3.3.3.3, Rt: 3.3.3.3, Seq: 8000004e, Age: 1, Sum: 1af2
+1782328255184|2026-06-24 19:10:54.515 <TRACE> ospf1: HELLO packet received from nbr 1.1.1.1 on eth2
+1782328255187|2026-06-24 19:10:54.516 <TRACE> ospf1: LSACK packet received from nbr 1.1.1.1 on eth2
+1782328255190|2026-06-24 19:10:54.516 <TRACE> ospf1:     length   44
+1782328255192|2026-06-24 19:10:54.516 <TRACE> ospf1:     router   1.1.1.1
+1782328255195|2026-06-24 19:10:54.516 <TRACE> ospf1:     LSA      Type: 0001, Id: 3.3.3.3, Rt: 3.3.3.3, Seq: 8000004e, Age: 1, Sum: 1af2
+1782328255197|2026-06-24 19:10:54.555 <TRACE> ospf1: HELLO packet received from nbr 2.2.2.2 on eth3
+1782328255199|2026-06-24 19:10:54.556 <TRACE> ospf1: LSACK packet received from nbr 2.2.2.2 on eth3
+1782328255201|2026-06-24 19:10:54.556 <TRACE> ospf1:     length   44
+1782328255204|2026-06-24 19:10:54.556 <TRACE> ospf1:     router   2.2.2.2
+1782328255206|2026-06-24 19:10:54.556 <TRACE> ospf1:     LSA      Type: 0001, Id: 3.3.3.3, Rt: 3.3.3.3, Seq: 8000004e, Age: 1, Sum: 1af2
+1782328255208|2026-06-24 19:10:54.595 <TRACE> ospf1: HELLO packet sent via eth1
+1782328255211|2026-06-24 19:10:54.595 <TRACE> ospf1: HELLO packet sent via eth2
+1782328255214|2026-06-24 19:10:54.661 <TRACE> ospf1: HELLO packet received from nbr 5.5.5.5 on eth1
+1782328255218|2026-06-24 19:10:54.991 <TRACE> ospf1: HELLO packet sent via eth3
+1782328260200|2026-06-24 19:10:59.359 <TRACE> ospf1 < interface eth0 goes up
+1782328260215|2026-06-24 19:10:59.359 <TRACE> ospf1.ipv4 < filtered out 10.0.34.0/24 unicast
+1782328260218|2026-06-24 19:10:59.359 <TRACE> ospf1 < address 10.0.34.0/24 on interface eth0 added
+1782328260226|2026-06-24 19:10:59.359 <TRACE> ospf1: Adding interface eth0 (10.0.34.0/24) to area 0.0.0.0
+1782328260229|2026-06-24 19:10:59.360 <TRACE> ospf1: Interface eth0 changed state from Down to Waiting
+1782328260233|2026-06-24 19:10:59.360 <TRACE> ospf1: HELLO packet sent via eth0
+1782328260236|2026-06-24 19:10:59.515 <TRACE> ospf1: HELLO packet received from nbr 1.1.1.1 on eth2
+1782328260238|2026-06-24 19:10:59.554 <TRACE> ospf1: HELLO packet received from nbr 2.2.2.2 on eth3
+1782328260241|2026-06-24 19:10:59.595 <TRACE> ospf1: HELLO packet sent via eth2
+1782328260243|2026-06-24 19:10:59.595 <TRACE> ospf1: HELLO packet sent via eth1
+1782328260244|2026-06-24 19:10:59.627 <TRACE> ospf1: HELLO packet received from nbr 4.4.4.4 on eth0
+1782328260246|2026-06-24 19:10:59.627 <TRACE> ospf1: New neighbor 4.4.4.4 on eth0, IP address 10.0.34.3
+1782328260247|2026-06-24 19:10:59.627 <TRACE> ospf1: Neighbor 4.4.4.4 on eth0 changed state from Down to Init
+1782328260248|2026-06-24 19:10:59.627 <TRACE> ospf1: Neighbor 4.4.4.4 on eth0 changed state from Init to 2-Way
+1782328260250|2026-06-24 19:10:59.627 <TRACE> ospf1: Interface eth0 changed state from Waiting to Backup
+1782328260251|2026-06-24 19:10:59.627 <TRACE> ospf1: Neighbor 4.4.4.4 on eth0 changed state from 2-Way to ExStart
+1782328260253|2026-06-24 19:10:59.627 <TRACE> ospf1: DBDES packet sent to nbr 4.4.4.4 on eth0
+1782328260254|2026-06-24 19:10:59.627 <TRACE> ospf1:     length   32
+1782328260256|2026-06-24 19:10:59.627 <TRACE> ospf1:     router   3.3.3.3
+1782328260258|2026-06-24 19:10:59.627 <TRACE> ospf1:     mtu      1500
+1782328260259|2026-06-24 19:10:59.627 <TRACE> ospf1:     imms     I M MS
+1782328260261|2026-06-24 19:10:59.627 <TRACE> ospf1:     ddseq    2612985627
+1782328260262|2026-06-24 19:10:59.627 <TRACE> ospf1: LSUPD packet ignored - lesser state than Exchange
+1782328260264|2026-06-24 19:10:59.627 <TRACE> ospf1: DBDES packet received from nbr 4.4.4.4 on eth0
+1782328260266|2026-06-24 19:10:59.627 <TRACE> ospf1:     length   32
+1782328260268|2026-06-24 19:10:59.627 <TRACE> ospf1:     router   4.4.4.4
+1782328260270|2026-06-24 19:10:59.627 <TRACE> ospf1:     mtu      1500
+1782328260272|2026-06-24 19:10:59.627 <TRACE> ospf1:     imms     I M MS
+1782328260273|2026-06-24 19:10:59.627 <TRACE> ospf1:     ddseq    2722512186
+1782328260275|2026-06-24 19:10:59.627 <TRACE> ospf1: Neighbor 4.4.4.4 on eth0 changed state from ExStart to Exchange
+1782328260277|2026-06-24 19:10:59.627 <TRACE> ospf1: DBDES packet sent to nbr 4.4.4.4 on eth0
+1782328260279|2026-06-24 19:10:59.627 <TRACE> ospf1:     length   392
+1782328260282|2026-06-24 19:10:59.627 <TRACE> ospf1:     router   3.3.3.3
+1782328260284|2026-06-24 19:10:59.627 <TRACE> ospf1:     mtu      1500
+1782328260286|2026-06-24 19:10:59.627 <TRACE> ospf1:     imms
+1782328260288|2026-06-24 19:10:59.627 <TRACE> ospf1:     ddseq    2722512186
+1782328260290|2026-06-24 19:10:59.627 <TRACE> ospf1:     LSA      Type: 0001, Id: 3.3.3.3, Rt: 3.3.3.3, Seq: 8000004e, Age: 6, Sum: 1af2
+1782328260292|2026-06-24 19:10:59.627 <TRACE> ospf1:     LSA      Type: 0003, Id: 10.0.35.0, Rt: 3.3.3.3, Seq: 8000000f, Age: 1282, Sum: 903b
+1782328260295|2026-06-24 19:10:59.627 <TRACE> ospf1:     LSA      Type: 0005, Id: 0.0.0.0, Rt: 2.2.2.2, Seq: 8000000e, Age: 1301, Sum: f0c2
+1782328260297|2026-06-24 19:10:59.627 <TRACE> ospf1:     LSA      Type: 0001, Id: 2.2.2.2, Rt: 2.2.2.2, Seq: 80000010, Age: 1343, Sum: 688c
+1782328260299|2026-06-24 19:10:59.627 <TRACE> ospf1:     LSA      Type: 0005, Id: 0.0.0.0, Rt: 1.1.1.1, Seq: 8000000e, Age: 1303, Sum: 0fa8
+1782328260301|2026-06-24 19:10:59.627 <TRACE> ospf1:     LSA      Type: 0001, Id: 1.1.1.1, Rt: 1.1.1.1, Seq: 80000010, Age: 1278, Sum: 69bb
+1782328260304|2026-06-24 19:10:59.627 <TRACE> ospf1:     LSA      Type: 0001, Id: 4.4.4.4, Rt: 4.4.4.4, Seq: 80000034, Age: 80, Sum: 2d77
+1782328260306|2026-06-24 19:10:59.627 <TRACE> ospf1:     LSA      Type: 0003, Id: 10.0.47.0, Rt: 4.4.4.4, Seq: 8000000f, Age: 1281, Sum: edcd
+1782328260309|2026-06-24 19:10:59.627 <TRACE> ospf1:     LSA      Type: 0002, Id: 10.0.13.3, Rt: 3.3.3.3, Seq: 8000000e, Age: 1282, Sum: b125
+1782328260312|2026-06-24 19:10:59.627 <TRACE> ospf1:     LSA      Type: 0002, Id: 10.0.24.3, Rt: 4.4.4.4, Seq: 8000000e, Age: 1281, Sum: 6e51
+1782328260314|2026-06-24 19:10:59.627 <TRACE> ospf1:     LSA      Type: 0002, Id: 10.0.12.3, Rt: 2.2.2.2, Seq: 8000000e, Age: 1281, Sum: b827
+1782328260316|2026-06-24 19:10:59.627 <TRACE> ospf1:     LSA      Type: 0003, Id: 10.0.78.255, Rt: 4.4.4.4, Seq: 8000000e, Age: 1281, Sum: fd95
+1782328260319|2026-06-24 19:10:59.627 <TRACE> ospf1:     LSA      Type: 0003, Id: 10.0.82.255, Rt: 4.4.4.4, Seq: 8000000e, Age: 1281, Sum: 364f
+1782328260321|2026-06-24 19:10:59.627 <TRACE> ospf1:     LSA      Type: 0002, Id: 10.0.14.3, Rt: 4.4.4.4, Seq: 8000000e, Age: 1279, Sum: aa23
+1782328260324|2026-06-24 19:10:59.627 <TRACE> ospf1:     LSA      Type: 0003, Id: 10.0.61.0, Rt: 3.3.3.3, Seq: 8000000e, Age: 1279, Sum: 3c62
+1782328260327|2026-06-24 19:10:59.627 <TRACE> ospf1:     LSA      Type: 0003, Id: 10.0.56.255, Rt: 3.3.3.3, Seq: 8000000e, Age: 1279, Sum: 0f9e
+1782328260330|2026-06-24 19:10:59.627 <TRACE> ospf1:     LSA      Type: 0002, Id: 10.0.23.2, Rt: 2.2.2.2, Seq: 80000003, Age: 1343, Sum: c315
+1782328260333|2026-06-24 19:10:59.627 <TRACE> ospf1:     LSA      Type: 0002, Id: 10.0.34.3, Rt: 4.4.4.4, Seq: 8000001f, Age: 80, Sum: 1090
+1782328260335|2026-06-24 19:10:59.627 <TRACE> ospf1: DBDES packet received from nbr 4.4.4.4 on eth0
+1782328260338|2026-06-24 19:10:59.627 <TRACE> ospf1:     length   392
+1782328260341|2026-06-24 19:10:59.627 <TRACE> ospf1:     router   4.4.4.4
+1782328260344|2026-06-24 19:10:59.627 <TRACE> ospf1:     mtu      1500
+1782328260348|2026-06-24 19:10:59.627 <TRACE> ospf1:     imms     MS
+1782328260350|2026-06-24 19:10:59.627 <TRACE> ospf1:     ddseq    2722512187
+1782328260353|2026-06-24 19:10:59.627 <TRACE> ospf1:     LSA      Type: 0001, Id: 4.4.4.4, Rt: 4.4.4.4, Seq: 80000034, Age: 79, Sum: 2d77
+1782328260357|2026-06-24 19:10:59.627 <TRACE> ospf1:     LSA      Type: 0003, Id: 10.0.47.0, Rt: 4.4.4.4, Seq: 8000000f, Age: 1279, Sum: edcd
+1782328260360|2026-06-24 19:10:59.627 <TRACE> ospf1:     LSA      Type: 0005, Id: 0.0.0.0, Rt: 2.2.2.2, Seq: 8000000e, Age: 1300, Sum: f0c2
+1782328260363|2026-06-24 19:10:59.627 <TRACE> ospf1:     LSA      Type: 0001, Id: 2.2.2.2, Rt: 2.2.2.2, Seq: 80000010, Age: 1343, Sum: 688c
+1782328260366|2026-06-24 19:10:59.627 <TRACE> ospf1:     LSA      Type: 0005, Id: 0.0.0.0, Rt: 1.1.1.1, Seq: 8000000e, Age: 1303, Sum: 0fa8
+1782328260369|2026-06-24 19:10:59.627 <TRACE> ospf1:     LSA      Type: 0001, Id: 1.1.1.1, Rt: 1.1.1.1, Seq: 80000010, Age: 1279, Sum: 69bb
+1782328260372|2026-06-24 19:10:59.627 <TRACE> ospf1:     LSA      Type: 0001, Id: 3.3.3.3, Rt: 3.3.3.3, Seq: 8000004e, Age: 9, Sum: 1af2
+1782328260375|2026-06-24 19:10:59.627 <TRACE> ospf1:     LSA      Type: 0003, Id: 10.0.35.0, Rt: 3.3.3.3, Seq: 8000000f, Age: 1283, Sum: 903b
+1782328260378|2026-06-24 19:10:59.627 <TRACE> ospf1:     LSA      Type: 0002, Id: 10.0.24.3, Rt: 4.4.4.4, Seq: 8000000e, Age: 1279, Sum: 6e51
+1782328260381|2026-06-24 19:10:59.627 <TRACE> ospf1:     LSA      Type: 0002, Id: 10.0.34.3, Rt: 4.4.4.4, Seq: 8000001f, Age: 79, Sum: 1090
+1782328260385|2026-06-24 19:10:59.627 <TRACE> ospf1:     LSA      Type: 0002, Id: 10.0.12.3, Rt: 2.2.2.2, Seq: 8000000e, Age: 1281, Sum: b827
+1782328260387|2026-06-24 19:10:59.627 <TRACE> ospf1:     LSA      Type: 0002, Id: 10.0.13.3, Rt: 3.3.3.3, Seq: 8000000e, Age: 1283, Sum: b125
+1782328260390|2026-06-24 19:10:59.627 <TRACE> ospf1:     LSA      Type: 0003, Id: 10.0.78.255, Rt: 4.4.4.4, Seq: 8000000e, Age: 1279, Sum: fd95
+1782328260393|2026-06-24 19:10:59.627 <TRACE> ospf1:     LSA      Type: 0003, Id: 10.0.82.255, Rt: 4.4.4.4, Seq: 8000000e, Age: 1279, Sum: 364f
+1782328260395|2026-06-24 19:10:59.627 <TRACE> ospf1:     LSA      Type: 0002, Id: 10.0.14.3, Rt: 4.4.4.4, Seq: 8000000e, Age: 1278, Sum: aa23
+1782328260397|2026-06-24 19:10:59.627 <TRACE> ospf1:     LSA      Type: 0003, Id: 10.0.61.0, Rt: 3.3.3.3, Seq: 8000000e, Age: 1280, Sum: 3c62
+1782328260399|2026-06-24 19:10:59.627 <TRACE> ospf1:     LSA      Type: 0003, Id: 10.0.56.255, Rt: 3.3.3.3, Seq: 8000000e, Age: 1280, Sum: 0f9e
+1782328260401|2026-06-24 19:10:59.627 <TRACE> ospf1:     LSA      Type: 0002, Id: 10.0.23.2, Rt: 2.2.2.2, Seq: 80000003, Age: 1343, Sum: c315
+1782328260402|2026-06-24 19:10:59.627 <TRACE> ospf1: DBDES packet sent to nbr 4.4.4.4 on eth0
+1782328260403|2026-06-24 19:10:59.627 <TRACE> ospf1:     length   32
+1782328260405|2026-06-24 19:10:59.627 <TRACE> ospf1:     router   3.3.3.3
+1782328260408|2026-06-24 19:10:59.627 <TRACE> ospf1:     mtu      1500
+1782328260411|2026-06-24 19:10:59.627 <TRACE> ospf1:     imms
+1782328260413|2026-06-24 19:10:59.627 <TRACE> ospf1:     ddseq    2722512187
+1782328260415|2026-06-24 19:10:59.627 <TRACE> ospf1: Neighbor 4.4.4.4 on eth0 changed state from Exchange to Full
+1782328260416|2026-06-24 19:10:59.658 <TRACE> ospf1: HELLO packet received from nbr 5.5.5.5 on eth1
+1782328260418|2026-06-24 19:10:59.992 <TRACE> ospf1: HELLO packet sent via eth3
+1782328260420|2026-06-24 19:11:00.161 <TRACE> ospf1: Updating router state for area 0.0.0.0
+1782328260422|2026-06-24 19:11:00.161 <TRACE> ospf1: Originating LSA: Type: 2001, Id: 3.3.3.3, Rt: 3.3.3.3, Seq: 8000004f
+1782328260424|2026-06-24 19:11:00.161 <TRACE> ospf1: Scheduling routing table calculation
+1782328260425|2026-06-24 19:11:00.161 <TRACE> ospf1: Starting routing table calculation
+1782328260427|2026-06-24 19:11:00.161 <TRACE> ospf1: Starting routing table calculation for area 0.0.0.0
+1782328260430|2026-06-24 19:11:00.161 <TRACE> ospf1: Starting routing table calculation for area 0.0.0.10
+1782328260432|2026-06-24 19:11:00.161 <TRACE> ospf1: Starting routing table calculation for inter-area (area 0.0.0.0)
+1782328260435|2026-06-24 19:11:00.161 <TRACE> ospf1: Starting routing table calculation for ext routes
+1782328260437|2026-06-24 19:11:00.161 <TRACE> ospf1: Starting routing table synchronization
+1782328260440|2026-06-24 19:11:00.161 <TRACE> ospf1.ipv4 > added [best] 10.0.24.0/24 unicast
+1782328260442|2026-06-24 19:11:00.161 <TRACE> ospf1.ipv4 < rejected by protocol 10.0.24.0/24 unicast
+1782328260445|2026-06-24 19:11:00.161 <TRACE> ospf1.ipv4 > added [best] 10.0.78.0/24 unicast
+1782328260447|2026-06-24 19:11:00.161 <TRACE> ospf1.ipv4 < rejected by protocol 10.0.78.0/24 unicast
+1782328260449|2026-06-24 19:11:00.161 <TRACE> ospf1.ipv4 > added [best] 10.0.47.0/24 unicast
+1782328260452|2026-06-24 19:11:00.161 <TRACE> ospf1.ipv4 < rejected by protocol 10.0.47.0/24 unicast
+1782328260454|2026-06-24 19:11:00.161 <TRACE> ospf1.ipv4 > added [best] 10.0.14.0/24 unicast
+1782328260457|2026-06-24 19:11:00.161 <TRACE> ospf1.ipv4 < rejected by protocol 10.0.14.0/24 unicast
+1782328260460|2026-06-24 19:11:00.161 <TRACE> ospf1.ipv4 > added [best] 10.0.82.0/24 unicast
+1782328260463|2026-06-24 19:11:00.161 <TRACE> ospf1.ipv4 < rejected by protocol 10.0.82.0/24 unicast
+1782328260466|2026-06-24 19:11:00.161 <TRACE> ospf1.ipv4 > added 10.0.34.0/24 unicast
+1782328260469|2026-06-24 19:11:00.164 <TRACE> ospf1: LSUPD packet flooded via eth2
+1782328260471|2026-06-24 19:11:00.164 <TRACE> ospf1:     length   88
+1782328260473|2026-06-24 19:11:00.164 <TRACE> ospf1:     router   3.3.3.3
+1782328260475|2026-06-24 19:11:00.164 <TRACE> ospf1:     LSA      Type: 0001, Id: 3.3.3.3, Rt: 3.3.3.3, Seq: 8000004f, Age: 1, Sum: c8cc
+1782328260478|2026-06-24 19:11:00.164 <TRACE> ospf1: LSUPD packet flooded via eth3
+1782328260480|2026-06-24 19:11:00.164 <TRACE> ospf1:     length   88
+1782328260482|2026-06-24 19:11:00.164 <TRACE> ospf1:     router   3.3.3.3
+1782328260484|2026-06-24 19:11:00.164 <TRACE> ospf1:     LSA      Type: 0001, Id: 3.3.3.3, Rt: 3.3.3.3, Seq: 8000004f, Age: 1, Sum: c8cc
+1782328260486|2026-06-24 19:11:00.164 <TRACE> ospf1: LSUPD packet flooded via eth0
+1782328260488|2026-06-24 19:11:00.164 <TRACE> ospf1:     length   88
+1782328260490|2026-06-24 19:11:00.164 <TRACE> ospf1:     router   3.3.3.3
+1782328260492|2026-06-24 19:11:00.164 <TRACE> ospf1:     LSA      Type: 0001, Id: 3.3.3.3, Rt: 3.3.3.3, Seq: 8000004f, Age: 1, Sum: c8cc
+1782328262186|2026-06-24 19:11:02.017 <TRACE> ospf1: LSACK packet received from nbr 1.1.1.1 on eth2
+1782328262190|2026-06-24 19:11:02.017 <TRACE> ospf1:     length   44
+1782328262195|2026-06-24 19:11:02.017 <TRACE> ospf1:     router   1.1.1.1
+1782328262198|2026-06-24 19:11:02.017 <TRACE> ospf1:     LSA      Type: 0001, Id: 3.3.3.3, Rt: 3.3.3.3, Seq: 8000004f, Age: 1, Sum: c8cc
+1782328262201|2026-06-24 19:11:02.055 <TRACE> ospf1: LSACK packet received from nbr 2.2.2.2 on eth3
+1782328262203|2026-06-24 19:11:02.055 <TRACE> ospf1:     length   44
+1782328262205|2026-06-24 19:11:02.055 <TRACE> ospf1:     router   2.2.2.2
+1782328262207|2026-06-24 19:11:02.055 <TRACE> ospf1:     LSA      Type: 0001, Id: 3.3.3.3, Rt: 3.3.3.3, Seq: 8000004f, Age: 1, Sum: c8cc
+1782328262209|2026-06-24 19:11:02.128 <TRACE> ospf1: LSACK packet received from nbr 4.4.4.4 on eth0
+1782328262211|2026-06-24 19:11:02.128 <TRACE> ospf1:     length   44
+1782328262213|2026-06-24 19:11:02.128 <TRACE> ospf1:     router   4.4.4.4
+1782328262214|2026-06-24 19:11:02.128 <TRACE> ospf1:     LSA      Type: 0001, Id: 3.3.3.3, Rt: 3.3.3.3, Seq: 8000004f, Age: 1, Sum: c8cc
+1782328265186|2026-06-24 19:11:04.361 <TRACE> ospf1: HELLO packet sent via eth0
+1782328265188|2026-06-24 19:11:04.514 <TRACE> ospf1: HELLO packet received from nbr 1.1.1.1 on eth2
+1782328895283|2026-06-24 19:21:35.177 <INFO> Reconfiguring
+1782328895285|2026-06-24 19:21:35.177 <INFO> Reconfigured

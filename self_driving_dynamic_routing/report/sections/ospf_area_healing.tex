@@ -1,0 +1,152 @@
+\section{OSPF Area Healing Across ABRs}
+
+\subsection{Objective}
+
+The objective of this experiment was to validate OSPF area healing across ABRs.
+
+The experiment tested whether traffic between two different OSPF areas could recover when the direct ABR-to-ABR/core link failed.
+
+The traffic tested was:
+
+\begin{verbatim}
+hpe-h1 -> hpe-h2
+10.0.61.2 -> 10.0.82.2
+\end{verbatim}
+
+In the topology, \texttt{hpe-h1} is behind Area 10, and \texttt{hpe-h2} is behind Area 20. Router \texttt{hpe-r3} acts as the ABR between Area 10 and Area 0, while \texttt{hpe-r4} acts as the ABR between Area 20 and Area 0.
+
+\subsection{Link Failed}
+
+The failed link was the direct core/ABR link between \texttt{hpe-r3} and \texttt{hpe-r4}.
+
+The failed interface was:
+
+\begin{verbatim}
+hpe-r3 eth0
+\end{verbatim}
+
+Before the failure, \texttt{hpe-r3} reached the Area 20 host network through \texttt{hpe-r4}.
+
+\begin{verbatim}
+10.0.82.0/24
+via 10.0.34.3 on eth0
+\end{verbatim}
+
+The old direct next-hop was:
+
+\begin{verbatim}
+10.0.34.3
+\end{verbatim}
+
+\subsection{Baseline Route Before Failure}
+
+Before the failure, the route from \texttt{hpe-r3} toward \texttt{10.0.82.0/24} was:
+
+\begin{verbatim}
+10.0.82.0/24 unicast [ospf1] IA
+via 10.0.34.3 on eth0
+\end{verbatim}
+
+The Linux kernel forwarding decision also used the same next-hop:
+
+\begin{verbatim}
+10.0.82.2 via 10.0.34.3 dev eth0
+\end{verbatim}
+
+This proves that before failure, Area 10 to Area 20 traffic used the direct \texttt{hpe-r3 -> hpe-r4} path.
+
+\subsection{Healing Behaviour After Failure}
+
+After \texttt{hpe-r3 eth0} was brought down, OSPF recalculated an alternate path.
+
+The route-get sampler first showed the new forwarding path as:
+
+\begin{verbatim}
+10.0.82.2 via 10.0.23.2 dev eth3
+\end{verbatim}
+
+The Linux kernel route later showed two alternate next-hops:
+
+\begin{verbatim}
+10.0.82.0/24 proto bird metric 32
+nexthop via 10.0.13.2 dev eth2 weight 1
+nexthop via 10.0.23.2 dev eth3 weight 1
+\end{verbatim}
+
+The BIRD route table also showed the healed route:
+
+\begin{verbatim}
+10.0.82.0/24 unicast [ospf1] IA
+via 10.0.13.2 on eth2 weight 1
+via 10.0.23.2 on eth3 weight 1
+\end{verbatim}
+
+This proves that after the direct ABR link failed, traffic healed through alternate backbone paths via \texttt{hpe-r1} and \texttt{hpe-r2}.
+
+\subsection{Measurement Results}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|l|r|}
+\hline
+\textbf{Measurement} & \textbf{Result} \\
+\hline
+Route-get switch time & 80 ms \\
+\hline
+Kernel route switch time & 931 ms \\
+\hline
+BIRD route switch time & 962 ms \\
+\hline
+Ping packets transmitted & 150 \\
+\hline
+Ping packets received & 136 \\
+\hline
+Ping packets lost & 14 \\
+\hline
+Packet loss & 9.33333\% \\
+\hline
+\end{tabular}
+\caption{OSPF area healing measurements}
+\end{table}
+
+The missing ICMP sequence numbers were:
+
+\begin{verbatim}
+11 12 13 14 15 16 17 18 19 20 21 22 23 24
+\end{verbatim}
+
+The ping interval used during the test was 0.1 seconds. This means the 14 lost packets represent a short disruption window of around 1.4 seconds during OSPF area healing.
+
+\subsection{Final Restored Health}
+
+After the failed link was restored, connectivity was checked again.
+
+\begin{verbatim}
+5 packets transmitted
+5 received
+0\% packet loss
+\end{verbatim}
+
+This confirms that the network returned to a healthy state after the link was restored.
+
+\subsection{Interpretation}
+
+The experiment shows three important things.
+
+First, the direct ABR path between \texttt{hpe-r3} and \texttt{hpe-r4} was being used before the failure.
+
+Second, when that direct link failed, OSPF did not leave Area 10 to Area 20 traffic broken. It recalculated alternate Area 0 backbone paths through \texttt{hpe-r1} and \texttt{hpe-r2}.
+
+Third, after the link was restored, normal connectivity returned with 0\% packet loss.
+
+The route-get result changed quickly, within 80 ms. The full kernel and BIRD route-table convergence took around 1 second. During this convergence window, 14 out of 150 high-frequency ping packets were lost.
+
+\subsection{Conclusion}
+
+The OSPF area healing experiment successfully demonstrated inter-area recovery across ABRs.
+
+Before failure, traffic from Area 10 toward Area 20 used the direct path from \texttt{hpe-r3} to \texttt{hpe-r4} through next-hop \texttt{10.0.34.3}. After the \texttt{hpe-r3 eth0} link failed, OSPF recalculated the path and installed alternate next-hops through \texttt{10.0.13.2} and \texttt{10.0.23.2}.
+
+The route-get sampler detected a forwarding change in 80 ms, while the full kernel and BIRD route-table updates completed in around 1 second. During the transition, 14 packets were lost in a high-frequency ping test, but after restoration the final health check showed 0\% packet loss.
+
+This confirms that OSPF area healing worked correctly across ABRs in the lab topology.

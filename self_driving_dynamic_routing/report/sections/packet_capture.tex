@@ -1,0 +1,58 @@
+
+\section{Packet Capture Validation}
+
+\subsection{Purpose}
+
+This experiment validates the routing-control behaviour using packet capture. Earlier experiments measured convergence using BIRD state, Linux route-table changes, CSV logs, and ping results. Packet capture adds protocol-level evidence by showing that BFD and BGP packets were actually observed during the experiments.
+
+\subsection{Captured Protocols}
+
+\begin{table}[H]
+\centering
+\small
+\renewcommand{\arraystretch}{1.25}
+\begin{tabular}{|p{4cm}|p{4cm}|p{5cm}|}
+\hline
+\textbf{Capture} & \textbf{Filter} & \textbf{Purpose} \\
+\hline
+Multi-hop BFD & \texttt{udp port 4784 or udp port 3784} & To verify that BFD control packets were exchanged. \\
+\hline
+BGP peer flap & \texttt{tcp port 179} & To verify BGP control-plane traffic during peer disable and re-enable. \\
+\hline
+\end{tabular}
+\caption{Packet capture filters used}
+\end{table}
+
+\subsection{Measurement Result}
+
+\begin{table}[H]
+\centering
+\small
+\renewcommand{\arraystretch}{1.25}
+\begin{tabular}{|p{5cm}|p{7cm}|}
+\hline
+\textbf{Measurement} & \textbf{Result} \\
+\hline
+BFD pcap file & \path{evidence/packet_capture/multihop_bfd_20260624_013648.pcap} \\
+\hline
+BGP pcap file & \path{evidence/packet_capture/bgp_peer_flap_20260624_013648.pcap} \\
+\hline
+BFD packet count & 347 \\
+\hline
+BGP packet count & 36 \\
+\hline
+BFD summary file & \path{evidence/packet_capture/multihop_bfd_summary_20260624_013648.txt} \\
+\hline
+BGP summary file & \path{evidence/packet_capture/bgp_peer_flap_summary_20260624_013648.txt} \\
+\hline
+\end{tabular}
+\caption{Packet capture result summary}
+\end{table}
+
+\subsection{Observation}
+
+The BFD capture recorded 347 packets, confirming that BFD control traffic was present. The BGP capture recorded 36 packets during the peer flap, confirming that BGP control-plane traffic over TCP port 179 was observed when the BGP peer was disabled and re-enabled.
+
+\subsection{Conclusion}
+
+This experiment confirms that packet-level evidence was collected for the routing mechanisms. The generated pcap files can be opened in Wireshark or inspected using tcpdump/tshark for deeper protocol-level analysis.

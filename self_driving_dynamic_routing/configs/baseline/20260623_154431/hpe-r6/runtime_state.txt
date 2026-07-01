@@ -1,0 +1,37 @@
+### hostname
+1ec6540a1034
+
+### ip addr
+lo               UNKNOWN        127.0.0.1/8 ::1/128 
+eth0@if118       UP             10.0.61.3/24 
+eth1@if119       UP             10.0.56.3/24 
+
+### ip route
+default via 10.0.56.2 dev eth1 proto bird metric 32 
+10.0.35.0/24 via 10.0.56.2 dev eth1 proto bird metric 32 
+10.0.56.0/24 dev eth1 proto kernel scope link src 10.0.56.3 
+10.0.56.0/24 dev eth1 proto bird scope link metric 32 
+10.0.61.0/24 dev eth0 proto kernel scope link src 10.0.61.3 
+10.0.61.0/24 dev eth0 proto bird scope link metric 32 
+
+### bird protocols
+BIRD 2.0.8 ready.
+Name       Proto      Table      State  Since         Info
+device1    Device     ---        up     08:45:01.940  
+direct1    Direct     ---        up     08:45:01.940  
+kernel1    Kernel     master4    up     08:45:01.940  
+ospf1      OSPF       master4    up     09:18:25.895  Running
+
+### bird routes
+BIRD 2.0.8 ready.
+Table master4:
+0.0.0.0/0            unicast [ospf1 09:18:46.996] * IA (150/1020) [3.3.3.3]
+	via 10.0.56.2 on eth1
+10.0.61.0/24         unicast [direct1 08:45:01.941] * (240)
+	dev eth0
+10.0.56.0/24         unicast [direct1 08:45:01.941] * (240)
+	dev eth1
+                     unicast [ospf1 09:18:25.995] I (150/10) [6.6.6.6]
+	dev eth1
+10.0.35.0/24         unicast [ospf1 09:18:46.996] * I (150/20) [5.5.5.5]
+	via 10.0.56.2 on eth1

@@ -1,0 +1,2 @@
+timestamp,test_name,target_prefix,gr_time_s,llgr_stale_time_s,first_stale_marker_ms,last_route_present_ms,first_route_missing_ms,ping_tx,ping_rx,ping_loss_percent
+20260626_092201,llgr_perfect_proof,10.0.93.0/24,5,10,5112,22320,15177,272,238,12.5

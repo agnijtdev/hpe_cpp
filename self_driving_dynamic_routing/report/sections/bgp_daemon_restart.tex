@@ -1,0 +1,64 @@
+\section{BGP Full Daemon Restart Experiment}
+
+\subsection{Purpose}
+
+The earlier BGP Graceful Restart experiment tested a BGP protocol/control-plane restart. In this additional experiment, the full BIRD daemon on \texttt{hpe-r9} was restarted to observe whether forwarding would remain fully preserved during a stronger control-plane disruption.
+
+\subsection{Experiment Setup}
+
+The restarted router was \texttt{hpe-r9}, which acts as the ISP/upstream router. Traffic was continuously sent from \texttt{hpe-h1} to \texttt{hpe-h3}.
+
+\begin{verbatim}
+hpe-h1 -> hpe-h3
+10.0.61.2 -> 10.0.93.2
+\end{verbatim}
+
+To reduce the chance of BFD immediately tearing down the BGP session, BGP-BFD was temporarily disabled for this controlled test. Graceful Restart and Long-Lived Graceful Restart remained enabled.
+
+A kernel \texttt{persist;} statement was also added on \texttt{hpe-r9} before the test so that kernel forwarding routes would be less likely to be removed during daemon restart.
+
+\subsection{Measured Result}
+
+\begin{table}[H]
+\centering
+\small
+\renewcommand{\arraystretch}{1.25}
+\begin{tabular}{|p{6cm}|p{5cm}|}
+\hline
+\textbf{Measurement} & \textbf{Result} \\
+\hline
+Restarted router & \texttt{hpe-r9} \\
+\hline
+Restart type & Full BIRD daemon crash/restart \\
+\hline
+BGP-BFD state during test & Temporarily disabled \\
+\hline
+BIRD control socket ready time & 84 ms \\
+\hline
+BGP re-establishment time & 4539 ms \\
+\hline
+Ping packets transmitted & 170 \\
+\hline
+Ping packets received & 97 \\
+\hline
+Packet loss & 42.9412\% \\
+\hline
+Forward route missing samples & 0 \\
+\hline
+Return route missing samples & 0 \\
+\hline
+Forwarding fully preserved & No \\
+\hline
+\end{tabular}
+\caption{BGP full daemon restart measurement result}
+\end{table}
+
+\subsection{Observation}
+
+The full BIRD daemon restart caused visible packet loss even though route-monitor samples did not show missing forward or return routes. This indicates that a full daemon restart is more disruptive than a BGP protocol restart.
+
+The earlier BGP protocol/control-plane restart test preserved forwarding with 0\% packet loss. However, restarting the complete BIRD daemon affected more components, including protocol state, kernel synchronization, control socket availability, and route export behaviour.
+
+\subsection{Conclusion}
+
+This experiment shows an important limitation. Graceful Restart and LLGR were effective for BGP protocol/control-plane restart, but full BIRD daemon restart did not fully preserve end-to-end forwarding in this lab. This means production networks must carefully coordinate GR, LLGR, BFD, and forwarding-plane route persistence during planned daemon maintenance.

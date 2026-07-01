@@ -1,0 +1,2 @@
+timestamp,test_name,t0_ms,bfd_detect_ms,bgp_non_established_ms,bgp_reestablished_ms,bird_route_changed_ms,bird_route_missing_ms,route_get_changed_ms,route_get_missing_ms,kernel_event_ms,first_loss_ms,traffic_recovery_ms,traffic_outage_ms,traffic_tool,traffic_tx,traffic_rx,traffic_lost,traffic_loss_percent,bfd_packet_lines,bgp_packet_lines,bird_event_lines_after_t0,old_next_hop
+20260625_005312,bfd_wan_edge_failure_gold_timeline,1782329008232,93,95,NA,99,NA,97,NA,8,3,29,26,ping_D,761,760,1,0.131406,190,23,174,10.0.29.3

@@ -1,0 +1,24 @@
+OSPF NSSA ROUTE VISIBILITY - 172.16.66.0/24
+============================================================
+
+----- hpe-r6 -----
+Network not found
+
+----- hpe-r5 -----
+Network not found
+
+----- hpe-r3 -----
+Network not found
+
+----- hpe-r1 -----
+Network not found
+
+----- hpe-r2 -----
+Network not found
+
+----- hpe-r4 -----
+Network not found
+
+----- hpe-r8 -----
+Network not found
+

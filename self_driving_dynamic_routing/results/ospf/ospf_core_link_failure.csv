@@ -1,0 +1,2 @@
+timestamp,test_name,old_next_hop,new_next_hop,kernel_monitor_ms,route_get_sample_ms,bird_route_sample_ms,ping_tx_estimated,ping_rx,failed_or_lost_packets,ping_loss_percent,explicit_unreachable_packets,note
+20260623_151142,ospf_r3_r2_core_link_failure,10.0.23.2,10.0.13.2,628,631,648,350,338,12,3.43,1,ping loss estimated from ICMP sequence numbers because normal ping summary was unavailable

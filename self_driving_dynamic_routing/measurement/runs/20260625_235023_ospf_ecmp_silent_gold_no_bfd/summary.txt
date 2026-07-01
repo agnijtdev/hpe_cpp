@@ -1,0 +1,45 @@
+============================================================
+GOLD OSPF ECMP SILENT FAILURE SUMMARY
+============================================================
+Run directory: measurement/runs/20260625_235023_ospf_ecmp_silent_gold_no_bfd
+Timestamp: 20260625_235023
+Mode: no_bfd
+
+T0 silent failure trigger: 1782411641239
+Failed next-hop: 10.0.34.3
+Survivor next-hop: 10.0.23.2
+BFD session present before failure: no
+
+Timeline relative to T0:
+- BFD state down/missing observed: 96 ms
+- Kernel route event observed: 17317 ms
+- ip route get switched to survivor: 17249 ms
+- BIRD route became survivor-only: 17254 ms
+- route-get final state: failed_nh
+- First estimated packet loss: 112 ms
+- Traffic recovery after loss: 17331 ms
+- Estimated traffic outage duration: 17219 ms
+
+Traffic:
+- Ping transmitted: 1515
+- Ping received: 709
+- Packet loss percent: 53.2013%
+- Missing ping sequence sample: [97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126]
+
+Packet capture:
+- OSPF packet evidence lines: 0
+- BFD packet evidence lines: 0
+
+BIRD event/debug log:
+- BIRD event lines after T0: 291
+- First BIRD event after T0: 1782411641335|2026-06-25 18:20:40.885 <TRACE> ospf1: HELLO packet received from nbr 1.1.1.1 on eth0
+
+Important evidence lines:
+- BFD line: 1782411641335|state=Missing|
+- Kernel event line: 1782411658556|10.0.24.0/24 via 10.0.23.2 dev eth1 proto bird metric 32
+- route-get switch line: 1782411658488|state=survivor_nh|10.0.24.2 via 10.0.23.2 dev eth1 src 10.0.23.3 uid 0 cache 
+- BIRD survivor-only line: 1782411658493|state=survivor_only|BIRD 2.0.8 ready. Table master4: 10.0.24.0/24 unicast [ospf1 18:20:58.551] * I (150/20) [4.4.4.4] via 10.0.23.2 on eth1 Type: OSPF univ OSPF.metric1: 20 OSPF.router_id: 4.4.4.4 
+
+CSV saved to: measurement/runs/20260625_235023_ospf_ecmp_silent_gold_no_bfd/parsed_timeline.csv
+Global CSV updated at: measurement/summaries/ospf_ecmp_silent_gold_summary.csv
+============================================================

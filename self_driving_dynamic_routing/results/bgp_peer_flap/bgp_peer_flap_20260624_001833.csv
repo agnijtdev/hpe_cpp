@@ -1,0 +1,2 @@
+timestamp,test_name,flapped_router,flapped_peer,target,route_to_alternate_ms,bgp_reestablished_ms,route_to_direct_ms,ping_tx,ping_rx,ping_loss
+20260624_001833,bgp_peer_flap,hpe-r1,r9,10.0.93.2,93,1596,1754,162,162,0%

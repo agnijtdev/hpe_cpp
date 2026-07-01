@@ -1,0 +1,26 @@
+====================================================================================================
+OSPF ECMP RE-HASH TO SURVIVING NEXT-HOP
+====================================================================================================
+Router under test: hpe-r3
+Target prefix: 10.0.24.0/24
+Failed ECMP next-hop: 10.0.34.3
+Surviving next-hop: 10.0.23.2
+Failure: hpe-r3 eth3 down
+
+Before failure ECMP distribution:
+Flows mapped to failed next-hop 10.0.34.3      : 17
+Flows mapped to survivor next-hop 10.0.23.2    : 23
+Other/NA flows                              : 0
+
+After failure ECMP distribution:
+Flows still mapped to failed next-hop 10.0.34.3 : 0
+Flows mapped to survivor next-hop 10.0.23.2    : 40
+Other/NA flows                              : 0
+
+Re-hash analysis:
+Flows remapped from failed next-hop to survivor : 17
+Flows that stayed on survivor                   : 23
+Flows still on failed next-hop after failure    : 0
+
+Conclusion: ECMP re-hash to the surviving next-hop was successfully observed.
+====================================================================================================

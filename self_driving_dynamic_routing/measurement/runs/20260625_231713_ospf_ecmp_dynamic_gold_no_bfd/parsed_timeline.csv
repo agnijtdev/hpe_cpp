@@ -1,0 +1,2 @@
+timestamp,test_name,mode,t0_ms,bfd_present,bfd_detect_ms,kernel_event_ms,route_get_switch_ms,bird_route_survivor_only_ms,route_get_missing_ms,first_loss_ms,traffic_recovery_ms,traffic_outage_ms,traffic_tx,traffic_rx,traffic_lost,traffic_loss_percent,ospf_packet_lines,bfd_packet_lines,bird_event_lines_after_t0,failed_next_hop,survivor_next_hop
+20260625_231713,ospf_ecmp_dynamic_gold_no_bfd,no_bfd,1782409652668,no,60,645,63,611,NA,NA,NA,NA,1412,1412,0,0,0,0,217,10.0.34.3,10.0.23.2

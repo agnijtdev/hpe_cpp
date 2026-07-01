@@ -1,0 +1,73 @@
+\section{Lab Topology}
+
+\subsection{Objective}
+
+The lab topology was designed to emulate a small enterprise network using the BIRD routing stack. The topology includes an OSPF campus core, non-backbone OSPF areas, WAN edge routers, an upstream ISP router, internal hosts, eBGP, iBGP, BFD, and BGP Graceful Restart mechanisms.
+
+The purpose of this topology is to provide a realistic environment for testing self-healing routing behaviour under link failures, control-plane restarts, and routing convergence events.
+
+\subsection{Topology Overview}
+
+The topology contains nine routers and three end hosts. Routers hpe-r1, hpe-r2, hpe-r3, and hpe-r4 form the enterprise OSPF Area 0 core. Routers hpe-r3 and hpe-r4 act as Area Border Routers. Router hpe-r3 connects the core to the NSSA-style Area 10, while router hpe-r4 connects the core to the stub-style Area 20.
+
+The external ISP or upstream network is represented by hpe-r9. The enterprise edge routers hpe-r1 and hpe-r2 connect to hpe-r9 using eBGP. The two enterprise edge routers also exchange routes internally using iBGP.
+
+\subsection{Router Roles}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|l|p{9cm}|}
+\hline
+\textbf{Node} & \textbf{Role} \\
+\hline
+hpe-r1 & Enterprise WAN edge router, OSPF Area 0 router, eBGP peer with hpe-r9, and iBGP peer with hpe-r2. \\
+\hline
+hpe-r2 & Enterprise WAN edge router, OSPF Area 0 router, eBGP peer with hpe-r9, and iBGP peer with hpe-r1. \\
+\hline
+hpe-r3 & Area Border Router between OSPF Area 0 and NSSA Area 10. \\
+\hline
+hpe-r4 & Area Border Router between OSPF Area 0 and Stub Area 20. \\
+\hline
+hpe-r5 & Internal router inside NSSA Area 10. \\
+\hline
+hpe-r6 & NSSA branch gateway router for host hpe-h1. \\
+\hline
+hpe-r7 & Internal router inside Stub Area 20. \\
+\hline
+hpe-r8 & Stub branch gateway router for host hpe-h2. \\
+\hline
+hpe-r9 & External ISP/upstream router in AS65002 and gateway for hpe-h3. \\
+\hline
+\end{tabular}
+\caption{Router roles in the BIRD routing lab}
+\end{table}
+
+\subsection{Host Networks}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Host} & \textbf{IP Address} & \textbf{Gateway Router} \\
+\hline
+hpe-h1 & 10.0.61.2/24 & hpe-r6 \\
+\hline
+hpe-h2 & 10.0.82.2/24 & hpe-r8 \\
+\hline
+hpe-h3 & 10.0.93.2/24 & hpe-r9 \\
+\hline
+\end{tabular}
+\caption{End-host addressing used in the lab}
+\end{table}
+
+\subsection{Routing Design}
+
+OSPF is used as the internal routing protocol. Area 0 represents the campus or headquarters core. Area 10 is used as an NSSA-style branch or guest area, and Area 20 is used as a stub-style branch area. This allows the lab to demonstrate area-based containment and ABR-based healing.
+
+BGP is used for WAN and inter-domain routing. Routers hpe-r1 and hpe-r2 peer with hpe-r9 using eBGP, while hpe-r1 and hpe-r2 also exchange routes internally using iBGP. BGP Graceful Restart and Long-Lived Graceful Restart are configured for later control-plane recovery experiments.
+
+BFD is enabled on WAN-edge BGP sessions to provide fast failure detection. This allows the lab to test sub-second detection and recovery behaviour on edge links.
+
+\subsection{Conclusion}
+
+The topology provides a realistic small-scale enterprise routing environment. It contains an OSPF core, ABRs, NSSA and stub areas, eBGP WAN connectivity, iBGP internal routing, BFD-based fast failure detection, and BGP state-preservation mechanisms. This makes it suitable for testing the self-healing routing mechanisms required by the project.

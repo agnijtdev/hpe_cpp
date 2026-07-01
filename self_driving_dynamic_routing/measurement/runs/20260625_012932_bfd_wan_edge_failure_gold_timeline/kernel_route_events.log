@@ -1,0 +1,10 @@
+1782331188004|default via 10.0.12.2 dev eth2 proto bird metric 32
+1782331188007|10.0.93.0/24 via 10.0.12.2 dev eth2 proto bird metric 32
+1782331188011|100.100.100.0/24 via 10.0.12.2 dev eth2 proto bird metric 32
+1782331188017|10.0.29.0/24 via 10.0.12.2 dev eth2 proto bird metric 32
+1782331196088|broadcast 10.0.29.255 dev eth1 table local proto kernel scope link src 10.0.29.2
+1782331196094|10.0.29.0/24 dev eth1 proto kernel scope link src 10.0.29.2
+1782331196100|10.0.29.0/24 dev eth1 proto bird scope link metric 32
+1782331196104|default via 10.0.29.3 dev eth1 proto bird metric 32
+1782331246109|10.0.93.0/24 via 10.0.29.3 dev eth1 proto bird metric 32
+1782331246111|100.100.100.0/24 via 10.0.29.3 dev eth1 proto bird metric 32

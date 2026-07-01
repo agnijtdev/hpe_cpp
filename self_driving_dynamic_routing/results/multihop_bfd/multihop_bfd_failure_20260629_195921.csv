@@ -1,0 +1,2 @@
+timestamp,test_name,failed_link,r1_peer,r8_peer,r1_bfd_detection_ms,r8_bfd_detection_ms,r1_recovery_ms,r8_recovery_ms,ping_tx,ping_rx,ping_loss,target_under_1s
+20260629_195921,multihop_bfd_failure,hpe-r4-eth3_to_hpe-r7-eth1,10.0.82.3,10.0.14.2,509,569,6743,2,248,78,68.5484%,yes

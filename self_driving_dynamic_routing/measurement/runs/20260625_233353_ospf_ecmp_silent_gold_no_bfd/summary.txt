@@ -1,0 +1,45 @@
+============================================================
+GOLD OSPF ECMP SILENT FAILURE SUMMARY
+============================================================
+Run directory: measurement/runs/20260625_233353_ospf_ecmp_silent_gold_no_bfd
+Timestamp: 20260625_233353
+Mode: no_bfd
+
+T0 silent failure trigger: 1782410651430
+Failed next-hop: 10.0.34.3
+Survivor next-hop: 10.0.23.2
+BFD session present before failure: no
+
+Timeline relative to T0:
+- BFD state down/missing observed: 78 ms
+- Kernel route event observed: 17888 ms
+- ip route get switched to survivor: 17845 ms
+- BIRD route became survivor-only: 17854 ms
+- route-get final state: failed_nh
+- First estimated packet loss: 160 ms
+- Traffic recovery after loss: 17899 ms
+- Estimated traffic outage duration: 17739 ms
+
+Traffic:
+- Ping transmitted: 1521
+- Ping received: 690
+- Packet loss percent: 54.6351%
+- Missing ping sequence sample: [99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128]
+
+Packet capture:
+- OSPF packet evidence lines: 0
+- BFD packet evidence lines: 0
+
+BIRD event/debug log:
+- BIRD event lines after T0: 294
+- First BIRD event after T0: 1782410651520|2026-06-25 18:04:10.884 <TRACE> ospf1: HELLO packet received from nbr 1.1.1.1 on eth0
+
+Important evidence lines:
+- BFD line: 1782410651508|state=Missing|
+- Kernel event line: 1782410669318|10.0.24.0/24 via 10.0.23.2 dev eth1 proto bird metric 32
+- route-get switch line: 1782410669275|state=survivor_nh|10.0.24.2 via 10.0.23.2 dev eth1 src 10.0.23.3 uid 0 cache 
+- BIRD survivor-only line: 1782410669284|state=survivor_only|BIRD 2.0.8 ready. Table master4: 10.0.24.0/24 unicast [ospf1 18:04:29.310] * I (150/20) [4.4.4.4] via 10.0.23.2 on eth1 Type: OSPF univ OSPF.metric1: 20 OSPF.router_id: 4.4.4.4 
+
+CSV saved to: measurement/runs/20260625_233353_ospf_ecmp_silent_gold_no_bfd/parsed_timeline.csv
+Global CSV updated at: measurement/summaries/ospf_ecmp_silent_gold_summary.csv
+============================================================

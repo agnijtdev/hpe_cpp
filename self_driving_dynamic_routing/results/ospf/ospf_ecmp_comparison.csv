@@ -1,0 +1,4 @@
+test,ospf_bfd,ping_interval,kernel_monitor_ms,kernel_route_sample_ms,route_get_sample_ms,bird_route_sample_ms,tx,rx,lost,loss_percent,interpretation
+native_ospf_ecmp_without_bfd,no,0.02s,840,820,94,819,500,420,80,16.00,native OSPF ECMP failover baseline
+ospf_ecmp_with_bfd_stress,yes,0.02s,292,305,49,304,500,463,37,7.40,BFD-assisted ECMP failover under high-rate stress traffic
+ospf_ecmp_with_bfd_normal,yes,1s,517,542,63,540,20,19,1,5.00,BFD-assisted ECMP failover under normal-rate traffic

@@ -1,0 +1,30 @@
+MULTIHOP BFD CURRENT ROUTED PATH AND FAILURE LINK
+============================================================
+
+Route from hpe-r1 to hpe-r8 peer 10.0.82.3:
+10.0.82.3 via 10.0.14.3 dev eth0 src 10.0.14.2 uid 0 
+    cache 
+
+Route from hpe-r4 to hpe-r8 peer 10.0.82.3:
+10.0.82.3 via 10.0.47.3 dev eth3 src 10.0.47.2 uid 0 
+    cache 
+
+Route from hpe-r7 to hpe-r8 peer 10.0.82.3:
+10.0.82.3 via 10.0.78.3 dev eth0 src 10.0.78.2 uid 0 
+    cache 
+
+Route from hpe-r8 to hpe-r1 peer 10.0.14.2:
+10.0.14.2 via 10.0.78.2 dev eth1 src 10.0.78.3 uid 0 
+    cache 
+
+Interface mapping:
+hpe-r4:
+lo               UNKNOWN        127.0.0.1/8 ::1/128 
+eth3@if115       UP             10.0.47.2/24 
+
+hpe-r7:
+lo               UNKNOWN        127.0.0.1/8 ::1/128 
+eth1@if121       UP             10.0.47.3/24 
+
+Corrected failed link:
+hpe-r4 eth3 -> hpe-r7 eth1

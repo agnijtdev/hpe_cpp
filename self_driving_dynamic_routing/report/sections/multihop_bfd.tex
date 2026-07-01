@@ -1,0 +1,83 @@
+\section{Multi-hop BFD Failure Detection}
+
+\subsection{Purpose}
+
+The earlier BFD experiments used directly connected BFD peers. In this experiment, a multi-hop BFD session was configured between \texttt{hpe-r1} and \texttt{hpe-r8}. These routers are not directly connected, so BFD packets travel through the routed OSPF network.
+
+The goal of this experiment was to verify whether BFD can detect failure of a routed multi-hop path within the project target of less than 1 second.
+
+\subsection{Multi-hop BFD Endpoints}
+
+The multi-hop BFD session used the following endpoints:
+
+\begin{table}[H]
+\centering
+\small
+\renewcommand{\arraystretch}{1.25}
+\begin{tabular}{|p{5cm}|p{6cm}|}
+\hline
+\textbf{Router} & \textbf{Multi-hop BFD Peer} \\
+\hline
+\texttt{hpe-r1} & \texttt{10.0.82.3} \\
+\hline
+\texttt{hpe-r8} & \texttt{10.0.14.2} \\
+\hline
+\end{tabular}
+\caption{Multi-hop BFD endpoints}
+\end{table}
+
+Before failure, the BFD session was observed in the \texttt{Up} state on both routers. The interface column showed \texttt{---}, confirming that the session was not tied to a directly connected interface.
+
+\subsection{Failure Scenario}
+
+The routed path between the two BFD endpoints used the branch-side path through \texttt{hpe-r4} and \texttt{hpe-r7}. To trigger a multi-hop reachability failure, the interface \texttt{eth2} on \texttt{hpe-r4} was brought down.
+
+\begin{verbatim}
+docker exec hpe-r4 ip link set eth2 down
+\end{verbatim}
+
+This broke the path:
+
+\begin{verbatim}
+hpe-r1 -> hpe-r4 -> hpe-r7 -> hpe-r8
+\end{verbatim}
+
+\subsection{Measurement Result}
+
+\begin{table}[H]
+\centering
+\small
+\renewcommand{\arraystretch}{1.25}
+\begin{tabular}{|p{6cm}|p{5cm}|}
+\hline
+\textbf{Measurement} & \textbf{Result} \\
+\hline
+Failed link & \texttt{hpe-r4 eth2} to \texttt{hpe-r7 eth1} \\
+\hline
+\texttt{hpe-r1} BFD detection time & 546 ms \\
+\hline
+\texttt{hpe-r8} BFD detection time & 629 ms \\
+\hline
+\texttt{hpe-r1} BFD recovery time & 7645 ms \\
+\hline
+\texttt{hpe-r8} BFD recovery time & 2 ms \\
+\hline
+Ping packets transmitted & 269 \\
+\hline
+Ping packets received & 79 \\
+\hline
+Ping loss & 70.632\% \\
+\hline
+Target below 1 second & Yes \\
+\hline
+\end{tabular}
+\caption{Multi-hop BFD failure detection result}
+\end{table}
+
+The measured multi-hop BFD failure detection times were 546 ms on \texttt{hpe-r1} and 629 ms on \texttt{hpe-r8}. Both values are below the 1-second target.
+
+The packet loss is high because the experiment intentionally broke the routed path between the multi-hop BFD endpoints. This test mainly validates fast multi-hop failure detection, not traffic failover.
+
+\subsection{Conclusion}
+
+This experiment satisfies the multi-hop BFD deliverable. It proves that BIRD can run BFD between non-directly connected routers and detect routed-path failure in sub-second time.

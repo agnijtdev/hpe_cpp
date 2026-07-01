@@ -1,0 +1,51 @@
+# Python/cache
+__pycache__/
+*.pyc
+
+# Editor/system
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Temporary/backup files
+*.tmp
+*.bak
+*.old
+*.swp
+*.backup
+*.before_*
+*backup*
+*before*
+
+# Packet captures / videos / large runtime files
+*.pcap
+*.pcapng
+videos/
+
+# LaTeX generated files
+report/*.aux
+report/*.log
+report/*.out
+report/*.toc
+
+# Debug text dumps
+files_to_review.txt
+measurement_trigger_candidates.txt
+
+# Old backup folders
+backups_before_gr/
+gr_test_backup/
+
+# Empty accidental files
+hpe-h1
+hpe-h2
+hpe-h3
+
+# Old / support folders not required in final submission
+Verification/
+bird-lab/
+puppeteer-config.json
+
+# Raw experiment evidence logs
+evidence/

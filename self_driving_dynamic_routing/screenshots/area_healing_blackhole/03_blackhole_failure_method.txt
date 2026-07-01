@@ -1,0 +1,26 @@
+OSPF AREA HEALING BLACKHOLE - FAILURE METHOD
+============================================================
+
+Failure type:
+Silent blackhole failure
+
+Important point:
+The interfaces are kept UP. Packets are silently dropped using tc/netem.
+
+Tested link:
+hpe-r3 eth3 <-> hpe-r4 eth2
+
+Interface state before blackhole:
+hpe-r3 eth3:
+eth3@if111       UP             10.0.34.2/24 
+
+hpe-r4 eth2:
+eth2@if114       UP             10.0.34.3/24 
+
+Blackhole injection commands used in the experiment:
+docker exec hpe-r3 tc qdisc add dev eth3 root netem loss 100%
+docker exec hpe-r4 tc qdisc add dev eth2 root netem loss 100%
+
+Why this is meaningful:
+Since the interface remains UP, the kernel does not receive a direct link-down event.
+This allows us to clearly compare BFD-based detection against normal OSPF detection.

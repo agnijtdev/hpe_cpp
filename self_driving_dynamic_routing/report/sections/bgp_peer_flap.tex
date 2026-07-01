@@ -1,0 +1,64 @@
+\section{BGP Peer Flap Recovery}
+
+\subsection{Purpose}
+
+This experiment tests how the network behaves when a BGP peer temporarily flaps. The goal is to verify whether traffic can automatically move to an alternate BGP path and continue without packet loss.
+
+\subsection{Experiment Setup}
+
+The BGP peer between \texttt{hpe-r1} and \texttt{hpe-r9} was disabled and then re-enabled.
+
+\begin{verbatim}
+birdc disable r9
+birdc enable r9
+\end{verbatim}
+
+The target traffic was from \texttt{hpe-r1} to the external host network behind \texttt{hpe-r9}.
+
+\begin{verbatim}
+hpe-r1 -> 10.0.93.2
+\end{verbatim}
+
+Before the peer flap, \texttt{hpe-r1} used the direct next-hop \texttt{10.0.19.3}. During the peer flap, it switched to the alternate path through \texttt{hpe-r2} using next-hop \texttt{10.0.12.3}.
+
+\subsection{Measurement Result}
+
+\begin{table}[H]
+\centering
+\small
+\renewcommand{\arraystretch}{1.25}
+\begin{tabular}{|p{6cm}|p{5cm}|}
+\hline
+\textbf{Measurement} & \textbf{Result} \\
+\hline
+Flapped router & \texttt{hpe-r1} \\
+\hline
+Flapped BGP peer & \texttt{r9} \\
+\hline
+Traffic target & \texttt{10.0.93.2} \\
+\hline
+Route switched to alternate next-hop & 93 ms \\
+\hline
+BGP peer re-established & 1596 ms \\
+\hline
+Route switched back to direct next-hop & 1754 ms \\
+\hline
+Ping packets transmitted & 162 \\
+\hline
+Ping packets received & 162 \\
+\hline
+Packet loss & 0\% \\
+\hline
+\end{tabular}
+\caption{BGP peer flap recovery result}
+\end{table}
+
+\subsection{Observation}
+
+When the direct BGP peer between \texttt{hpe-r1} and \texttt{hpe-r9} was disabled, \texttt{hpe-r1} quickly selected the alternate BGP route through \texttt{hpe-r2}. The route switched to the alternate next-hop in 93 ms.
+
+After the BGP peer was re-enabled, the session was re-established in 1596 ms, and the route switched back to the direct next-hop in 1754 ms.
+
+\subsection{Conclusion}
+
+This experiment proves that the BGP design supports peer flap recovery and automatic alternate path selection. Traffic continued with 0\% packet loss during the flap, showing strong forwarding continuity during BGP peer-level failure.

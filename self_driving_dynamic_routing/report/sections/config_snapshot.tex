@@ -1,0 +1,40 @@
+\section{Configuration Snapshot}
+
+\subsection{Objective}
+
+The objective of this deliverable was to save a clean baseline snapshot of the working lab configuration.
+
+This snapshot was taken after baseline validation confirmed that containers were running, OSPF neighbours were in the Full state, BGP sessions were Established, BFD sessions were Up, and end-to-end host connectivity worked with zero packet loss.
+
+\subsection{Captured Files}
+
+The snapshot includes the following files:
+
+\begin{itemize}
+    \item BIRD configuration from each router.
+    \item Runtime state from each router.
+    \item Runtime state from each host.
+    \item A manifest describing the snapshot contents.
+\end{itemize}
+
+\subsection{Snapshot Location}
+
+The timestamped baseline snapshot is stored in:
+
+\begin{verbatim}
+configs/baseline/20260623_142648/
+\end{verbatim}
+
+The latest baseline snapshot is also available in:
+
+\begin{verbatim}
+configs/baseline/latest/
+\end{verbatim}
+
+\subsection{Importance}
+
+The project proposal requires configuration evidence before and after tuning. This snapshot acts as the baseline configuration state before additional experiments such as BFD tuning, OSPF healing, ECMP failover, and BGP GR/LLGR testing.
+
+\subsection{Conclusion}
+
+The baseline configuration snapshot was successfully created. It provides a reproducible reference point for comparing future tuned configurations and experiment results.

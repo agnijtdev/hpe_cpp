@@ -1,0 +1,38 @@
+============================================================
+GOLD OSPF CORE LINK FAILURE MEASUREMENT SUMMARY
+============================================================
+Run directory: measurement/runs/20260624_234924_ospf_core_failure_gold_timeline
+Timestamp: 20260624_234924
+
+T0 failure trigger: 1782325177031
+
+Timeline relative to T0:
+- BFD detection time: 61 ms
+- BIRD route changed to new next-hop: 656 ms
+- BIRD route missing observed: NA ms
+- Kernel route event observed: 670 ms
+- ip route get changed to new next-hop: 90 ms
+- ip route get missing/unreachable observed: NA ms
+- OSPF protocol non-running observed: NA ms
+- First estimated packet loss: 4 ms
+- Traffic recovery after loss: 712 ms
+- Estimated traffic outage duration: 708 ms
+
+Traffic:
+- Ping transmitted: 710
+- Ping received: 677
+- Packet loss percent: 4.64789%
+- Missing ping sequences sample: [94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113]
+
+Packet capture:
+- tcpdump evidence lines counted: 81
+
+Important evidence lines:
+- BFD line: 1782325177092|state=Missing|
+- BIRD new route line: 1782325177687|state=new|BIRD 2.0.8 ready. Table master4: 10.0.82.0/24 unicast [ospf1 18:19:37.695] * IA (150/50) [4.4.4.4] via 10.0.13.2 on eth2 weight 1 via 10.0.23.2 on eth3 weight 1 Type: OSPF-IA univ OSPF.metric1: 50 OSPF.router_id: 4.4.4.4 
+- Kernel event line: 1782325177701|10.0.24.0/24 via 10.0.23.2 dev eth3 proto bird metric 32
+- route-get new line: 1782325177121|state=new|10.0.82.2 via 10.0.23.2 dev eth3 src 10.0.23.3 uid 0 cache 
+
+CSV saved to: measurement/runs/20260624_234924_ospf_core_failure_gold_timeline/parsed_timeline.csv
+Global CSV updated at: measurement/summaries/convergence_gold_summary.csv
+============================================================

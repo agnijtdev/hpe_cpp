@@ -1,0 +1,38 @@
+============================================================
+GOLD OSPF CORE LINK FAILURE MEASUREMENT SUMMARY
+============================================================
+Run directory: measurement/runs/20260624_231809_ospf_core_failure_gold_timeline
+Timestamp: 20260624_231809
+
+T0 failure trigger: 1782323301894
+
+Timeline relative to T0:
+- BFD detection time: 182 ms
+- BIRD route changed to new next-hop: NA ms
+- BIRD route missing observed: NA ms
+- Kernel route event observed: 803 ms
+- ip route get changed to new next-hop: NA ms
+- ip route get missing/unreachable observed: NA ms
+- OSPF protocol non-running observed: NA ms
+- First estimated packet loss: NA ms
+- Traffic recovery after loss: NA ms
+- Estimated traffic outage duration: NA ms
+
+Traffic:
+- Ping transmitted: 296
+- Ping received: 296
+- Packet loss percent: 0%
+- Missing ping sequences sample: none detected
+
+Packet capture:
+- tcpdump evidence lines counted: 42
+
+Important evidence lines:
+- BFD line: 1782323302076|state=Missing|
+- BIRD new route line: NA
+- Kernel event line: 1782323302697|default via 10.0.13.2 dev eth2 proto bird metric 32
+- route-get new line: NA
+
+CSV saved to: measurement/runs/20260624_231809_ospf_core_failure_gold_timeline/parsed_timeline.csv
+Global CSV updated at: measurement/summaries/convergence_gold_summary.csv
+============================================================
