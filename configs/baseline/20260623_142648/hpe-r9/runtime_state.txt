@@ -1,0 +1,107 @@
+### hostname
+1db0ad75cff1
+
+### ip addr
+lo               UNKNOWN        127.0.0.1/8 ::1/128 
+eth0@if124       UP             10.0.19.3/24 
+eth1@if125       UP             10.0.29.3/24 
+eth2@if126       UP             10.0.93.3/24 
+
+### ip route
+10.0.12.0/24 via 10.0.19.2 dev eth0 proto bird metric 32 
+10.0.13.0/24 via 10.0.19.2 dev eth0 proto bird metric 32 
+10.0.14.0/24 via 10.0.19.2 dev eth0 proto bird metric 32 
+10.0.19.0/24 dev eth0 proto kernel scope link src 10.0.19.3 
+10.0.19.0/24 dev eth0 proto bird scope link metric 32 
+10.0.23.0/24 via 10.0.19.2 dev eth0 proto bird metric 32 
+10.0.24.0/24 via 10.0.19.2 dev eth0 proto bird metric 32 
+10.0.29.0/24 dev eth1 proto kernel scope link src 10.0.29.3 
+10.0.29.0/24 dev eth1 proto bird scope link metric 32 
+10.0.34.0/24 via 10.0.19.2 dev eth0 proto bird metric 32 
+10.0.35.0/24 via 10.0.19.2 dev eth0 proto bird metric 32 
+10.0.47.0/24 via 10.0.19.2 dev eth0 proto bird metric 32 
+10.0.56.0/24 via 10.0.19.2 dev eth0 proto bird metric 32 
+10.0.61.0/24 via 10.0.19.2 dev eth0 proto bird metric 32 
+10.0.78.0/24 via 10.0.19.2 dev eth0 proto bird metric 32 
+10.0.82.0/24 via 10.0.19.2 dev eth0 proto bird metric 32 
+10.0.93.0/24 dev eth2 proto kernel scope link src 10.0.93.3 
+10.0.93.0/24 dev eth2 proto bird scope link metric 32 
+blackhole 100.100.100.0/24 proto bird metric 32 
+
+### bird protocols
+BIRD 2.0.8 ready.
+Name       Proto      Table      State  Since         Info
+device1    Device     ---        up     08:45:02.132  
+direct1    Direct     ---        up     08:45:02.132  
+kernel1    Kernel     master4    up     08:45:02.132  
+bfd1       BFD        ---        up     08:45:02.132  
+r1         BGP        ---        up     08:45:06.408  Established   
+r2         BGP        ---        up     08:45:05.491  Established   
+static1    Static     master4    up     08:45:02.132  
+
+### bird routes
+BIRD 2.0.8 ready.
+Table master4:
+10.0.29.0/24         unicast [direct1 08:45:02.134] * (240)
+	dev eth1
+                     unicast [r2 08:45:05.678] (100) [AS65001i]
+	via 10.0.29.2 on eth1
+                     unicast [r1 08:45:06.605] (100) [AS65001i]
+	via 10.0.19.2 on eth0
+10.0.24.0/24         unicast [r1 08:45:06.605] * (100) [AS65001i]
+	via 10.0.19.2 on eth0
+                     unicast [r2 08:45:05.678] (100) [AS65001i]
+	via 10.0.29.2 on eth1
+10.0.93.0/24         unicast [direct1 08:45:02.134] * (240)
+	dev eth2
+10.0.61.0/24         unicast [r1 08:48:08.553] * (100) [AS65001i]
+	via 10.0.19.2 on eth0
+                     unicast [r2 08:48:08.554] (100) [AS65001i]
+	via 10.0.29.2 on eth1
+100.100.100.0/24     blackhole [static1 08:45:02.132] * (200)
+10.0.56.0/24         unicast [r1 08:48:08.553] * (100) [AS65001i]
+	via 10.0.19.2 on eth0
+                     unicast [r2 08:48:08.554] (100) [AS65001i]
+	via 10.0.29.2 on eth1
+10.0.23.0/24         unicast [r1 08:45:06.605] * (100) [AS65001i]
+	via 10.0.19.2 on eth0
+                     unicast [r2 08:45:05.678] (100) [AS65001i]
+	via 10.0.29.2 on eth1
+10.0.19.0/24         unicast [direct1 08:45:02.134] * (240)
+	dev eth0
+                     unicast [r2 08:45:05.722] (100) [AS65001i]
+	via 10.0.29.2 on eth1
+                     unicast [r1 08:45:06.605] (100) [AS65001i]
+	via 10.0.19.2 on eth0
+10.0.78.0/24         unicast [r1 08:48:09.554] * (100) [AS65001i]
+	via 10.0.19.2 on eth0
+                     unicast [r2 08:48:09.554] (100) [AS65001i]
+	via 10.0.29.2 on eth1
+10.0.12.0/24         unicast [r1 08:45:06.605] * (100) [AS65001i]
+	via 10.0.19.2 on eth0
+                     unicast [r2 08:45:05.678] (100) [AS65001i]
+	via 10.0.29.2 on eth1
+10.0.13.0/24         unicast [r1 08:45:06.605] * (100) [AS65001i]
+	via 10.0.19.2 on eth0
+                     unicast [r2 08:45:05.722] (100) [AS65001i]
+	via 10.0.29.2 on eth1
+10.0.47.0/24         unicast [r1 08:48:08.553] * (100) [AS65001i]
+	via 10.0.19.2 on eth0
+                     unicast [r2 08:48:08.554] (100) [AS65001i]
+	via 10.0.29.2 on eth1
+10.0.14.0/24         unicast [r1 08:45:06.605] * (100) [AS65001i]
+	via 10.0.19.2 on eth0
+                     unicast [r2 08:45:05.722] (100) [AS65001i]
+	via 10.0.29.2 on eth1
+10.0.82.0/24         unicast [r1 08:48:09.554] * (100) [AS65001i]
+	via 10.0.19.2 on eth0
+                     unicast [r2 08:48:09.554] (100) [AS65001i]
+	via 10.0.29.2 on eth1
+10.0.34.0/24         unicast [r1 08:48:08.553] * (100) [AS65001i]
+	via 10.0.19.2 on eth0
+                     unicast [r2 08:48:08.554] (100) [AS65001i]
+	via 10.0.29.2 on eth1
+10.0.35.0/24         unicast [r1 08:48:08.553] * (100) [AS65001i]
+	via 10.0.19.2 on eth0
+                     unicast [r2 08:48:08.554] (100) [AS65001i]
+	via 10.0.29.2 on eth1

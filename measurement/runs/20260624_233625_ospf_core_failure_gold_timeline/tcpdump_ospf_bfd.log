@@ -1,0 +1,52 @@
+tcpdump: data link type LINUX_SLL2
+tcpdump: verbose output suppressed, use -v[v]... for full protocol decode
+listening on any, link-type LINUX_SLL2 (Linux cooked v2), snapshot length 262144 bytes
+ 00:00:00.000000 eth0  Out IP 10.0.34.2 > 224.0.0.5: OSPFv2, Hello, length 48
+ 00:00:01.894070 eth2  Out IP 10.0.13.3 > 224.0.0.5: OSPFv2, LS-Update, length 76
+ 00:00:01.894264 eth3  Out IP 10.0.23.3 > 224.0.0.5: OSPFv2, LS-Update, length 76
+ 00:00:02.712029 eth2  M   IP 10.0.13.2 > 224.0.0.5: OSPFv2, Hello, length 48
+ 00:00:02.714365 eth2  M   IP 10.0.13.2 > 224.0.0.5: OSPFv2, LS-Ack, length 44
+ 00:00:02.751665 eth3  M   IP 10.0.23.2 > 224.0.0.5: OSPFv2, Hello, length 48
+ 00:00:02.752074 eth3  M   IP 10.0.23.2 > 224.0.0.5: OSPFv2, LS-Ack, length 44
+ 00:00:02.791563 eth1  Out IP 10.0.35.2 > 224.0.0.5: OSPFv2, Hello, length 48
+ 00:00:02.791695 eth2  Out IP 10.0.13.3 > 224.0.0.5: OSPFv2, Hello, length 48
+ 00:00:02.854961 eth1  M   IP 10.0.35.3 > 224.0.0.5: OSPFv2, Hello, length 48
+ 00:00:03.188939 eth3  Out IP 10.0.23.3 > 224.0.0.5: OSPFv2, Hello, length 48
+ 00:00:07.712053 eth2  M   IP 10.0.13.2 > 224.0.0.5: OSPFv2, Hello, length 48
+ 00:00:07.751546 eth3  M   IP 10.0.23.2 > 224.0.0.5: OSPFv2, Hello, length 48
+ 00:00:07.791925 eth2  Out IP 10.0.13.3 > 224.0.0.5: OSPFv2, Hello, length 48
+ 00:00:07.792109 eth1  Out IP 10.0.35.2 > 224.0.0.5: OSPFv2, Hello, length 48
+ 00:00:07.855555 eth1  M   IP 10.0.35.3 > 224.0.0.5: OSPFv2, Hello, length 48
+ 00:00:08.189113 eth3  Out IP 10.0.23.3 > 224.0.0.5: OSPFv2, Hello, length 48
+ 00:00:09.138623 eth0  Out IP 10.0.34.2 > 224.0.0.5: OSPFv2, Hello, length 44
+ 00:00:09.925268 eth2  Out IP 10.0.13.3 > 224.0.0.5: OSPFv2, LS-Update, length 88
+ 00:00:09.925361 eth3  Out IP 10.0.23.3 > 224.0.0.5: OSPFv2, LS-Update, length 88
+ 00:00:09.925709 eth2  M   IP 10.0.13.2 > 224.0.0.5: OSPFv2, LS-Update, length 120
+ 00:00:09.925804 eth3  Out IP 10.0.23.3 > 224.0.0.5: OSPFv2, LS-Update, length 120
+ 00:00:09.925875 eth3  M   IP 10.0.23.2 > 224.0.0.5: OSPFv2, LS-Update, length 120
+ 00:00:10.214239 eth2  M   IP 10.0.13.2 > 224.0.0.5: OSPFv2, LS-Ack, length 44
+ 00:00:10.252600 eth3  Out IP 10.0.23.3 > 224.0.0.5: OSPFv2, LS-Ack, length 64
+ 00:00:10.252695 eth3  M   IP 10.0.23.2 > 224.0.0.5: OSPFv2, LS-Ack, length 44
+ 00:00:10.292981 eth2  Out IP 10.0.13.3 > 224.0.0.5: OSPFv2, LS-Ack, length 64
+ 00:00:12.712277 eth2  M   IP 10.0.13.2 > 224.0.0.5: OSPFv2, Hello, length 48
+ 00:00:12.751530 eth3  M   IP 10.0.23.2 > 224.0.0.5: OSPFv2, Hello, length 48
+ 00:00:12.792031 eth1  Out IP 10.0.35.2 > 224.0.0.5: OSPFv2, Hello, length 48
+ 00:00:12.792192 eth2  Out IP 10.0.13.3 > 224.0.0.5: OSPFv2, Hello, length 48
+ 00:00:12.824761 eth0  M   IP 10.0.34.3 > 224.0.0.5: OSPFv2, Hello, length 48
+ 00:00:12.824973 eth0  Out IP 10.0.34.2 > 10.0.34.3: OSPFv2, Database Description, length 32
+ 00:00:12.825068 eth0  In  IP 10.0.34.3 > 10.0.34.2: OSPFv2, Database Description, length 32
+ 00:00:12.825125 eth0  Out IP 10.0.34.2 > 10.0.34.3: OSPFv2, Database Description, length 372
+ 00:00:12.825158 eth0  In  IP 10.0.34.3 > 10.0.34.2: OSPFv2, Database Description, length 372
+ 00:00:12.825200 eth0  Out IP 10.0.34.2 > 10.0.34.3: OSPFv2, Database Description, length 32
+ 00:00:12.855518 eth1  M   IP 10.0.35.3 > 224.0.0.5: OSPFv2, Hello, length 48
+ 00:00:13.189309 eth3  Out IP 10.0.23.3 > 224.0.0.5: OSPFv2, Hello, length 48
+ 00:00:13.925335 eth0  M   IP 10.0.34.3 > 224.0.0.5: OSPFv2, LS-Update, length 60
+ 00:00:13.925436 eth2  M   IP 10.0.13.2 > 224.0.0.5: OSPFv2, LS-Update, length 60
+ 00:00:13.925465 eth2  Out IP 10.0.13.3 > 224.0.0.5: OSPFv2, LS-Update, length 60
+ 00:00:13.925474 eth3  M   IP 10.0.23.2 > 224.0.0.5: OSPFv2, LS-Update, length 60
+ 00:00:13.925535 eth3  Out IP 10.0.23.3 > 224.0.0.5: OSPFv2, LS-Update, length 60
+ 00:00:14.138664 eth0  Out IP 10.0.34.2 > 224.0.0.5: OSPFv2, Hello, length 48
+45 packets captured
+47 packets received by filter
+0 packets dropped by kernel
+

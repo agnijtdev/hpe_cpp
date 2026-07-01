@@ -1,0 +1,133 @@
+### hostname
+d076bf232dbe
+
+### ip addr
+lo               UNKNOWN        127.0.0.1/8 ::1/128 
+eth0@if100       UP             10.0.19.2/24 
+eth1@if101       UP             10.0.12.2/24 
+eth2@if102       UP             10.0.13.2/24 
+eth3@if103       UP             10.0.14.2/24 
+
+### ip route
+default via 10.0.19.3 dev eth0 proto bird metric 32 
+10.0.12.0/24 dev eth1 proto kernel scope link src 10.0.12.2 
+10.0.12.0/24 dev eth1 proto bird scope link metric 32 
+10.0.13.0/24 dev eth2 proto kernel scope link src 10.0.13.2 
+10.0.13.0/24 dev eth2 proto bird scope link metric 32 
+10.0.14.0/24 dev eth3 proto kernel scope link src 10.0.14.2 
+10.0.14.0/24 dev eth3 proto bird scope link metric 32 
+10.0.19.0/24 dev eth0 proto kernel scope link src 10.0.19.2 
+10.0.19.0/24 dev eth0 proto bird scope link metric 32 
+10.0.23.0/24 proto bird metric 32 
+	nexthop via 10.0.12.3 dev eth1 weight 1 
+	nexthop via 10.0.13.3 dev eth2 weight 1 
+10.0.24.0/24 proto bird metric 32 
+	nexthop via 10.0.12.3 dev eth1 weight 1 
+	nexthop via 10.0.14.3 dev eth3 weight 1 
+10.0.29.0/24 via 10.0.12.3 dev eth1 proto bird metric 32 
+10.0.34.0/24 proto bird metric 32 
+	nexthop via 10.0.13.3 dev eth2 weight 1 
+	nexthop via 10.0.14.3 dev eth3 weight 1 
+10.0.35.0/24 via 10.0.13.3 dev eth2 proto bird metric 32 
+10.0.47.0/24 via 10.0.14.3 dev eth3 proto bird metric 32 
+10.0.56.0/24 via 10.0.13.3 dev eth2 proto bird metric 32 
+10.0.61.0/24 via 10.0.13.3 dev eth2 proto bird metric 32 
+10.0.78.0/24 via 10.0.14.3 dev eth3 proto bird metric 32 
+10.0.82.0/24 via 10.0.14.3 dev eth3 proto bird metric 32 
+10.0.93.0/24 via 10.0.19.3 dev eth0 proto bird metric 32 
+100.100.100.0/24 via 10.0.19.3 dev eth0 proto bird metric 32 
+
+### bird protocols
+BIRD 2.0.8 ready.
+Name       Proto      Table      State  Since         Info
+device1    Device     ---        up     08:45:01.598  
+direct1    Direct     ---        up     08:45:01.598  
+kernel1    Kernel     master4    up     08:45:01.598  
+bfd1       BFD        ---        up     08:45:01.598  
+ospf1      OSPF       master4    up     09:18:25.651  Running
+r9         BGP        ---        up     08:45:06.408  Established   
+r2         BGP        ---        up     08:45:05.679  Established   
+default_to_isp Static     master4    up     08:45:01.598  
+
+### bird routes
+BIRD 2.0.8 ready.
+Table master4:
+0.0.0.0/0            unicast [default_to_isp 08:45:01.598] * (200)
+	via 10.0.19.3 on eth0
+                     unicast [r2 08:45:05.721] (100) [i]
+	via 10.0.12.3 on eth1
+                     unicast [ospf1 09:25:47.752] E2 (150/10/10) [2.2.2.2]
+	via 10.0.12.3 on eth1
+10.0.29.0/24         unicast [r2 09:25:47.730] * (100) [i]
+	via 10.0.12.3 on eth1
+                     unicast [r9 08:45:06.646] (100) [AS65002i]
+	via 10.0.19.3 on eth0
+10.0.24.0/24         unicast [ospf1 09:18:51.752] * I (150/20) [4.4.4.4]
+	via 10.0.12.3 on eth1 weight 1
+	via 10.0.14.3 on eth3 weight 1
+                     unicast [r2 08:45:05.721] (100) [i]
+	via 10.0.12.3 on eth1
+10.0.93.0/24         unicast [r9 08:45:06.646] * (100) [AS65002i]
+	via 10.0.19.3 on eth0
+                     unicast [r2 09:27:32.797] (100) [AS65002i]
+	via 10.0.12.3 on eth1
+10.0.61.0/24         unicast [ospf1 09:18:51.752] * IA (150/40) [3.3.3.3]
+	via 10.0.13.3 on eth2
+                     unicast [r2 09:18:51.797] (100) [i]
+	via 10.0.12.3 on eth1
+100.100.100.0/24     unicast [r9 08:45:06.646] * (100) [AS65002i]
+	via 10.0.19.3 on eth0
+                     unicast [r2 09:27:32.797] (100) [AS65002i]
+	via 10.0.12.3 on eth1
+10.0.56.0/24         unicast [ospf1 09:18:51.752] * IA (150/30) [3.3.3.3]
+	via 10.0.13.3 on eth2
+                     unicast [r2 09:18:51.797] (100) [i]
+	via 10.0.12.3 on eth1
+10.0.23.0/24         unicast [ospf1 10:07:50.751] * I (150/20) [2.2.2.2]
+	via 10.0.12.3 on eth1 weight 1
+	via 10.0.13.3 on eth2 weight 1
+                     unicast [r2 08:45:05.721] (100) [i]
+	via 10.0.12.3 on eth1
+10.0.19.0/24         unicast [direct1 08:45:01.604] * (240)
+	dev eth0
+                     unicast [r9 08:45:06.646] (100) [AS65002i]
+	via 10.0.19.3 on eth0
+10.0.78.0/24         unicast [ospf1 09:18:51.752] * IA (150/30) [4.4.4.4]
+	via 10.0.14.3 on eth3
+                     unicast [r2 09:18:50.797] (100) [i]
+	via 10.0.12.3 on eth1
+10.0.12.0/24         unicast [direct1 08:45:01.604] * (240)
+	dev eth1
+                     unicast [r2 08:45:05.721] (100) [i]
+	via 10.0.12.3 on eth1
+                     unicast [ospf1 09:18:46.752] I (150/10) [2.2.2.2]
+	dev eth1
+10.0.13.0/24         unicast [direct1 08:45:01.604] * (240)
+	dev eth2
+                     unicast [ospf1 09:18:46.752] I (150/10) [3.3.3.3]
+	dev eth2
+                     unicast [r2 09:18:50.797] (100) [i]
+	via 10.0.12.3 on eth1
+10.0.47.0/24         unicast [ospf1 09:18:51.752] * IA (150/20) [4.4.4.4]
+	via 10.0.14.3 on eth3
+                     unicast [r2 09:18:50.797] (100) [i]
+	via 10.0.12.3 on eth1
+10.0.14.0/24         unicast [direct1 08:45:01.604] * (240)
+	dev eth3
+                     unicast [ospf1 09:18:50.751] I (150/10) [4.4.4.4]
+	dev eth3
+                     unicast [r2 09:18:50.797] (100) [i]
+	via 10.0.12.3 on eth1
+10.0.82.0/24         unicast [ospf1 09:18:52.752] * IA (150/40) [4.4.4.4]
+	via 10.0.14.3 on eth3
+                     unicast [r2 09:18:52.797] (100) [i]
+	via 10.0.12.3 on eth1
+10.0.34.0/24         unicast [ospf1 09:18:51.752] * I (150/20) [4.4.4.4]
+	via 10.0.13.3 on eth2 weight 1
+	via 10.0.14.3 on eth3 weight 1
+                     unicast [r2 09:18:50.797] (100) [i]
+	via 10.0.12.3 on eth1
+10.0.35.0/24         unicast [ospf1 09:18:51.752] * IA (150/20) [3.3.3.3]
+	via 10.0.13.3 on eth2
+                     unicast [r2 09:18:51.797] (100) [i]
+	via 10.0.12.3 on eth1

@@ -1,0 +1,2 @@
+timestamp,test_name,t0_ms,bfd_detect_ms,bird_new_route_ms,bird_missing_ms,kernel_event_ms,route_get_new_ms,route_get_missing_ms,protocol_not_running_ms,first_loss_ms,traffic_recovery_ms,traffic_outage_ms,ping_tx,ping_rx,ping_loss_percent,tcpdump_packet_lines,old_next_hop,new_next_hop
+20260625_002557,ospf_core_failure_gold_timeline,1782327370409,81,830,NA,761,119,NA,NA,15,848,833,712,673,5.47753,50,10.0.34.3,10.0.23.2

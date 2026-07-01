@@ -1,0 +1,2 @@
+test_name,failed_link,bfd_before,bgp_before,detection_time_ms,traffic_during_failure,bfd_after_restore,bgp_after_restore
+r2_r9_edge_failure,hpe-r2_eth4_to_hpe-r9,Up,Established,57,0_percent_packet_loss,Up,Established

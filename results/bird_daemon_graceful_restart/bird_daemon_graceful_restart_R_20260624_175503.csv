@@ -1,0 +1,2 @@
+timestamp,test_name,restarted_router,method,birdc_ready_ms,bgp_reestablished_ms,ping_tx,ping_rx,ping_loss_percent,route_missing_samples,r9_route_present_samples,r2_route_present_samples
+20260624_175503,bird_daemon_graceful_restart_R,hpe-r9,birdc_graceful_restart_plus_bird_R,138,4385,244,160,34.4262,0,120,120

@@ -1,0 +1,5 @@
+run,test_name,failed_link,before_next_hop,after_next_hop,route_switch_time_ms,total_ping_samples,successful_samples,failed_samples,packet_loss_percent,traffic_after_convergence
+1,r3_r2_core_link_failure,hpe-r3_to_hpe-r2,10.0.23.2,10.0.13.2,625,64,62,2,3.12,0_percent_packet_loss
+2,r3_r2_core_link_failure,hpe-r3_to_hpe-r2,10.0.23.2,10.0.13.2,972,60,57,3,5.00,0_percent_packet_loss
+3,r3_r2_core_link_failure,hpe-r3_to_hpe-r2,10.0.23.2,10.0.13.2,521,62,61,1,1.61,0_percent_packet_loss
+average,r3_r2_core_link_failure,hpe-r3_to_hpe-r2,10.0.23.2,10.0.13.2,706,62,60,2,3.23,0_percent_packet_loss

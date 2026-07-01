@@ -1,0 +1,43 @@
+flowchart LR
+    subgraph ISP["External ISP / Upstream AS65002"]
+        R9["hpe-r9<br/>ISP Router<br/>AS65002"]
+        H3["hpe-h3<br/>10.0.93.2/24"]
+        R9 --- H3
+    end
+
+    subgraph CORE["Campus / HQ OSPF Area 0<br/>Enterprise AS65001"]
+        R1["hpe-r1<br/>WAN Edge / Core<br/>AS65001"]
+        R2["hpe-r2<br/>WAN Edge / Core<br/>AS65001"]
+        R3["hpe-r3<br/>ABR<br/>Area 0 to Area 10"]
+        R4["hpe-r4<br/>ABR<br/>Area 0 to Area 20"]
+
+        R1 --- R2
+        R1 --- R3
+        R1 --- R4
+        R2 --- R3
+        R2 --- R4
+        R3 --- R4
+    end
+
+    subgraph NSSA["OSPF Area 10 - NSSA<br/>Branch / Guest / DMZ-like Area"]
+        R5["hpe-r5<br/>NSSA Router"]
+        R6["hpe-r6<br/>NSSA Branch Gateway"]
+        H1["hpe-h1<br/>10.0.61.2/24"]
+        R5 --- R6
+        R6 --- H1
+    end
+
+    subgraph STUB["OSPF Area 20 - Stub Area<br/>Small Branch Area"]
+        R7["hpe-r7<br/>Stub Router"]
+        R8["hpe-r8<br/>Stub Branch Gateway"]
+        H2["hpe-h2<br/>10.0.82.2/24"]
+        R7 --- R8
+        R8 --- H2
+    end
+
+    R3 --- R5
+    R4 --- R7
+
+    R1 -. "eBGP + BFD + GR/LLGR" .- R9
+    R2 -. "eBGP + BFD + GR/LLGR" .- R9
+    R1 -. "iBGP" .- R2

@@ -1,0 +1,2 @@
+timestamp,test_name,restart_router,restart_protocol,old_next_hop,route_change_ms,bgp_non_established_seen_ms,stale_or_grace_text_seen,ping_tx,ping_rx,ping_lost,ping_loss_percent,route_change_line,bgp_non_established_line,missing_ping_sequences
+20260623_165320,bgp_gr_peer_restart,hpe-r9,r1,10.0.19.3,54,134,no,180,180,0,0,"10.0.93.2 via 10.0.12.3 dev eth1 src 10.0.12.2 uid 0","Name       Proto      Table      State  Since         Info r9         BGP        ---        start  11:23:26.341  Active        Received: Administrative reset",""

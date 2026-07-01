@@ -1,0 +1,2 @@
+timestamp,test_name,restarted_router,method,first_missing_ms,route_missing_samples,r9_route_present_samples,r2_route_present_samples,isolated_result
+20260624_185003,hard_restart_route_disappears_isolated,hpe-r9,pkill_KILL_plus_normal_bird_start,1285,76,4,0,pass

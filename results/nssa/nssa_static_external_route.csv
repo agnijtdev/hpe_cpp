@@ -1,0 +1,8 @@
+timestamp,router,route_present,first_route_type,first_route_line
+20260623_162347,hpe-r6,yes,Type: static univ,172.16.66.0/24 blackhole [nssa_test_static 10:53:47.630] * (200)
+20260623_162347,hpe-r5,yes,Type: OSPF-E2 univ,172.16.66.0/24 unicast [ospf1 10:53:53.217] * E2 (150/20/66) [6.6.6.6]
+20260623_162347,hpe-r3,yes,Type: OSPF-E2 univ,172.16.66.0/24 unicast [ospf1 10:53:52.294] * E2 (150/30/66) [6.6.6.6]
+20260623_162347,hpe-r1,yes,Type: OSPF-E2 univ,172.16.66.0/24 unicast [ospf1 10:53:52.420] * E2 (150/40/66) [3.3.3.3]
+20260623_162347,hpe-r2,yes,Type: OSPF-E2 univ,172.16.66.0/24 unicast [ospf1 10:53:52.846] * E2 (150/40/66) [3.3.3.3]
+20260623_162347,hpe-r4,yes,Type: OSPF-E2 univ,172.16.66.0/24 unicast [ospf1 10:53:52.754] * E2 (150/40/66) [3.3.3.3]
+20260623_162347,hpe-r8,no,unknown,

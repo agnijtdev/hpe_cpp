@@ -1,0 +1,2 @@
+timestamp,test_name,blackhole_guard_enabled,r1_r2_path_disabled,withdrawn_prefix,bgp_session_non_established_seen_after_withdraw,old_next_hop_seen_after_withdraw,alternate_next_hop_seen_after_withdraw,blackhole_seen_ms,bird_route_missing_ms,ping_tx,ping_rx,ping_lost,ping_loss_percent,blackhole_line,bird_route_missing_line,missing_ping_sequences
+20260623_172052,bgp_route_withdrawal,yes,yes,10.0.93.0/24,no,yes,no,NA,134,220,11,209,95,"not observed","Network not found",""

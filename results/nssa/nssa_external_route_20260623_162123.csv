@@ -1,0 +1,8 @@
+timestamp,router,route_present,route_type,route_source_line
+20260623_162123,hpe-r6,yes,Type: OSPF univ,172.16.66.0/24       unicast [direct1 10:51:23.318] * (240)
+20260623_162123,hpe-r5,yes,Type: OSPF univ,172.16.66.0/24       unicast [ospf1 10:51:24.217] * I (150/20) [6.6.6.6]
+20260623_162123,hpe-r3,yes,Type: OSPF univ,172.16.66.0/24       unicast [ospf1 10:51:24.295] * I (150/30) [6.6.6.6]
+20260623_162123,hpe-r1,yes,Type: BGP univ,172.16.66.0/24       unicast [ospf1 10:51:24.421] * IA (150/40) [3.3.3.3]
+20260623_162123,hpe-r2,yes,Type: BGP univ,172.16.66.0/24       unicast [ospf1 10:51:24.846] * IA (150/40) [3.3.3.3]
+20260623_162123,hpe-r4,yes,Type: OSPF-IA univ,172.16.66.0/24       unicast [ospf1 10:51:24.754] * IA (150/40) [3.3.3.3]
+20260623_162123,hpe-r8,no,unknown,

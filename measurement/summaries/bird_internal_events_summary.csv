@@ -1,0 +1,7 @@
+timestamp,test_name,run_dir,t0_ms,bird_events_after_t0,bird_netlink_down_ms,bird_interface_down_ms,bird_neighbor_down_ms,bird_router_state_update_ms,bird_lsa_originated_ms,bird_spf_scheduled_ms,bird_spf_started_ms,bird_routes_updated_ms
+20260625_002557,ospf_core_failure_gold_timeline,measurement/runs/20260625_002557_ospf_core_failure_gold_timeline,1782327370409,1379,4,4,4,753,753,753,753,NA
+20260625_003501,ospf_core_failure_gold_timeline,measurement/runs/20260625_003501_ospf_core_failure_gold_timeline,1782327913918,1132,5,5,5,243,243,243,243,NA
+20260625_003625,ospf_core_failure_gold_timeline,measurement/runs/20260625_003625_ospf_core_failure_gold_timeline,1782327998222,868,4,4,4,939,939,939,939,NA
+20260625_003749,ospf_core_failure_gold_timeline,measurement/runs/20260625_003749_ospf_core_failure_gold_timeline,1782328082550,634,4,4,4,612,612,612,612,NA
+20260625_003914,ospf_core_failure_gold_timeline,measurement/runs/20260625_003914_ospf_core_failure_gold_timeline,1782328166894,399,5,5,5,267,267,267,267,NA
+20260625_004038,ospf_core_failure_gold_timeline,measurement/runs/20260625_004038_ospf_core_failure_gold_timeline,1782328251255,184,4,4,4,906,906,906,906,NA

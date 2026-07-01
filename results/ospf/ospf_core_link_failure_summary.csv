@@ -1,0 +1,2 @@
+test_name,failed_link,before_next_hop,after_next_hop,route_switch_time_ms,total_ping_samples,successful_samples,failed_samples,packet_loss_percent,traffic_after_convergence
+r3_r2_core_link_failure,hpe-r3_eth2_to_hpe-r2,10.0.23.2,10.0.13.2,625,64,62,2,3.12,0_percent_packet_loss

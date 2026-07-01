@@ -1,0 +1,45 @@
+============================================================
+GOLD OSPF ECMP DYNAMIC FAILOVER SUMMARY
+============================================================
+Run directory: measurement/runs/20260625_223805_ospf_ecmp_dynamic_gold_no_bfd
+Timestamp: 20260625_223805
+Mode: no_bfd
+
+T0 failure trigger: 1782407304830
+Failed next-hop: 10.0.34.3
+Survivor next-hop: 10.0.23.2
+BFD session present before failure: no
+
+Timeline relative to T0:
+- BFD state down/missing observed: 82 ms
+- Kernel route event observed: 577 ms
+- ip route get switched to survivor: 84 ms
+- BIRD route became survivor-only: 618 ms
+- ip route get missing/unreachable observed: NA ms
+- First estimated packet loss: NA ms
+- Traffic recovery after loss: NA ms
+- Estimated traffic outage duration: NA ms
+
+Traffic:
+- Ping transmitted: 1409
+- Ping received: 1409
+- Packet loss percent: 0%
+- Missing ping sequence sample: none detected
+
+Packet capture:
+- OSPF packet evidence lines: 0
+- BFD packet evidence lines: 0
+
+BIRD event/debug log:
+- BIRD event lines after T0: 351
+- First BIRD event after T0: 1782407304849|2026-06-25 17:08:24.834 <WARN> Netlink: Network is down
+
+Important evidence lines:
+- BFD line: 1782407304912|state=Missing|
+- Kernel event line: 1782407305407|10.0.24.0/24 via 10.0.23.2 dev eth1 proto bird metric 32
+- route-get switch line: 1782407304914|state=survivor_nh|10.0.24.2 via 10.0.23.2 dev eth1 src 10.0.23.3 uid 0 cache 
+- BIRD survivor-only line: 1782407305448|state=survivor_only|BIRD 2.0.8 ready. Table master4: 10.0.24.0/24 unicast [ospf1 17:08:25.403] * I (150/20) [4.4.4.4] via 10.0.23.2 on eth1 Type: OSPF univ OSPF.metric1: 20 OSPF.router_id: 4.4.4.4 
+
+CSV saved to: measurement/runs/20260625_223805_ospf_ecmp_dynamic_gold_no_bfd/parsed_timeline.csv
+Global CSV updated at: measurement/summaries/ospf_ecmp_dynamic_gold_summary.csv
+============================================================

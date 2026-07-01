@@ -1,0 +1,13 @@
+timestamp,test_name,mode,t0_ms,bfd_present,bfd_detect_ms,kernel_event_ms,route_get_switch_ms,bird_route_survivor_only_ms,route_get_missing_ms,first_loss_ms,traffic_recovery_ms,traffic_outage_ms,traffic_tx,traffic_rx,traffic_lost,traffic_loss_percent,ospf_packet_lines,bfd_packet_lines,bird_event_lines_after_t0,failed_next_hop,survivor_next_hop
+20260625_223805,ospf_ecmp_dynamic_gold_no_bfd,no_bfd,1782407304830,no,82,577,84,618,NA,NA,NA,NA,1409,1409,0,0,0,0,351,10.0.34.3,10.0.23.2
+20260625_224900,ospf_ecmp_dynamic_gold_with_bfd,with_bfd,1782407959355,yes,39,105,41,45,NA,NA,NA,NA,1408,1408,0,0,0,2652,2890,10.0.34.3,10.0.23.2
+20260625_225818,ospf_ecmp_dynamic_gold_with_bfd,with_bfd,1782408518087,yes,99,374,106,376,NA,NA,NA,NA,1409,1409,0,0,0,2621,2857,10.0.34.3,10.0.23.2
+20260625_230004,ospf_ecmp_dynamic_gold_with_bfd,with_bfd,1782408623816,yes,93,645,99,635,NA,NA,NA,NA,1409,1409,0,0,0,2622,2858,10.0.34.3,10.0.23.2
+20260625_230150,ospf_ecmp_dynamic_gold_with_bfd,with_bfd,1782408729482,yes,91,978,102,983,NA,NA,NA,NA,1408,1408,0,0,0,2641,2870,10.0.34.3,10.0.23.2
+20260625_230335,ospf_ecmp_dynamic_gold_with_bfd,with_bfd,1782408835082,yes,99,378,105,385,NA,NA,NA,NA,1410,1410,0,0,0,2656,2914,10.0.34.3,10.0.23.2
+20260625_230521,ospf_ecmp_dynamic_gold_with_bfd,with_bfd,1782408940793,yes,55,667,0,683,NA,NA,NA,NA,1408,1408,0,0,0,2680,2930,10.0.34.3,10.0.23.2
+20260625_231537,ospf_ecmp_dynamic_gold_no_bfd,no_bfd,1782409556932,no,65,383,69,339,NA,NA,NA,NA,1413,1413,0,0,0,0,462,10.0.34.3,10.0.23.2
+20260625_231713,ospf_ecmp_dynamic_gold_no_bfd,no_bfd,1782409652668,no,60,645,63,611,NA,NA,NA,NA,1412,1412,0,0,0,0,217,10.0.34.3,10.0.23.2
+20260625_231849,ospf_ecmp_dynamic_gold_no_bfd,no_bfd,1782409748320,no,91,994,96,1043,NA,NA,NA,NA,1410,1410,0,0,0,0,306,10.0.34.3,10.0.23.2
+20260625_232024,ospf_ecmp_dynamic_gold_no_bfd,no_bfd,1782409843983,no,62,333,64,329,NA,NA,NA,NA,1410,1410,0,0,0,0,327,10.0.34.3,10.0.23.2
+20260625_232200,ospf_ecmp_dynamic_gold_no_bfd,no_bfd,1782409939793,no,81,520,87,500,NA,NA,NA,NA,1410,1410,0,0,0,0,347,10.0.34.3,10.0.23.2

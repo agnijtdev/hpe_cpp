@@ -1,0 +1,42 @@
+1782328252167|10.0.24.0/24 via 10.0.23.2 dev eth3 proto bird metric 32
+1782328252170|10.0.78.0/24 proto bird metric 32
+1782328252172|nexthop via 10.0.13.2 dev eth2 weight 1
+1782328252181|nexthop via 10.0.23.2 dev eth3 weight 1
+1782328252184|10.0.47.0/24 proto bird metric 32
+1782328252189|nexthop via 10.0.13.2 dev eth2 weight 1
+1782328252197|nexthop via 10.0.23.2 dev eth3 weight 1
+1782328252201|10.0.14.0/24 via 10.0.13.2 dev eth2 proto bird metric 32
+1782328252204|10.0.82.0/24 proto bird metric 32
+1782328252207|nexthop via 10.0.13.2 dev eth2 weight 1
+1782328252215|nexthop via 10.0.23.2 dev eth3 weight 1
+1782328252221|10.0.34.0/24 proto bird metric 32
+1782328252227|nexthop via 10.0.13.2 dev eth2 weight 1
+1782328252234|nexthop via 10.0.23.2 dev eth3 weight 1
+1782328259366|broadcast 10.0.34.255 dev eth0 table local proto kernel scope link src 10.0.34.2
+1782328259368|10.0.34.0/24 dev eth0 proto kernel scope link src 10.0.34.2
+1782328259373|10.0.34.0/24 dev eth0 proto bird scope link metric 32
+1782328260167|10.0.24.0/24 proto bird metric 32
+1782328260189|nexthop via 10.0.23.2 dev eth3 weight 1
+1782328260208|nexthop via 10.0.34.3 dev eth0 weight 1
+1782328260213|10.0.78.0/24 via 10.0.34.3 dev eth0 proto bird metric 32
+1782328260216|10.0.47.0/24 via 10.0.34.3 dev eth0 proto bird metric 32
+1782328260222|10.0.14.0/24 proto bird metric 32
+1782328260224|nexthop via 10.0.13.2 dev eth2 weight 1
+1782328260227|nexthop via 10.0.34.3 dev eth0 weight 1
+1782328260230|10.0.82.0/24 via 10.0.34.3 dev eth0 proto bird metric 32
+1782329009197|default via 10.0.13.2 dev eth2 proto bird metric 32
+1782329017196|default via 10.0.23.2 dev eth3 proto bird metric 32
+1782329345199|default via 10.0.13.2 dev eth2 proto bird metric 32
+1782329353194|default via 10.0.23.2 dev eth3 proto bird metric 32
+1782329447207|default via 10.0.13.2 dev eth2 proto bird metric 32
+1782329455197|default via 10.0.23.2 dev eth3 proto bird metric 32
+1782330760202|default via 10.0.13.2 dev eth2 proto bird metric 32
+1782330768191|default via 10.0.23.2 dev eth3 proto bird metric 32
+1782330867193|default via 10.0.13.2 dev eth2 proto bird metric 32
+1782330875194|default via 10.0.23.2 dev eth3 proto bird metric 32
+1782330975198|default via 10.0.13.2 dev eth2 proto bird metric 32
+1782330983190|default via 10.0.23.2 dev eth3 proto bird metric 32
+1782331082192|default via 10.0.13.2 dev eth2 proto bird metric 32
+1782331090191|default via 10.0.23.2 dev eth3 proto bird metric 32
+1782331188195|default via 10.0.13.2 dev eth2 proto bird metric 32
+1782331196189|default via 10.0.23.2 dev eth3 proto bird metric 32

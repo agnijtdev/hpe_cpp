@@ -1,0 +1,286 @@
+\documentclass[12pt,a4paper]{article}
+
+% ---------------- Packages ----------------
+\usepackage[a4paper,margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{listings}
+\usepackage{caption}
+\usepackage{titlesec}
+
+% ---------------- Formatting ----------------
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+urlcolor=blue
+}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+
+\titleformat{\section}{\Large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\large\bfseries}{\thesubsection}{1em}{}
+
+\lstset{
+basicstyle=\ttfamily\small,
+breaklines=true,
+frame=single,
+columns=fullflexible
+}
+
+% ---------------- Document ----------------
+\begin{document}
+
+% ---------------- Title Page ----------------
+\begin{titlepage}
+\thispagestyle{empty}
+\vspace*{\fill}
+\begin{center}
+{\Huge\bfseries Self-Driving Dynamic Routing Using OSPF and BGP in the BIRD Routing Stack\par}
+\end{center}
+\vspace*{\fill}
+\end{titlepage}
+
+\tableofcontents
+\newpage
+
+% ---------------- Abstract ----------------
+\section{Abstract}
+
+This project implements a self-driving dynamic routing lab using the BIRD routing stack. The objective is to demonstrate how modern enterprise networks detect failures, recover automatically, and preserve forwarding during routing control-plane disruptions.
+
+The lab uses OSPF as the intra-domain routing protocol and BGP as the inter-domain/WAN routing protocol. It includes BFD for fast failure detection, OSPF ECMP for path redundancy, NSSA and stub areas for route containment, OSPF area healing across ABRs, and BGP Graceful Restart / Long-Lived Graceful Restart configuration for forwarding continuity during BGP restarts.
+
+The implementation was validated using a multi-router container-based topology. Each experiment includes configuration evidence, measurement logs, packet-loss results, route-table observations, and screenshots. The final validation confirmed that all end-to-end connectivity paths were restored successfully after the experiments.
+
+% ---------------- Project Overview ----------------
+\section{Project Overview}
+
+The project proposal required the design and implementation of a self-driving dynamic routing network capable of detecting failures, automatically choosing alternate paths, reducing brownouts, and demonstrating how OSPF and BGP work together in a resilient network.
+
+The implemented lab satisfies this goal using a realistic enterprise-style topology with:
+
+\begin{itemize}
+\item OSPF Area 0 as the core backbone.
+\item Area Border Routers connecting Area 0 to other areas.
+\item NSSA area for controlled external route redistribution.
+\item Stub area for branch-style containment.
+\item eBGP sessions toward an upstream ISP router.
+\item iBGP between internal WAN edge routers.
+\item BFD attached to OSPF and BGP sessions.
+\item BGP Graceful Restart and Long-Lived Graceful Restart configuration.
+\end{itemize}
+
+The project does not simply configure routing protocols. It measures actual behaviour during failures and validates whether the network recovers automatically.
+
+% ---------------- Requirement Mapping ----------------
+\section{Proposal Requirement Mapping}
+
+\begin{longtable}{|p{5cm}|p{2.5cm}|p{7cm}|}
+\hline
+\textbf{Proposal Requirement} & \textbf{Status} & \textbf{Implemented Evidence} \\
+\hline
+BIRD-based routing lab & Completed & 9-router, 3-host BIRD lab topology. \\
+\hline
+OSPF Area 0 core & Completed & Core routers configured in Area 0. \\
+\hline
+ABRs to building/branch areas & Completed & ABR behaviour implemented using hpe-r3 and hpe-r4. \\
+\hline
+NSSA area & Completed & Area 10 configured as NSSA. \\
+\hline
+Stub area & Completed & Area 20 configured as stub area. \\
+\hline
+eBGP to ISP/upstream & Completed & hpe-r1/hpe-r2 peer with hpe-r9. \\
+\hline
+iBGP internally & Completed & hpe-r1 and hpe-r2 internal BGP session. \\
+\hline
+BFD attached to BGP & Completed & BGP WAN edge failure detected using BFD. \\
+\hline
+BFD attached to OSPF & Completed & OSPF-BFD sessions enabled and tested. \\
+\hline
+BFD single-hop detection below 300 ms & Completed & BFD WAN detection measured at 61 ms. \\
+\hline
+OSPF failure recovery & Completed & OSPF core link failure recovery measured. \\
+\hline
+OSPF ECMP failover & Completed & Native OSPF ECMP and OSPF-BFD assisted ECMP measured. \\
+\hline
+NSSA Type-7 / Type-5 behaviour & Completed & Type-7 inside NSSA and Type-5 outside NSSA observed. \\
+\hline
+OSPF area healing across ABRs & Completed & Area 10 to Area 20 recovery tested after ABR link failure. \\
+\hline
+BGP Graceful Restart & Completed & Forwarding continuity observed during BGP control-plane restart. \\
+\hline
+LLGR configuration & Completed & Long-lived graceful restart configured with LL stale time. \\
+\hline
+Route withdrawal behaviour & Completed & Real route withdrawal caused route removal and packet loss. \\
+\hline
+Topology diagram & Completed & Topology documented in Markdown, Mermaid, and LaTeX. \\
+\hline
+Before/after configurations & Completed & Config snapshots and modified configs stored. \\
+\hline
+Measurement logs & Completed & CSVs, evidence logs, route samples, and ping logs saved. \\
+\hline
+Screenshots & Completed & Screenshots collected for all major experiments. \\
+\hline
+Graphs & Pending / Optional & CSV results are available; graphs can be generated as final polish. \\
+\hline
+BIRD source-code patch & Not in scope & This was an excellence-level optional item, not required for minimum delivery. \\
+\hline
+\end{longtable}
+
+% ---------------- Topology ----------------
+\input{sections/topology}
+
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.95\textwidth]{figures/topology.png}
+\caption{Implemented BIRD routing lab topology}
+\end{figure}
+
+
+% ---------------- Tools and Environment ----------------
+\section{Tools and Environment}
+
+The project was implemented using a Linux-based container lab.
+
+The main tools used were:
+
+\begin{itemize}
+\item Linux networking namespaces / containers
+\item BIRD routing daemon
+\item BFD inside BIRD
+\item OSPF and BGP protocol configuration
+\item Bash scripts for automated experiments
+\item Python scripts for parsing logs and generating CSV results
+\item ping for traffic continuity measurement
+\item ip route and birdc commands for route observation
+\item Mermaid / LaTeX for documentation
+\end{itemize}
+
+The lab contains routers \texttt{hpe-r1} to \texttt{hpe-r9} and hosts \texttt{hpe-h1}, \texttt{hpe-h2}, and \texttt{hpe-h3}.
+
+% ---------------- Baseline ----------------
+\input{sections/baseline_validation}
+
+% ---------------- Config Snapshot ----------------
+\input{sections/config_snapshot}
+
+% ---------------- BFD ----------------
+\input{sections/bfd_wan_edge_failure}
+\input{sections/multihop_bfd}
+
+% ---------------- OSPF Core Failure ----------------
+\input{sections/ospf_core_link_failure}
+
+% ---------------- OSPF ECMP ----------------
+\input{sections/ospf_ecmp_failover}
+
+% ---------------- NSSA ----------------
+\input{sections/nssa_type7_type5_translation}
+
+% ---------------- Area Healing ----------------
+\input{sections/ospf_area_healing}
+
+% ---------------- BGP GR / LLGR ----------------
+\input{sections/bgp_gr_llgr}
+\input{sections/bgp_daemon_restart}
+\input{sections/bgp_peer_flap}
+\input{sections/llgr_stale_timer}
+\input{sections/packet_capture}
+\input{sections/result_graphs}
+
+% ---------------- Final Validation ----------------
+\section{Final Lab Validation}
+
+After all failure experiments, configuration changes, BGP withdrawals, and recovery tests, a final validation was performed.
+
+The purpose was to verify that the lab returned to a healthy state.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|l|l|l|r|r|r|l|}
+\hline
+\textbf{Test} & \textbf{Source} & \textbf{Target} & \textbf{TX} & \textbf{RX} & \textbf{Loss} & \textbf{Status} \\
+\hline
+h1\_to\_h2 & hpe-h1 & 10.0.82.2 & 5 & 5 & 0\% & pass \\
+\hline
+h2\_to\_h1 & hpe-h2 & 10.0.61.2 & 5 & 5 & 0\% & pass \\
+\hline
+h1\_to\_h3 & hpe-h1 & 10.0.93.2 & 5 & 5 & 0\% & pass \\
+\hline
+h3\_to\_h1 & hpe-h3 & 10.0.61.2 & 5 & 5 & 0\% & pass \\
+\hline
+h2\_to\_h3 & hpe-h2 & 10.0.93.2 & 5 & 5 & 0\% & pass \\
+\hline
+h3\_to\_h2 & hpe-h3 & 10.0.82.2 & 5 & 5 & 0\% & pass \\
+\hline
+\end{tabular}
+\caption{Final end-to-end connectivity validation}
+\end{table}
+
+All final connectivity tests passed with 0\% packet loss. This confirms that the routing lab was restored successfully after all experiments.
+
+% ---------------- Summary Table ----------------
+\section{Summary of Measured Results}
+
+\begin{longtable}{|p{4cm}|p{4cm}|p{6cm}|}
+\hline
+\textbf{Mechanism} & \textbf{Measured Result} & \textbf{Conclusion} \\
+\hline
+BFD WAN edge failure & 61 ms detection and 0\% packet loss & Fast sub-second failure detection achieved. \\
+\hline
+OSPF core link failure & Kernel/BIRD route update around 628--648 ms & OSPF recovered within sub-second range. \\
+\hline
+OSPF ECMP native & 840 ms kernel monitor, 16\% packet loss under stress & ECMP recovery worked but with higher loss. \\
+\hline
+OSPF ECMP with BFD & 292 ms under stress, 517 ms under normal traffic & BFD improved ECMP failover behaviour. \\
+\hline
+NSSA Type-7/Type-5 & Type-7 inside NSSA, Type-5 outside NSSA & NSSA translation and containment worked. \\
+\hline
+OSPF area healing & BIRD/kernel update around 931--962 ms & Inter-area healing across ABRs worked. \\
+\hline
+BGP GR forwarding & 200/200 packets received, 0\% loss & Forwarding preserved during BGP restart. \\
+\hline
+BGP withdrawal & Route missing in 134 ms, 95\% loss during test & True route withdrawal removed forwarding path. \\
+\hline
+Final validation & All six end-to-end tests passed & Lab restored to healthy state. \\
+\hline
+\end{longtable}
+
+% ---------------- Limitations ----------------
+\section{To be Completed}
+
+\begin{itemize}
+    \item A dedicated multi-hop BFD experiment can be added.
+    \item Full LLGR stale timer expiry can be observed by waiting for the configured LL stale time.
+    \item A full BIRD daemon restart experiment can be added. The current test focused on BGP protocol/control-plane restart.
+    \item Graphs can be generated from the CSV files to improve visual analysis.
+    \item tcpdump or tshark packet captures can be added to show control-plane packet behaviour.
+    \item BIRD source-code patching can be considered as an optional future extension.
+\end{itemize}
+
+\section{Conclusion}
+
+This project successfully implemented a self-driving dynamic routing lab using OSPF and BGP in the BIRD routing stack.
+
+The lab demonstrated fast failure detection using BFD, OSPF recovery under core link failures, ECMP failover behaviour, NSSA Type-7 to Type-5 translation, stub-area containment, OSPF area healing across ABRs, and BGP Graceful Restart forwarding continuity.
+
+The strongest BFD result showed a 61 ms failure detection time. OSPF recovery and area healing were observed within approximately one second. ECMP failover improved when OSPF-BFD was enabled. BGP Graceful Restart preserved forwarding during a control-plane restart with 0\% packet loss, while a true BGP route withdrawal correctly removed the route and caused traffic failure.
+
+The final validation confirmed that all end-to-end traffic paths were restored successfully after the experiments.
+
+Overall, the project satisfies the main proposal requirements and demonstrates how modern networks can automatically detect failures, preserve forwarding, and recover without manual intervention.
+
+
+% ---------------- Screenshot Appendix ----------------
+\clearpage
+\input{sections/screenshots_appendix}
+
+
+\end{document}

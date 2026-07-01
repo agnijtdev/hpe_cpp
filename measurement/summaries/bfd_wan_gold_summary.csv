@@ -1,0 +1,15 @@
+timestamp,test_name,t0_ms,bfd_detect_ms,bgp_non_established_ms,bgp_reestablished_ms,bird_route_changed_ms,bird_route_missing_ms,route_get_changed_ms,route_get_missing_ms,kernel_event_ms,first_loss_ms,traffic_recovery_ms,traffic_outage_ms,traffic_tool,traffic_tx,traffic_rx,traffic_lost,traffic_loss_percent,bfd_packet_lines,bgp_packet_lines,bird_event_lines_after_t0,old_next_hop
+20260625_005312,bfd_wan_edge_failure_gold_timeline,1782329008232,93,95,NA,99,NA,97,NA,8,3,29,26,ping_D,761,760,1,0.131406,190,23,174,10.0.29.3
+20260625_005848,bfd_wan_edge_failure_gold_timeline,1782329344389,89,90,NA,93,NA,92,NA,7,NA,NA,NA,ping_D,1416,1416,0,0,536,39,536,10.0.29.3
+20260625_010031,bfd_wan_edge_failure_gold_timeline,1782329446680,65,68,NA,72,NA,69,NA,12,NA,NA,NA,ping_D,1414,1414,0,0,526,42,525,10.0.29.3
+20260625_012223,bfd_wan_edge_failure_gold_timeline,1782330759446,81,81,NA,81,NA,88,NA,12,NA,NA,NA,ping_D,1416,1416,0,0,528,42,526,10.0.29.3
+20260625_012411,bfd_wan_edge_failure_gold_timeline,1782330866813,109,0,NA,112,NA,1,NA,6,1,24,23,ping_D,1414,1413,1,0.0707214,535,47,534,10.0.29.3
+20260625_012558,bfd_wan_edge_failure_gold_timeline,1782330974315,38,40,NA,40,NA,40,NA,5,NA,NA,NA,ping_D,1414,1414,0,0,529,51,525,10.0.29.3
+20260625_012745,bfd_wan_edge_failure_gold_timeline,1782331081273,121,124,NA,124,NA,128,NA,9,NA,NA,NA,ping_D,1414,1414,0,0,527,39,523,10.0.29.3
+20260625_012932,bfd_wan_edge_failure_gold_timeline,1782331187997,79,20,NA,18,NA,17,NA,7,NA,NA,NA,ping_D,1416,1416,0,0,525,50,528,10.0.29.3
+20260627_152653,bfd_wan_edge_failure_gold_timeline,1782554229125,58,59,NA,61,NA,63,NA,8,NA,NA,NA,ping_D,1417,1417,0,0,529,40,0,10.0.29.3
+20260627_152840,bfd_wan_edge_failure_gold_timeline,1782554335749,71,73,NA,85,NA,75,NA,8,NA,NA,NA,ping_D,1416,1416,0,0,534,45,0,10.0.29.3
+20260627_153027,bfd_wan_edge_failure_gold_timeline,1782554443358,50,61,NA,54,NA,54,NA,6,NA,NA,NA,ping_D,1413,1413,0,0,533,37,0,10.0.29.3
+20260627_153215,bfd_wan_edge_failure_gold_timeline,1782554551025,82,86,NA,83,NA,82,NA,10,NA,NA,NA,ping_D,1414,1414,0,0,530,43,0,10.0.29.3
+20260627_153403,bfd_wan_edge_failure_gold_timeline,1782554658483,41,41,NA,41,NA,42,NA,8,NA,NA,NA,ping_D,1417,1417,0,0,533,48,0,10.0.29.3
+20260627_153550,bfd_wan_edge_failure_gold_timeline,1782554766009,32,33,NA,34,NA,33,NA,7,NA,NA,NA,ping_D,1416,1416,0,0,536,51,0,10.0.29.3

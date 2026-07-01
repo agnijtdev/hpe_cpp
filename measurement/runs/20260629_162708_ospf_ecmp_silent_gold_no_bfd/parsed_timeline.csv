@@ -1,0 +1,2 @@
+timestamp,test_name,mode,failure_type,t0_ms,bfd_present,bfd_detect_ms,kernel_event_ms,route_get_switch_ms,bird_route_survivor_only_ms,routeget_final_state,first_loss_ms,traffic_recovery_ms,traffic_outage_ms,traffic_tx,traffic_rx,traffic_lost,traffic_loss_percent,ospf_packet_lines,bfd_packet_lines,bird_event_lines_after_t0,failed_next_hop,survivor_next_hop
+20260629_162708,ospf_ecmp_silent_gold_no_bfd,no_bfd,silent_tc_netem_loss_100,1782730645595,no,77,19014,18970,18970,failed_nh,123,11385,11262,962,558,404,41.9958,0,0,0,10.0.34.3,10.0.23.2

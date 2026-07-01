@@ -1,0 +1,2 @@
+timestamp,test_name,failed_router,failed_interface,peer_ip,bfd_detection_ms,bgp_reaction_ms,estimated_tx,received,lost,loss_percent,explicit_unreachable_packets,fail_ms,restore_ms
+20260623_145246,bfd_wan_edge_failure,hpe-r2,eth1,10.0.29.3,61,61,293,293,0,0.00,0,1782206572526,1782206576853

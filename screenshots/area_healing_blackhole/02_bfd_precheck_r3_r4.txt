@@ -1,0 +1,26 @@
+OSPF AREA HEALING BLACKHOLE - BFD PRECHECK
+============================================================
+
+Tested OSPF ABR/core link:
+hpe-r3 eth3 = 10.0.34.2/24
+hpe-r4 eth2 = 10.0.34.3/24
+
+BFD session on hpe-r3 toward hpe-r4:
+bfd1:
+IP address                Interface  State      Since         Interval  Timeout
+10.0.34.3                 eth3       Up         17:43:14.732    0.100    0.500
+
+BFD session on hpe-r4 toward hpe-r3:
+bfd1:
+IP address                Interface  State      Since         Interval  Timeout
+10.0.34.2                 eth2       Up         17:43:14.732    0.100    0.500
+
+OSPF neighbour on hpe-r3 toward hpe-r4:
+ospf1:
+Router ID   	Pri	     State     	DTime	Interface  Router IP
+4.4.4.4     	  1	Full/DR   	18.436	eth3       10.0.34.3
+
+OSPF neighbour on hpe-r4 toward hpe-r3:
+ospf1:
+Router ID   	Pri	     State     	DTime	Interface  Router IP
+3.3.3.3     	  1	Full/BDR  	16.803	eth2       10.0.34.2

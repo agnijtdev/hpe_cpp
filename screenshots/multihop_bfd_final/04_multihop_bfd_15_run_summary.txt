@@ -1,0 +1,19 @@
+==========================================================================================
+MULTIHOP BFD FAILURE DETECTION SUMMARY
+==========================================================================================
+Runs: 15
+Path: hpe-r1 -> hpe-r4 -> hpe-r7 -> hpe-r8
+Failed link: hpe-r4 eth3 -> hpe-r7 eth1
+Target: detection < 1 second
+
+Metric                                   Average       Median        Min        Max     StdDev
+------------------------------------------------------------------------------------------
+hpe-r1 BFD detection                    511.27 ms     501.00 ms   488.00 ms   581.00 ms    22.43 ms
+hpe-r8 BFD detection                    570.73 ms     567.00 ms   544.00 ms   642.00 ms    24.03 ms
+
+Target < 1 second passed: 15/15 runs
+Timeout runs: 0/15
+
+Conclusion:
+Multihop BFD detected the routed-path failure within 1 second in 15/15 runs. Average detection was 511.27 ms from hpe-r1 and 570.73 ms from hpe-r8.
+==========================================================================================

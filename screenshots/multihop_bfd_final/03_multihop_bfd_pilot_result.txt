@@ -1,0 +1,16 @@
+REPRESENTATIVE MULTIHOP BFD PILOT RUN
+============================================================
+
+Timestamp: 20260629_194605
+hpe-r1 peer: 10.0.82.3
+hpe-r8 peer: 10.0.14.2
+We fail the routed path by bringing down hpe-r4 eth3.
+Ping log: evidence/multihop_bfd/multihop_bfd_ping_20260629_194605.log
+Failure time ms: 1782742566749
+hpe-r1 multi-hop BFD detection time: 496 ms
+hpe-r8 multi-hop BFD detection time: 564 ms
+10.0.82.3                 ---        Down       14:16:07.287    1.000    0.000
+10.0.14.2                 ---        Down       14:16:07.256    1.000    0.000
+Ping loss: 69.1304%
+11. CSV result
+20260629_194605,multihop_bfd_failure,hpe-r4-eth3_to_hpe-r7-eth1,10.0.82.3,10.0.14.2,496,564,5874,2,230,71,69.1304%,yes

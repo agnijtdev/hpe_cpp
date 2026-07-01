@@ -1,0 +1,6 @@
+timestamp,cycle,r1_state_before,r2_state_before,down_detect_ms,recovery_ms,r1_state_after_down,r2_state_after_down,r1_state_after_recovery,r2_state_after_recovery,result
+20260630_132506,1,Up,Up,665,473,Down,Down,Up,Up,pass
+20260630_132506,2,Up,Up,657,445,Down,Down,Up,Up,pass
+20260630_132506,3,Up,Up,670,474,Down,Down,Up,Up,pass
+20260630_132506,4,Up,Up,656,480,Down,Down,Up,Up,pass
+20260630_132506,5,Up,Up,635,466,Down,Down,Up,Up,pass

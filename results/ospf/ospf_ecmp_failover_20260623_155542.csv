@@ -1,0 +1,2 @@
+timestamp,test_name,failed_next_hop,surviving_next_hop,kernel_monitor_ms,kernel_route_sample_ms,route_get_sample_ms,bird_route_sample_ms,ping_tx_estimated,ping_rx,failed_or_lost_packets,ping_loss_percent,explicit_unreachable_packets
+20260623_155542,ospf_ecmp_failover,10.0.23.2,10.0.34.3,517,542,63,540,20,19,1,5.00,0

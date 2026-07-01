@@ -1,0 +1,219 @@
+tcpdump: data link type LINUX_SLL2
+tcpdump: verbose output suppressed, use -v[v]... for full protocol decode
+listening on any, link-type LINUX_SLL2 (Linux cooked v2), snapshot length 262144 bytes
+ 00:00:00.000000 eth1  In  IP 10.0.29.3.38784 > 10.0.29.2.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:00.008339 eth1  Out IP 10.0.29.2.36923 > 10.0.29.3.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:00.085591 eth1  In  IP 10.0.29.3.38784 > 10.0.29.2.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:00.091957 eth1  Out IP 10.0.29.2.36923 > 10.0.29.3.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:00.175127 eth1  In  IP 10.0.29.3.38784 > 10.0.29.2.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:00.179561 eth1  Out IP 10.0.29.2.36923 > 10.0.29.3.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:00.256126 eth1  Out IP 10.0.29.2.36923 > 10.0.29.3.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:00.257386 eth1  In  IP 10.0.29.3.38784 > 10.0.29.2.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:00.333777 eth1  Out IP 10.0.29.2.36923 > 10.0.29.3.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:00.337030 eth1  In  IP 10.0.29.3.38784 > 10.0.29.2.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:00.411475 eth1  Out IP 10.0.29.2.36923 > 10.0.29.3.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:00.426128 eth1  In  IP 10.0.29.3.38784 > 10.0.29.2.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:00.499663 eth1  Out IP 10.0.29.2.36923 > 10.0.29.3.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:00.506196 eth1  In  IP 10.0.29.3.38784 > 10.0.29.2.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:00.582628 eth1  Out IP 10.0.29.2.36923 > 10.0.29.3.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:00.585871 eth1  In  IP 10.0.29.3.38784 > 10.0.29.2.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:00.665260 eth1  Out IP 10.0.29.2.36923 > 10.0.29.3.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:00.675473 eth1  In  IP 10.0.29.3.38784 > 10.0.29.2.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:00.749919 eth1  Out IP 10.0.29.2.36923 > 10.0.29.3.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:00.753171 eth1  In  IP 10.0.29.3.38784 > 10.0.29.2.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:00.831473 eth1  In  IP 10.0.29.3.38784 > 10.0.29.2.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:00.834760 eth1  Out IP 10.0.29.2.36923 > 10.0.29.3.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:00.912128 eth1  Out IP 10.0.29.2.36923 > 10.0.29.3.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:00.917429 eth1  In  IP 10.0.29.3.38784 > 10.0.29.2.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:00.998912 eth1  Out IP 10.0.29.2.36923 > 10.0.29.3.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:01.003206 eth1  In  IP 10.0.29.3.38784 > 10.0.29.2.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:01.083676 eth1  Out IP 10.0.29.2.36923 > 10.0.29.3.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:01.087179 eth1  In  IP 10.0.29.3.38784 > 10.0.29.2.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:01.160744 eth1  Out IP 10.0.29.2.36923 > 10.0.29.3.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:01.168026 eth1  In  IP 10.0.29.3.38784 > 10.0.29.2.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:01.236432 eth1  Out IP 10.0.29.2.36923 > 10.0.29.3.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:01.243696 eth1  In  IP 10.0.29.3.38784 > 10.0.29.2.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:01.312253 eth1  Out IP 10.0.29.2.36923 > 10.0.29.3.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:01.320506 eth1  In  IP 10.0.29.3.38784 > 10.0.29.2.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:01.393077 eth1  Out IP 10.0.29.2.36923 > 10.0.29.3.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:01.399939 eth1  In  IP 10.0.29.3.38784 > 10.0.29.2.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:01.476386 eth1  In  IP 10.0.29.3.38784 > 10.0.29.2.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:01.481705 eth1  Out IP 10.0.29.2.36923 > 10.0.29.3.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:01.558039 eth1  Out IP 10.0.29.2.36923 > 10.0.29.3.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:01.564445 eth1  In  IP 10.0.29.3.38784 > 10.0.29.2.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:01.636915 eth1  Out IP 10.0.29.2.36923 > 10.0.29.3.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:01.648376 eth1  In  IP 10.0.29.3.38784 > 10.0.29.2.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:01.725793 eth1  Out IP 10.0.29.2.36923 > 10.0.29.3.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:01.737040 eth1  In  IP 10.0.29.3.38784 > 10.0.29.2.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:01.803389 eth1  Out IP 10.0.29.2.36923 > 10.0.29.3.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:01.815713 eth1  In  IP 10.0.29.3.38784 > 10.0.29.2.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:01.883193 eth1  Out IP 10.0.29.2.36923 > 10.0.29.3.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:01.900447 eth1  In  IP 10.0.29.3.38784 > 10.0.29.2.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:01.962912 eth1  Out IP 10.0.29.2.36923 > 10.0.29.3.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:01.987154 eth1  In  IP 10.0.29.3.38784 > 10.0.29.2.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:02.036052 eth2  Out IP 10.0.12.3.51192 > 10.0.12.2.179: Flags [P.], seq 221767228:221767263, ack 3568888959, win 63, options [nop,nop,TS val 625347122 ecr 396141987], length 35: BGP
+ 00:00:02.036139 eth2  In  IP 10.0.12.2.179 > 10.0.12.3.51192: Flags [.], ack 35, win 64, options [nop,nop,TS val 396198478 ecr 625347122], length 0
+ 00:00:02.036177 eth2  Out IP 10.0.12.3.51192 > 10.0.12.2.179: Flags [P.], seq 35:80, ack 1, win 63, options [nop,nop,TS val 625347122 ecr 396198478], length 45: BGP
+ 00:00:02.036191 eth2  In  IP 10.0.12.2.179 > 10.0.12.3.51192: Flags [.], ack 80, win 64, options [nop,nop,TS val 396198478 ecr 625347122], length 0
+ 00:00:02.036460 eth2  In  IP 10.0.12.2.179 > 10.0.12.3.51192: Flags [P.], seq 1:55, ack 80, win 64, options [nop,nop,TS val 396198478 ecr 625347122], length 54: BGP
+ 00:00:02.036481 eth2  Out IP 10.0.12.3.51192 > 10.0.12.2.179: Flags [.], ack 55, win 63, options [nop,nop,TS val 625347122 ecr 396198478], length 0
+ 00:00:10.127613 eth2  Out IP 10.0.12.3.51192 > 10.0.12.2.179: Flags [P.], seq 80:128, ack 55, win 63, options [nop,nop,TS val 625355213 ecr 396198478], length 48: BGP
+ 00:00:10.127815 eth1  Out IP 10.0.29.2.51340 > 10.0.29.3.3784: BFDv1, Control, State Down, Flags: [none], length: 24
+ 00:00:10.128039 eth2  In  IP 10.0.12.2.179 > 10.0.12.3.51192: Flags [P.], seq 55:82, ack 128, win 64, options [nop,nop,TS val 396206570 ecr 625355213], length 27: BGP
+ 00:00:10.128067 eth2  Out IP 10.0.12.3.51192 > 10.0.12.2.179: Flags [P.], seq 128:173, ack 82, win 63, options [nop,nop,TS val 625355214 ecr 396206570], length 45: BGP
+ 00:00:10.169909 eth2  In  IP 10.0.12.2.179 > 10.0.12.3.51192: Flags [.], ack 173, win 64, options [nop,nop,TS val 396206612 ecr 625355214], length 0
+ 00:00:10.663916 eth1  In  IP 10.0.29.3.41275 > 10.0.29.2.3784: BFDv1, Control, State Init, Flags: [none], length: 24
+ 00:00:10.664125 eth1  Out IP 10.0.29.2.51340 > 10.0.29.3.3784: BFDv1, Control, State Up, Flags: [Poll], length: 24
+ 00:00:10.664253 eth1  In  IP 10.0.29.3.41275 > 10.0.29.2.3784: BFDv1, Control, State Up, Flags: [Final], length: 24
+ 00:00:10.664293 eth1  In  IP 10.0.29.3.41275 > 10.0.29.2.3784: BFDv1, Control, State Up, Flags: [Poll], length: 24
+ 00:00:10.664390 eth1  Out IP 10.0.29.2.51340 > 10.0.29.3.3784: BFDv1, Control, State Up, Flags: [Final], length: 24
+ 00:00:10.742609 eth1  Out IP 10.0.29.2.51340 > 10.0.29.3.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:10.749811 eth1  In  IP 10.0.29.3.41275 > 10.0.29.2.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:10.821145 eth1  Out IP 10.0.29.2.51340 > 10.0.29.3.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:10.830342 eth1  In  IP 10.0.29.3.41275 > 10.0.29.2.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:10.906713 eth1  Out IP 10.0.29.2.51340 > 10.0.29.3.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:10.917975 eth1  In  IP 10.0.29.3.41275 > 10.0.29.2.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:10.992345 eth1  Out IP 10.0.29.2.51340 > 10.0.29.3.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:10.998673 eth1  In  IP 10.0.29.3.41275 > 10.0.29.2.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:11.078051 eth1  Out IP 10.0.29.2.51340 > 10.0.29.3.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:11.080255 eth1  In  IP 10.0.29.3.41275 > 10.0.29.2.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:11.158589 eth1  Out IP 10.0.29.2.51340 > 10.0.29.3.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:11.167875 eth1  In  IP 10.0.29.3.41275 > 10.0.29.2.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:11.239318 eth1  Out IP 10.0.29.2.51340 > 10.0.29.3.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:11.247572 eth1  In  IP 10.0.29.3.41275 > 10.0.29.2.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:11.323827 eth1  In  IP 10.0.29.3.41275 > 10.0.29.2.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:11.327191 eth1  Out IP 10.0.29.2.51340 > 10.0.29.3.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:11.404498 eth1  Out IP 10.0.29.2.51340 > 10.0.29.3.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:11.405757 eth1  In  IP 10.0.29.3.41275 > 10.0.29.2.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:11.481782 eth1  In  IP 10.0.29.3.41275 > 10.0.29.2.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:11.494214 eth1  Out IP 10.0.29.2.51340 > 10.0.29.3.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:11.568700 eth1  In  IP 10.0.29.3.41275 > 10.0.29.2.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:11.583108 eth1  Out IP 10.0.29.2.51340 > 10.0.29.3.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:11.646004 eth1  In  IP 10.0.29.3.41275 > 10.0.29.2.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:11.661392 eth1  Out IP 10.0.29.2.51340 > 10.0.29.3.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:11.726442 eth1  In  IP 10.0.29.3.41275 > 10.0.29.2.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:11.736899 eth1  Out IP 10.0.29.2.51340 > 10.0.29.3.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:11.807214 eth1  In  IP 10.0.29.3.41275 > 10.0.29.2.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:11.816144 eth1  Out IP 10.0.29.2.51340 > 10.0.29.3.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:11.889619 eth1  In  IP 10.0.29.3.41275 > 10.0.29.2.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:11.891969 eth1  Out IP 10.0.29.2.51340 > 10.0.29.3.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:11.969265 eth1  Out IP 10.0.29.2.51340 > 10.0.29.3.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:11.977497 eth1  In  IP 10.0.29.3.41275 > 10.0.29.2.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:12.051915 eth1  Out IP 10.0.29.2.51340 > 10.0.29.3.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:12.064167 eth1  In  IP 10.0.29.3.41275 > 10.0.29.2.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:12.141567 eth1  Out IP 10.0.29.2.51340 > 10.0.29.3.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:12.150075 eth1  In  IP 10.0.29.3.41275 > 10.0.29.2.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:12.184879 eth2  Out IP 10.0.12.3.51192 > 10.0.12.2.179: Flags [P.], seq 173:192, ack 82, win 63, options [nop,nop,TS val 625357270 ecr 396206612], length 19: BGP
+ 00:00:12.184938 eth2  In  IP 10.0.12.2.179 > 10.0.12.3.51192: Flags [.], ack 192, win 64, options [nop,nop,TS val 396208627 ecr 625357270], length 0
+ 00:00:12.221511 eth1  Out IP 10.0.29.2.51340 > 10.0.29.3.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:12.233762 eth1  In  IP 10.0.29.3.41275 > 10.0.29.2.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:12.300249 eth1  Out IP 10.0.29.2.51340 > 10.0.29.3.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:12.309576 eth1  In  IP 10.0.29.3.41275 > 10.0.29.2.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:12.390068 eth1  Out IP 10.0.29.2.51340 > 10.0.29.3.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:12.398369 eth1  In  IP 10.0.29.3.41275 > 10.0.29.2.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:12.473771 eth1  Out IP 10.0.29.2.51340 > 10.0.29.3.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:12.483067 eth1  In  IP 10.0.29.3.41275 > 10.0.29.2.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:12.557502 eth1  Out IP 10.0.29.2.51340 > 10.0.29.3.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:12.564965 eth1  In  IP 10.0.29.3.41275 > 10.0.29.2.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:12.644581 eth1  In  IP 10.0.29.3.41275 > 10.0.29.2.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:12.646564 eth1  Out IP 10.0.29.2.51340 > 10.0.29.3.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:12.722965 eth1  Out IP 10.0.29.2.51340 > 10.0.29.3.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:12.727214 eth1  In  IP 10.0.29.3.41275 > 10.0.29.2.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:12.809517 eth1  Out IP 10.0.29.2.51340 > 10.0.29.3.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:12.811766 eth1  In  IP 10.0.29.3.41275 > 10.0.29.2.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:12.893272 eth1  Out IP 10.0.29.2.51340 > 10.0.29.3.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:12.898549 eth1  In  IP 10.0.29.3.41275 > 10.0.29.2.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:12.970986 eth1  Out IP 10.0.29.2.51340 > 10.0.29.3.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:12.979246 eth1  In  IP 10.0.29.3.41275 > 10.0.29.2.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:13.055181 eth1  In  IP 10.0.29.3.41275 > 10.0.29.2.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:13.058602 eth1  Out IP 10.0.29.2.51340 > 10.0.29.3.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:13.139927 eth1  Out IP 10.0.29.2.51340 > 10.0.29.3.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:13.140055 eth1  In  IP 10.0.29.3.41275 > 10.0.29.2.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:13.220406 eth1  Out IP 10.0.29.2.51340 > 10.0.29.3.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:13.222678 eth1  In  IP 10.0.29.3.41275 > 10.0.29.2.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:13.296114 eth1  Out IP 10.0.29.2.51340 > 10.0.29.3.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:13.303459 eth1  In  IP 10.0.29.3.41275 > 10.0.29.2.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:13.372939 eth1  Out IP 10.0.29.2.51340 > 10.0.29.3.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:13.386199 eth1  In  IP 10.0.29.3.41275 > 10.0.29.2.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:13.449614 eth1  Out IP 10.0.29.2.51340 > 10.0.29.3.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:13.463934 eth1  In  IP 10.0.29.3.41275 > 10.0.29.2.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:13.536321 eth1  Out IP 10.0.29.2.51340 > 10.0.29.3.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:13.539515 eth1  In  IP 10.0.29.3.41275 > 10.0.29.2.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:13.617903 eth1  Out IP 10.0.29.2.51340 > 10.0.29.3.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:13.621442 eth1  In  IP 10.0.29.3.41275 > 10.0.29.2.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:13.699162 eth1  Out IP 10.0.29.2.51340 > 10.0.29.3.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:13.709408 eth1  In  IP 10.0.29.3.41275 > 10.0.29.2.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:13.782761 eth1  Out IP 10.0.29.2.51340 > 10.0.29.3.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:13.788002 eth1  In  IP 10.0.29.3.41275 > 10.0.29.2.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:13.866360 eth1  Out IP 10.0.29.2.51340 > 10.0.29.3.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:13.877640 eth1  In  IP 10.0.29.3.41275 > 10.0.29.2.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:13.894155 eth2  In  IP 10.0.12.2.179 > 10.0.12.3.51192: Flags [P.], seq 82:101, ack 192, win 64, options [nop,nop,TS val 396210336 ecr 625357270], length 19: BGP
+ 00:00:13.934907 eth2  Out IP 10.0.12.3.51192 > 10.0.12.2.179: Flags [.], ack 101, win 63, options [nop,nop,TS val 625359021 ecr 396210336], length 0
+ 00:00:13.948011 eth1  Out IP 10.0.29.2.51340 > 10.0.29.3.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:13.954255 eth1  In  IP 10.0.29.3.41275 > 10.0.29.2.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:14.032642 eth1  Out IP 10.0.29.2.51340 > 10.0.29.3.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:14.039971 eth1  In  IP 10.0.29.3.41275 > 10.0.29.2.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:14.114377 eth1  Out IP 10.0.29.2.51340 > 10.0.29.3.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:14.121626 eth1  In  IP 10.0.29.3.41275 > 10.0.29.2.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:14.202028 eth1  Out IP 10.0.29.2.51340 > 10.0.29.3.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:14.203302 eth1  In  IP 10.0.29.3.41275 > 10.0.29.2.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:14.287016 eth1  In  IP 10.0.29.3.41275 > 10.0.29.2.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:14.288358 eth1  Out IP 10.0.29.2.51340 > 10.0.29.3.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:14.370433 eth1  In  IP 10.0.29.3.41275 > 10.0.29.2.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:14.371709 eth1  Out IP 10.0.29.2.51340 > 10.0.29.3.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:14.446932 eth1  In  IP 10.0.29.3.41275 > 10.0.29.2.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:14.451253 eth1  Out IP 10.0.29.2.51340 > 10.0.29.3.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:14.522325 eth1  In  IP 10.0.29.3.41275 > 10.0.29.2.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:14.537696 eth1  Out IP 10.0.29.2.51340 > 10.0.29.3.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:14.607713 eth1  In  IP 10.0.29.3.41275 > 10.0.29.2.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:14.626613 eth1  Out IP 10.0.29.2.51340 > 10.0.29.3.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:14.690281 eth1  In  IP 10.0.29.3.41275 > 10.0.29.2.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:14.701822 eth1  Out IP 10.0.29.2.51340 > 10.0.29.3.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:14.765772 eth1  In  IP 10.0.29.3.41275 > 10.0.29.2.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:14.777179 eth1  Out IP 10.0.29.2.51340 > 10.0.29.3.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:14.841437 eth1  In  IP 10.0.29.3.41275 > 10.0.29.2.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:14.863823 eth1  Out IP 10.0.29.2.51340 > 10.0.29.3.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:14.923236 eth1  In  IP 10.0.29.3.41275 > 10.0.29.2.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:14.949604 eth1  Out IP 10.0.29.2.51340 > 10.0.29.3.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:15.010145 eth1  In  IP 10.0.29.3.41275 > 10.0.29.2.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:15.033619 eth1  Out IP 10.0.29.2.51340 > 10.0.29.3.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:15.042645 eth1  Out IP 10.0.29.2.56211 > 10.0.29.3.179: Flags [S], seq 2026201742, win 64240, options [mss 1460,sackOK,TS val 1875002738 ecr 0,nop,wscale 10], length 0
+ 00:00:15.042741 eth1  In  IP 10.0.29.3.179 > 10.0.29.2.56211: Flags [S.], seq 260560686, ack 2026201743, win 65160, options [mss 1460,sackOK,TS val 3827757712 ecr 1875002738,nop,wscale 10], length 0
+ 00:00:15.042781 eth1  Out IP 10.0.29.2.56211 > 10.0.29.3.179: Flags [.], ack 1, win 63, options [nop,nop,TS val 1875002738 ecr 3827757712], length 0
+ 00:00:15.042995 eth1  Out IP 10.0.29.2.56211 > 10.0.29.3.179: Flags [P.], seq 1:65, ack 1, win 63, options [nop,nop,TS val 1875002739 ecr 3827757712], length 64: BGP
+ 00:00:15.043010 eth1  In  IP 10.0.29.3.179 > 10.0.29.2.56211: Flags [F.], seq 1, ack 1, win 64, options [nop,nop,TS val 3827757713 ecr 1875002738], length 0
+ 00:00:15.043112 eth1  In  IP 10.0.29.3.179 > 10.0.29.2.56211: Flags [R], seq 260560687, win 0, length 0
+ 00:00:15.090628 eth1  In  IP 10.0.29.3.41275 > 10.0.29.2.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:15.119002 eth1  Out IP 10.0.29.2.51340 > 10.0.29.3.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:15.177189 eth1  In  IP 10.0.29.3.41275 > 10.0.29.2.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:15.207604 eth1  Out IP 10.0.29.2.51340 > 10.0.29.3.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:15.259302 eth1  In  IP 10.0.29.3.41275 > 10.0.29.2.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:15.286671 eth1  Out IP 10.0.29.2.51340 > 10.0.29.3.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:15.330916 eth1  In  IP 10.0.29.3.179 > 10.0.29.2.55375: Flags [FP.], seq 2814205908:2814205929, ack 2388212406, win 64, options [nop,nop,TS val 3827758001 ecr 1874971613], length 21: BGP
+ 00:00:15.330953 eth1  Out IP 10.0.29.2.55375 > 10.0.29.3.179: Flags [R], seq 2388212406, win 0, length 0
+ 00:00:15.347602 eth1  In  IP 10.0.29.3.41275 > 10.0.29.2.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:15.371084 eth1  Out IP 10.0.29.2.51340 > 10.0.29.3.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:15.437649 eth1  In  IP 10.0.29.3.41275 > 10.0.29.2.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:15.450052 eth1  Out IP 10.0.29.2.51340 > 10.0.29.3.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:15.524080 eth1  In  IP 10.0.29.3.41275 > 10.0.29.2.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:15.530443 eth1  Out IP 10.0.29.2.51340 > 10.0.29.3.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:15.610792 eth1  In  IP 10.0.29.3.41275 > 10.0.29.2.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:15.616167 eth1  Out IP 10.0.29.2.51340 > 10.0.29.3.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:15.695462 eth1  Out IP 10.0.29.2.51340 > 10.0.29.3.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:15.696713 eth1  In  IP 10.0.29.3.41275 > 10.0.29.2.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:15.772056 eth1  Out IP 10.0.29.2.51340 > 10.0.29.3.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:15.776340 eth1  In  IP 10.0.29.3.41275 > 10.0.29.2.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:15.848783 eth1  Out IP 10.0.29.2.51340 > 10.0.29.3.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:15.857053 eth1  In  IP 10.0.29.3.41275 > 10.0.29.2.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:15.934431 eth1  Out IP 10.0.29.2.51340 > 10.0.29.3.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:15.935661 eth1  In  IP 10.0.29.3.41275 > 10.0.29.2.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:16.019993 eth1  Out IP 10.0.29.2.51340 > 10.0.29.3.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:16.022179 eth1  In  IP 10.0.29.3.41275 > 10.0.29.2.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:16.104508 eth1  Out IP 10.0.29.2.51340 > 10.0.29.3.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:16.104685 eth1  In  IP 10.0.29.3.41275 > 10.0.29.2.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:16.181224 eth1  Out IP 10.0.29.2.51340 > 10.0.29.3.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+ 00:00:16.190515 eth1  In  IP 10.0.29.3.41275 > 10.0.29.2.3784: BFDv1, Control, State Up, Flags: [none], length: 24
+
+212 packets captured
+215 packets received by filter
+0 packets dropped by kernel

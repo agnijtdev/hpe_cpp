@@ -1,0 +1,45 @@
+============================================================
+GOLD OSPF ECMP SILENT FAILURE SUMMARY
+============================================================
+Run directory: measurement/runs/20260625_234600_ospf_ecmp_silent_gold_with_bfd
+Timestamp: 20260625_234600
+Mode: with_bfd
+
+T0 silent failure trigger: 1782411378166
+Failed next-hop: 10.0.34.3
+Survivor next-hop: 10.0.23.2
+BFD session present before failure: yes
+
+Timeline relative to T0:
+- BFD state down/missing observed: 689 ms
+- Kernel route event observed: 941 ms
+- ip route get switched to survivor: 943 ms
+- BIRD route became survivor-only: 868 ms
+- route-get final state: failed_nh
+- First estimated packet loss: 136 ms
+- Traffic recovery after loss: 949 ms
+- Estimated traffic outage duration: 813 ms
+
+Traffic:
+- Ping transmitted: 1514
+- Ping received: 1476
+- Packet loss percent: 2.50991%
+- Missing ping sequence sample: [97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126]
+
+Packet capture:
+- OSPF packet evidence lines: 0
+- BFD packet evidence lines: 2537
+
+BIRD event/debug log:
+- BIRD event lines after T0: 2798
+- First BIRD event after T0: 1782411378261|2026-06-25 18:16:17.292 <TRACE> bfd1: CTL received from 10.0.34.3 [Up]
+
+Important evidence lines:
+- BFD line: 1782411378855|state=Missing|
+- Kernel event line: 1782411379107|10.0.24.0/24 via 10.0.23.2 dev eth1 proto bird metric 32
+- route-get switch line: 1782411379109|state=survivor_nh|10.0.24.2 via 10.0.23.2 dev eth1 src 10.0.23.3 uid 0 cache 
+- BIRD survivor-only line: 1782411379034|state=survivor_only|BIRD 2.0.8 ready. Table master4: 10.0.24.0/24 unicast [ospf1 18:16:19.100] * I (150/20) [4.4.4.4] via 10.0.23.2 on eth1 Type: OSPF univ OSPF.metric1: 20 OSPF.router_id: 4.4.4.4 
+
+CSV saved to: measurement/runs/20260625_234600_ospf_ecmp_silent_gold_with_bfd/parsed_timeline.csv
+Global CSV updated at: measurement/summaries/ospf_ecmp_silent_gold_summary.csv
+============================================================
