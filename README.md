@@ -79,13 +79,5 @@ Extends BIRD with `transport tls;` and `transport quic;` config options
 | Traffic testing | `ping`, `tcpdump` |
 | Automation / analysis | Bash, Python |
 
-## Repository Layout (suggested)
 
-```
-anycast/       
-bgpost_lab/       
-multihoming/    
-self_driving_dynamic_routing/        
-report/         # project report
-```
 
