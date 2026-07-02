@@ -1,0 +1,65 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+env/
+
+# Editor/system files
+.DS_Store
+.vscode/
+.idea/
+
+# Logs/temp
+*.log
+*.tmp
+*.bak
+*.swp
+
+# Docker/runtime files
+*.pid
+*.sock
+
+# Certificates and private keys
+*.key
+*.pem
+*.crt
+*.csr
+certs/
+generated_configs/*/certs/
+
+# Large routing data and captures
+data/
+*.mrt
+*.mrt.gz
+*.pcap
+*.pcapng
+*.csv.gz
+
+# External cloned repos / heavy artifacts
+external/
+source/*/.git/
+
+# Ignore generated configs by default
+generated_configs/
+
+# Ignore most result folders by default
+results/*
+
+# Keep selected final result folders
+!results/final_5_mode_graphs_5000_announce50_delay15/
+!results/final_5_mode_graphs_5000_announce50_delay15/*.csv
+!results/final_5_mode_graphs_5000_announce50_delay15/*.png
+!results/final_5_mode_graphs_5000_announce50_delay15/*.pdf
+
+!results/generated_convergence_boxplot_10000_delay0/
+!results/generated_convergence_boxplot_10000_delay0/*.csv
+!results/generated_convergence_boxplot_10000_delay0/*.png
+!results/generated_convergence_boxplot_10000_delay0/*.pdf
+
+!results/final_5_mode_graphs_observed_13104_announce50_delay15/
+!results/final_5_mode_graphs_observed_13104_announce50_delay15/*.csv
+!results/final_5_mode_graphs_observed_13104_announce50_delay15/*.png
+!results/final_5_mode_graphs_observed_13104_announce50_delay15/*.pdf
